@@ -1,0 +1,56 @@
+Dependencies for Project 'TM4C', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6140001::V6.14.1::ARMCLANG
+F (.\main.c)(0x662A20A4)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Drivers/MCAL/INC -I ./Drivers/HAL/INC -I ./Drivers/SERVICES/INC-I./RTE/_Target_1-IC:/Users/mw296/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/mw296/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="532" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/main.o -MD)
+I (Drivers\MCAL\INC\UART_int.h)(0x66281E65)
+I (Drivers\MCAL\INC\BIT_MATH.h)(0x65BBE988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F514ACE)
+I (Drivers\MCAL\INC\tm4c123gh6pme.h)(0x661331F4)
+I (Drivers\MCAL\INC\UART_prv.h)(0x66282766)
+I (Drivers\HAL\INC\GPS.h)(0x6628C8C2)
+I (Drivers\MCAL\INC\UART_cfg.h)(0x661C0ADA)
+I (Drivers\SERVICES\INC\APP.h)(0x6628DB23)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5F514ACE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F514ACE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5F514ACE)
+I (Drivers\MCAL\INC\GPIO_Interface.h)(0x6628EB4D)
+I (Drivers\SERVICES\INC\STD_TYPES.h)(0x65CFBFD2)
+I (Drivers\MCAL\INC\GPIO_Private.h)(0x661C0C80)
+F (.\Io.h)(0x65FF321C)()
+F (.\Drivers\MCAL\UART_src.c)(0x6628270A)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Drivers/MCAL/INC -I ./Drivers/HAL/INC -I ./Drivers/SERVICES/INC-I./RTE/_Target_1-IC:/Users/mw296/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/mw296/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="532" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/uart_src.o -MD)
+I (Drivers\MCAL\INC\UART_int.h)(0x66281E65)
+I (Drivers\MCAL\INC\BIT_MATH.h)(0x65BBE988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F514ACE)
+I (Drivers\MCAL\INC\tm4c123gh6pme.h)(0x661331F4)
+I (Drivers\MCAL\INC\UART_prv.h)(0x66282766)
+F (.\Drivers\MCAL\GPIO_Proggramm.c)(0x6628F052)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Drivers/MCAL/INC -I ./Drivers/HAL/INC -I ./Drivers/SERVICES/INC-I./RTE/_Target_1-IC:/Users/mw296/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/mw296/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="532" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/gpio_proggramm.o -MD)
+I (Drivers\MCAL\INC\BIT_MATH.h)(0x65BBE988)
+I (Drivers\SERVICES\INC\STD_TYPES.h)(0x65CFBFD2)
+I (Drivers\MCAL\INC\GPIO_Interface.h)(0x6628EB4D)
+I (Drivers\MCAL\INC\GPIO_Private.h)(0x661C0C80)
+I (Drivers\MCAL\INC\GPIO_Config.h)(0x661C0C80)
+F (.\Drivers\HAL\GPS.c)(0x6628E553)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Drivers/MCAL/INC -I ./Drivers/HAL/INC -I ./Drivers/SERVICES/INC-I./RTE/_Target_1-IC:/Users/mw296/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/mw296/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="532" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/gps.o -MD)
+I (Drivers\HAL\INC\GPS.h)(0x6628C8C2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F514ACE)
+I (Drivers\MCAL\INC\UART_prv.h)(0x66282766)
+I (Drivers\MCAL\INC\UART_cfg.h)(0x661C0ADA)
+I (Drivers\MCAL\INC\UART_int.h)(0x66281E65)
+I (Drivers\MCAL\INC\BIT_MATH.h)(0x65BBE988)
+I (Drivers\MCAL\INC\tm4c123gh6pme.h)(0x661331F4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F514ACE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F514ACE)
+F (.\Drivers\SERVICES\APP.c)(0x6628E87B)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Drivers/MCAL/INC -I ./Drivers/HAL/INC -I ./Drivers/SERVICES/INC-I./RTE/_Target_1-IC:/Users/mw296/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/mw296/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="532" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/app.o -MD)
+I (Drivers\SERVICES\INC\APP.h)(0x6628DB23)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5F514ACE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F514ACE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5F514ACE)
+F (RTE\Device\TM4C123GH6PM\startup_TM4C123.s)(0x66172466)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-IC:/Users/mw296/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/mw296/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-Wa,armasm,--pd,"__UVISION_VERSION SETA 532" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"TM4C123GH6PM SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_tm4c123.o)
+F (RTE\Device\TM4C123GH6PM\system_TM4C123.c)(0x66279427)(-xc -std=gnu11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Drivers/MCAL/INC -I ./Drivers/HAL/INC -I ./Drivers/SERVICES/INC-I./RTE/_Target_1-IC:/Users/mw296/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/mw296/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="532" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/system_tm4c123.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F514ACE)
+I (C:\Users\mw296\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530EE4E6)
+I (C:\Users\mw296\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h)(0x550FD41C)
+I (C:\Users\mw296\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F831E)
+I (C:\Users\mw296\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F831E)
+I (C:\Users\mw296\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F831E)
+I (C:\Users\mw296\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F831E)
+I (C:\Users\mw296\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F831E)
+I (C:\Users\mw296\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6C7E6)
