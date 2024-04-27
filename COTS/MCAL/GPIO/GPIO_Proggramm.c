@@ -32,3 +32,30 @@ Std_ReturnType MCAL_GPIO_INIT(u32 Port, GPIO_REGISTERES *Copy_PortId)
 
     return Local_FunctionStatus;
 }
+
+Std_ReturnType MCAL_GPIO_SetPinValue(GPIO_REGISTERES *Gpio_Port, u8 Copy_PinId, u8 Copy_PinValue)
+{
+    Std_ReturnType Local_FunctionStatus = E_NOT_OK;
+	Gpio_Port->GPIO_WRITE_DATA &= ~( 1 << Copy_PinId);
+    Gpio_Port->GPIO_WRITE_DATA |= ((Copy_PinValue & 1) << Copy_PinId);
+
+    return Local_FunctionStatus;
+}
+
+Std_ReturnType MCAL_GPIO_GetPinValue(GPIO_REGISTERES *Gpio_Port, u8 Copy_PinId, u8 *Copy_PinReturnValue)
+{
+    Std_ReturnType Local_FunctionStatus = E_OK;
+
+    if (Copy_PinReturnValue != NULL)
+    {
+        *Copy_PinReturnValue = (Gpio_Port->GPIO_WRITE_DATA & 1 << Copy_PinId);
+        *Copy_PinReturnValue>>=Copy_PinId;
+    }
+    
+    else
+    {
+        Local_FunctionStatus = E_NOT_OK;
+    }
+
+    return Local_FunctionStatus;
+}
