@@ -21,8 +21,8 @@ The goal is to create a GPS tracking system that collects real-time positional c
 - [**`COTS/HAL/GPS`**](./HAL/GPS): GPS module driver configuration, parsing and proper reading.
 - [**`COTS/HAL/LED`**](./HAL/LED): LED configuration and control.
 - [**`COTS/APP`**](./COTS/APP): Application layer testing and implementing GPS-related functionality.
-- [**`Final Program`**](./Final_Program): Full fledged package, combining all the previous modules.
-- [**`Test Programs`**](./Test_Programs): Individual testing programs for each module.
+- [**`Final Program`**](./Final%20Program): Full fledged package, combining all the previous modules.
+- [**`Test Programs`**](./Test%20Programs): Individual testing programs for each module.
 
 ## ⚙ Hardware Requirements
 - Microcontroller development board ( ARM® Cortex®-M4F Based MCU TM4C123G "TivaC" ) 🖥️
