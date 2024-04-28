@@ -2,27 +2,176 @@
 #include "tm4c123gh6pme.h"
 
 
+static void UART_GPIO_RCC(UART_ConfigType * cfg)
+{
+	if(cfg->Instance == UART0)
+	{
+		// Enable Clocks For UART and GPIOA
+		SYSCTL_RCGCUART_R |= SYSCTL_RCGCUART_R0;
+		SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R0;
+		
+		// Poll Cycles for stabilization 
+		while(!GET_BIT(SYSCTL_PRGPIO_R,0));
+		
+		// Disable UART 
+		cfg->Instance->CTL &= ~UART_CTL_UARTEN;
+		
+		
+		// PA0 RX   PA1 TX
+    GPIO_PORTA_AFSEL_R |= (1<<0) | (1<<1);
+		GPIO_PORTA_PCTL_R = GPIO_PCTL_PA0_U0RX | GPIO_PCTL_PA1_U0TX;		
+    GPIO_PORTA_DEN_R   |= (1<<0) | (1<<1);                     
+    GPIO_PORTA_AMSEL_R &= ~((1<<0)|(1<<1));                    
+	}
+	else if(cfg->Instance == UART1)
+	{
+		// Enable Clocks For UART and GPIOB
+		SYSCTL_RCGCUART_R |= SYSCTL_RCGCUART_R1;
+		SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R1;
 
+		// Poll Cycles for stabilization 
+		while(!GET_BIT(SYSCTL_PRGPIO_R,1));
 
+		
+		// Disable UART 
+		cfg->Instance->CTL &= ~UART_CTL_UARTEN;
+		
+		// PB0 RX   PB1 TX
+		GPIO_PORTB_AFSEL_R |=(1<<0) | (1<<1);    
+		GPIO_PORTB_PCTL_R = GPIO_PCTL_PB1_U1TX|GPIO_PCTL_PB0_U1RX;	 		
+    GPIO_PORTB_DEN_R   |= (1<<0) | (1<<1);                           
+    GPIO_PORTB_AMSEL_R &= ~((1<<0)|(1<<1));                    
+		
+    
+	}
+	else if(cfg->Instance == UART2)
+	{
+		// Enable Clocks For UART2 and GPIOD
+		SYSCTL_RCGCUART_R |= SYSCTL_RCGCUART_R2;
+		SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R3;
 
+		// Poll Cycles for stabilization 
+		while(!GET_BIT(SYSCTL_PRGPIO_R,3));
 
+		
+		// Disable UART 
+		cfg->Instance->CTL &= ~UART_CTL_UARTEN;
+		
+		// PD6 RX   PD7 TX
+		GPIO_PORTD_AFSEL_R |= (1<<6) | (1<<7);   
+		GPIO_PORTD_PCTL_R  |= GPIO_PCTL_PD6_U2RX | GPIO_PCTL_PD7_U2TX ;		
+    GPIO_PORTD_DEN_R   |= (1<<6) | (1<<7);                           
+    GPIO_PORTD_AMSEL_R &= ~((1<<6)|(1<<7));                    
+		
+    
+	}
+	else if(cfg->Instance == UART3)
+	{
+		// Enable Clocks For UART3 and GPIOD
+		SYSCTL_RCGCUART_R |= SYSCTL_RCGCUART_R3;
+		SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R2;
 
+		// Poll Cycles for stabilization 
+		while(!GET_BIT(SYSCTL_PRGPIO_R,2));
 
+		
+		// Disable UART 
+		cfg->Instance->CTL &= ~UART_CTL_UARTEN;
+		
+		// PC6 RX   PC7 TX
+		GPIO_PORTC_AFSEL_R |= (1<<6) | (1<<7);   
+		GPIO_PORTC_PCTL_R  |= GPIO_PCTL_PC6_U3RX | GPIO_PCTL_PC7_U3TX ;		
+    GPIO_PORTC_DEN_R   |= (1<<6) | (1<<7);                           
+    GPIO_PORTC_AMSEL_R &= ~((1<<6)|(1<<7));                    
+		
+    
+	}
+	else if(cfg->Instance == UART4)
+	{
+		// Enable Clocks For UART4 and GPIOC
+		SYSCTL_RCGCUART_R |= SYSCTL_RCGCUART_R4;
+		SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R2;
 
+		// Poll Cycles for stabilization 
+		while(!GET_BIT(SYSCTL_PRGPIO_R,2));
 
+		
+		// Disable UART 
+		cfg->Instance->CTL &= ~UART_CTL_UARTEN;
+		
+		// PC4 RX   PC5 TX
+		GPIO_PORTC_AFSEL_R |= (1<<4) | (1<<5);   
+		GPIO_PORTC_PCTL_R  |= GPIO_PCTL_PC4_U4RX | GPIO_PCTL_PC5_U4TX ;		
+    GPIO_PORTC_DEN_R   |= (1<<4) | (1<<5);                           
+    GPIO_PORTC_AMSEL_R &= ~((1<<4)|(1<<5));                    
+		
+    
+	}
+	else if(cfg->Instance == UART5)
+	{
+		// Enable Clocks For UART5 and GPIOE
+		SYSCTL_RCGCUART_R |= SYSCTL_RCGCUART_R5;
+		SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R4;
 
+		// Poll Cycles for stabilization 
+		while(!GET_BIT(SYSCTL_PRGPIO_R,4));
 
+		
+		// Disable UART 
+		cfg->Instance->CTL &= ~UART_CTL_UARTEN;
+		
+		// PE4 RX   PE5 TX
+		GPIO_PORTE_AFSEL_R |= (1<<4) | (1<<5);   
+		GPIO_PORTE_PCTL_R  |= GPIO_PCTL_PE4_U5RX | GPIO_PCTL_PE5_U5TX ;		
+    GPIO_PORTE_DEN_R   |= (1<<4) | (1<<5);                           
+    GPIO_PORTE_AMSEL_R &= ~((1<<4)|(1<<5));                    
+		
+    
+	}
+	else if(cfg->Instance == UART6)
+	{
+		// Enable Clocks For UART6 and GPIOD
+		SYSCTL_RCGCUART_R |= SYSCTL_RCGCUART_R6;
+		SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R3;
 
+		// Poll Cycles for stabilization 
+		while(!GET_BIT(SYSCTL_PRGPIO_R,3));
 
+		
+		// Disable UART 
+		cfg->Instance->CTL &= ~UART_CTL_UARTEN;
+		
+		// PD4 RX   PD5 TX
+		GPIO_PORTD_AFSEL_R |= (1<<4) | (1<<5);   
+		GPIO_PORTD_PCTL_R  |= GPIO_PCTL_PD4_U6RX | GPIO_PCTL_PD5_U6TX ;		
+    GPIO_PORTD_DEN_R   |= (1<<4) | (1<<5);                           
+    GPIO_PORTD_AMSEL_R &= ~((1<<4)|(1<<5));                    
+		
+    
+	}
+	else if(cfg->Instance == UART7)
+	{
+		// Enable Clocks For UART7 and GPIOE
+		SYSCTL_RCGCUART_R |= SYSCTL_RCGCUART_R7;
+		SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R4;
 
+		// Poll Cycles for stabilization 
+		while(!GET_BIT(SYSCTL_PRGPIO_R,4));
 
-
-
-
-
-
-
-
+		
+		// Disable UART 
+		cfg->Instance->CTL &= ~UART_CTL_UARTEN;
+		
+		// PE0 RX   PE1 TX
+		GPIO_PORTE_AFSEL_R |= (1<<0) | (1<<1);   
+		GPIO_PORTE_PCTL_R  |= GPIO_PCTL_PE0_U7RX | GPIO_PCTL_PE1_U7TX ;		
+    GPIO_PORTE_DEN_R   |= (1<<0) | (1<<1);                           
+    GPIO_PORTE_AMSEL_R &= ~((1<<0)|(1<<1));                    
+		
+    
+	}
+	
+}
 
 
 void MCAL_UART_Init(UART_ConfigType * cfg)
