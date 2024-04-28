@@ -75,3 +75,58 @@ typedef enum
 #define GPIO_INPUT_PULL_DOWN_MOD 0 /**< GPIO Input Pull down Mode */
 #define GPIO_INPUT_PULL_UP_MOD 1   /**< GPIO Input Pull up Mode */
 /** @} */
+
+
+/** @} */
+
+/**
+ * @defgroup GPIO_Functions GPIO Functions
+ * @brief GPIO functions for controlling GPIO pins.
+ * @{
+ */
+
+/**
+ * @brief Sets the mode of a GPIO pin.
+ *
+ * This function sets the mode of a specified GPIO pin.
+ *
+ * @param[in] Copy_PortId The ID of the GPIO port (e.g., GPIO_PORTA, GPIO_PORTB, etc.).
+ * @param[in] Copy_PinId The ID of the GPIO pin (e.g., GPIO_PIN0, GPIO_PIN1, etc.).
+ * @param[in] Copy_PinDir The Direct'ion of pin either it is  input or output
+ * @param[in] Copy_PinMode The desired mode for the GPIO pin like pull up or pull down for inputs.
+ * @return Std_ReturnType Returns E_OK if the operation was successful, or E_NOT_OK if an error occurred.
+ */
+Std_ReturnType MCAL_GPIO_SetPinMode( GPIO_REGISTERES* Copy_PortId, u8 Copy_PinId, u8 Copy_PinDir,u8 Copy_PinMode) ;
+
+/**
+ * @brief Sets the value of a GPIO pin.
+ *
+ * This function sets the value of a specified GPIO pin to either high or low.
+ *
+ * @param[in] Copy_PortId The ID of the GPIO port (e.g., GPIO_PORTA, GPIO_PORTB, etc.).
+ * @param[in] Copy_PinId The ID of the GPIO pin (e.g., GPIO_PIN0, GPIO_PIN1, etc.).
+ * @param[in] Copy_PinValue The desired value for the GPIO pin (GPIO_HIGH or GPIO_LOW).
+ * @return Std_ReturnType Returns E_OK if the operation was successful, or E_NOT_OK if an error occurred.
+ */
+Std_ReturnType MCAL_GPIO_SetPinValue(GPIO_REGISTERES* Copy_PortId, u8 Copy_PinId, u8 Copy_PinValue);
+
+/**
+ * @brief Gets the value of a GPIO pin.
+ *'
+ * This function reads the current value of a specified GPIO pin and stores it in the provided pointer.
+ *
+ * @param[in] Copy_PortId The ID of the GPIO port (e.g., GPIO_PORTA, GPIO_PORTB, etc.).
+ * @param[in] Copy_PinId The ID of the GPIO pin (e.g., GPIO_PIN0, GPIO_PIN1, etc.).
+ * @param[out] Copy_PinReturnValue Pointer to the variable where the pin value will be stored (GPIO_HIGH or GPIO_LOW).
+ * @return Std_ReturnType Returns E_OK if the operation was successful, or E_NOT_OK if an error occurred.
+ */
+Std_ReturnType MCAL_GPIO_GetPinValue(GPIO_REGISTERES* Copy_PortId, u8 Copy_PinId, u8 *Copy_PinReturnValue);
+/** @brief Initalize the PORT and open it's Clock
+ * @param[in] Port adding name of port  from the enum above like PortA
+ * @param[in] Copy_PortId Adding name of port like GPIO_PORTA
+ */
+Std_ReturnType MCAL_GPIO_INIT(u32 Port,GPIO_REGISTERES* Copy_PortId) ;
+/** @} */
+
+
+#endif /**< GPIO_INTERFACE_H_ */
