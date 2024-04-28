@@ -28,7 +28,10 @@ Std_ReturnType MCAL_I2C_INIT(u32 Port, GPIO_REGISTERES *Copy_PortId,u8 I2C_numbe
     Copy_PortId->GPIOODR|=1<<I2C0_SDA  ;
     I2C_0->I2CMCR = I2C_Master_Enable;
     I2C_0->I2CMTPR=TPR_Value_100Kbps;
+    //not sure is this address of master or the slave
     I2C_0->I2CMSA=Slave_Address_Value;
+    GPIO_PORTB->GPIODEN |=I2C0_SDA;
+    GPIO_PORTB->GPIODEN |=I2C0_SCL;
 }
 
 Std_ReturnType MCAL_I2C_SEND_BYTE(u8 DATA)
