@@ -15,6 +15,61 @@
 #include "UART_prv.h"
 
 /**
+ * @defgroup uartNum UART Instance
+ * @{
+ */
+#define UART_Instance		UART_Type /**< UART instance */
+/** @} */
+
+/**
+ * @defgroup dataSize Data Bits Size
+ * @{
+ */
+typedef enum
+{
+    Data_Bit_5 = UART_LCRH_WLEN_5, /**< 5 data bits */
+    Data_Bit_6 = UART_LCRH_WLEN_6, /**< 6 data bits */
+    Data_Bit_7 = UART_LCRH_WLEN_7, /**< 7 data bits */
+    Data_Bit_8 = UART_LCRH_WLEN_8  /**< 8 data bits */
+}UART_Data_Bit;
+/** @} */
+
+/**
+ * @defgroup stopBits Stop Bits
+ * @{
+ */
+typedef enum
+{
+    Stop_bit_1, /**< 1 stop bit */
+    Stop_bit_2  /**< 2 stop bits */
+}UART_Stop_Bit;
+/** @} */
+
+/**
+ * @defgroup parity Parity Type
+ * @{
+ */
+typedef enum 
+{
+    Parity_None, /**< No parity */
+    Parity_Even, /**< Even parity */
+    Parity_Odd   /**< Odd parity */
+}UART_Parity;
+/** @} */
+
+/**
+ * @brief UART Configuration Structure
+ */
+typedef struct
+{
+    UART_Instance  * Instance;   /**< @ref uartNum */
+    UART_Data_Bit  Data_Bit;    /**< @ref dataSize */
+    UART_Stop_Bit  Stop_Bit;    /**< @ref stopBits */
+    UART_Parity    Parity;      /**< @ref parity */
+    uint32_t       BaudRate;    /**< Baud rate */
+}UART_ConfigType;
+
+/**
  * @brief Initializes the UART peripheral.
  * @param cfg Pointer to the UART configuration structure.
  */
