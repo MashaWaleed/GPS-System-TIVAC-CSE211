@@ -1,0 +1,133 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Moaz Ragab, AInshams, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\asu_eng\Second_semester_Junior\Intro_To_Emb_Systems\GPS-Tiva-Project-CSE211\Test_Drivers\GPIO\GPIO_TEST.uvprojx
+Project File Date:  04/24/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(4): warning: In file included from...
+./STD_TYPES.h(26): warning: 'NULL' macro redefined [-Wmacro-redefined]
+#define NULL ((void *)0)
+        ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(61): note: previous definition is here
+#define NULL 0                   /* see <stddef.h> */
+        ^
+main.c(12): warning: passing 'volatile GPIO_REGISTERES *' to parameter of type 'GPIO_REGISTERES *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        MCAL_GPIO_INIT(PortF,GPIO_PORTF);
+                             ^~~~~~~~~~
+./GPIO_Private.h(39): note: expanded from macro 'GPIO_PORTF'
+#define GPIO_PORTF  ((volatile GPIO_REGISTERES *)(GPIO_PORTF_BASE_ADDRESS))
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./GPIO_Interface.h(142): note: passing argument to parameter 'Copy_PortId' here
+Std_ReturnType MCAL_GPIO_INIT(u32 Port,GPIO_REGISTERES* Copy_PortId) ;
+                                                        ^
+main.c(13): warning: passing 'volatile GPIO_REGISTERES *' to parameter of type 'GPIO_REGISTERES *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        MCAL_GPIO_SetPinMode(GPIO_PORTF,GPIO_PIN2,GPIO_PIN_OUTPUT,GPIO_INPUT_PULL_DOWN_MOD);
+                             ^~~~~~~~~~
+./GPIO_Private.h(39): note: expanded from macro 'GPIO_PORTF'
+#define GPIO_PORTF  ((volatile GPIO_REGISTERES *)(GPIO_PORTF_BASE_ADDRESS))
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./GPIO_Interface.h(113): note: passing argument to parameter 'Copy_PortId' here
+Std_ReturnType MCAL_GPIO_SetPinMode( GPIO_REGISTERES* Copy_PortId, u8 Copy_PinId, u8 Copy_PinDir,u8 Copy_PinMode) ;
+                                                      ^
+main.c(14): warning: passing 'volatile GPIO_REGISTERES *' to parameter of type 'GPIO_REGISTERES *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+                MCAL_GPIO_SetPinMode(GPIO_PORTF,GPIO_PIN4,GPIO_PIN_INPUT,GPIO_INPUT_PULL_DOWN_MOD);
+                                     ^~~~~~~~~~
+./GPIO_Private.h(39): note: expanded from macro 'GPIO_PORTF'
+#define GPIO_PORTF  ((volatile GPIO_REGISTERES *)(GPIO_PORTF_BASE_ADDRESS))
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./GPIO_Interface.h(113): note: passing argument to parameter 'Copy_PortId' here
+Std_ReturnType MCAL_GPIO_SetPinMode( GPIO_REGISTERES* Copy_PortId, u8 Copy_PinId, u8 Copy_PinDir,u8 Copy_PinMode) ;
+                                                      ^
+main.c(18): warning: passing 'volatile GPIO_REGISTERES *' to parameter of type 'GPIO_REGISTERES *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+                MCAL_GPIO_GetPinValue(GPIO_PORTF,GPIO_PIN4,&x);
+                                      ^~~~~~~~~~
+./GPIO_Private.h(39): note: expanded from macro 'GPIO_PORTF'
+#define GPIO_PORTF  ((volatile GPIO_REGISTERES *)(GPIO_PORTF_BASE_ADDRESS))
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./GPIO_Interface.h(137): note: passing argument to parameter 'Copy_PortId' here
+Std_ReturnType MCAL_GPIO_GetPinValue(GPIO_REGISTERES* Copy_PortId, u8 Copy_PinId, u8 *Copy_PinReturnValue);
+                                                      ^
+main.c(18): warning: incompatible pointer types passing 'int *' to parameter of type 'u8 *' (aka 'unsigned char *') [-Wincompatible-pointer-types]
+                MCAL_GPIO_GetPinValue(GPIO_PORTF,GPIO_PIN4,&x);
+                                                           ^~
+./GPIO_Interface.h(137): note: passing argument to parameter 'Copy_PinReturnValue' here
+Std_ReturnType MCAL_GPIO_GetPinValue(GPIO_REGISTERES* Copy_PortId, u8 Copy_PinId, u8 *Copy_PinReturnValue);
+                                                                                      ^
+main.c(23): warning: passing 'volatile GPIO_REGISTERES *' to parameter of type 'GPIO_REGISTERES *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+                MCAL_GPIO_SetPinValue(GPIO_PORTF,GPIO_PIN2,GPIO_LOW);           
+                                      ^~~~~~~~~~
+./GPIO_Private.h(39): note: expanded from macro 'GPIO_PORTF'
+#define GPIO_PORTF  ((volatile GPIO_REGISTERES *)(GPIO_PORTF_BASE_ADDRESS))
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./GPIO_Interface.h(125): note: passing argument to parameter 'Copy_PortId' here
+Std_ReturnType MCAL_GPIO_SetPinValue(GPIO_REGISTERES* Copy_PortId, u8 Copy_PinId, u8 Copy_PinValue);
+                                                      ^
+main.c(27): warning: passing 'volatile GPIO_REGISTERES *' to parameter of type 'GPIO_REGISTERES *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+                MCAL_GPIO_SetPinValue(GPIO_PORTF,GPIO_PIN2,GPIO_HIGH);  
+                                      ^~~~~~~~~~
+./GPIO_Private.h(39): note: expanded from macro 'GPIO_PORTF'
+#define GPIO_PORTF  ((volatile GPIO_REGISTERES *)(GPIO_PORTF_BASE_ADDRESS))
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./GPIO_Interface.h(125): note: passing argument to parameter 'Copy_PortId' here
+Std_ReturnType MCAL_GPIO_SetPinValue(GPIO_REGISTERES* Copy_PortId, u8 Copy_PinId, u8 Copy_PinValue);
+                                                      ^
+8 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=1448 RO-data=636 RW-data=0 ZI-data=608  
+".\Objects\GPIO_TEST.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/pc/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Source file:   Device/Source/system_TM4C123.c
+      Include file:  Device/Include/TM4C123/TM4C123.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
