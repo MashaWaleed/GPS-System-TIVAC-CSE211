@@ -18,8 +18,8 @@ The goal is to create a GPS tracking system that collects real-time positional c
 - [**`Documentation`**](./Documentation.pdf): A detailed project report including screenshots of our simulations and results.
 - [**`COTS/MCAL/GPIO`**](./COTS/MCAL/GPIO): Full GPIO driver implementation (initalization and control) for the TivaC TM4C123G microcontroller.
 - [**`COTS/MCAL/UART`**](./COTS/MCAL/UART): Full UART driver configuration (initalization and control) for the TivaC TM4C123G microcontroller.
-- [**`COTS/HAL/GPS`**](./HAL/GPS): GPS module driver configuration, parsing and proper reading.
-- [**`COTS/HAL/LED`**](./HAL/LED): LED configuration and control.
+- [**`COTS/HAL/GPS`**](./COTS/HAL/GPS): GPS module driver configuration, parsing and proper reading.
+- [**`COTS/HAL/LED`**](./COTS/HAL/LED): LED configuration and control.
 - [**`COTS/APP`**](./COTS/APP): Application layer testing and implementing GPS-related functionality.
 - [**`Final Program`**](./Final%20Program): Full fledged package, combining all the previous modules.
 - [**`Test Programs`**](./Test%20Programs): Individual testing programs for each module.
