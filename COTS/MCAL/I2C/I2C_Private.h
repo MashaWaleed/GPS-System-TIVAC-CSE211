@@ -13,6 +13,8 @@
 #define I2C_Master_Enable   0x00000010
 #define I2C0_SDA            GPIO_PIN3
 #define I2C0_SCL            GPIO_PIN2
+#define I2C1_SCL 						GPIO_PIN6
+#define I2C1_SDA 						GPIO_PIN7
 #define I2C0_Base_Address   0x40020000
 #define I2C1_Base_Address   0x40021000
 #define I2C2_Base_Address   0x40022000
