@@ -14,22 +14,22 @@
  *
  */
 typedef struct {
-    u32 GPIODATA;
-    u32 Non_Usable_Space[254] ;
-    u32 GPIO_WRITE_DATA;
-    u32 GPIODIR;
-    u32 Non_Usable_Space2[7] ;
-    u32 GPIOAFSEL;
-    u32 Non_Usable_Space3[58] ;
-    u32 GPIOODR;
-    u32 GPIOPUR;
-    u32 GPIOPDR;
-    u32 GPIOSLR;
-    u32 GPIODEN;
-    u32 GPIOLOCK;
-    u32 GPIOCR;
-    u32 GPIOAMSEL;
-    u32 GPIOPCTL;
+    volatile u32 GPIODATA;
+    volatile u32 Non_Usable_Space[254] ;
+    volatile u32 GPIO_WRITE_DATA;
+    volatile u32 GPIODIR;
+    volatile u32 Non_Usable_Space2[7] ;
+    volatile u32 GPIOAFSEL;
+    volatile u32 Non_Usable_Space3[58] ;
+    volatile u32 GPIOODR;
+    volatile u32 GPIOPUR;
+    volatile u32 GPIOPDR;
+    volatile u32 GPIOSLR;
+    volatile u32 GPIODEN;
+    volatile u32 GPIOLOCK;
+    volatile u32 GPIOCR;
+    volatile u32 GPIOAMSEL;
+    volatile u32 GPIOPCTL;
 }GPIO_REGISTERES;
 
 /**
@@ -45,7 +45,7 @@ typedef struct {
 #define GPIO_PORTF_BASE_ADDRESS 0x40025000U /**< GPIO Port C base address */
 #define GPIO_RCC_ENABLE_BASE_ADDRESS (0x400FE608)
 #define GPIO_RCC_READY_FOR_ACCESS_ADDRESS (0x400FEA08 )
-#define GPIO_PORTF_DATA_R       (*((volatile u32 *)0x400253FC))
+#define GPIO_PortF_DATA_R       (*(( u32 *)0x400253FC))
 #define  LOCK_VALUE 0x4C4F434B
 #define I2C_PCTL_VALUE 0x3
 /** @} */
@@ -56,14 +56,14 @@ typedef struct {
  * @{
  */
 /******************************************< REGISTERS ADDRESSES FOR PORT A ******************************************/
-#define GPIO_PORTA  ((volatile GPIO_REGISTERES *)(GPIO_PORTA_BASE_ADDRESS))
-#define GPIO_PORTB  ((volatile GPIO_REGISTERES *)(GPIO_PORTB_BASE_ADDRESS))
-#define GPIO_PORTC  ((volatile GPIO_REGISTERES *)(GPIO_PORTC_BASE_ADDRESS))
-#define GPIO_PORTD  ((volatile GPIO_REGISTERES *)(GPIO_PORTD_BASE_ADDRESS))
-#define GPIO_PORTE  ((volatile GPIO_REGISTERES *)(GPIO_PORTE_BASE_ADDRESS))
-#define GPIO_PORTF  ((volatile GPIO_REGISTERES *)(GPIO_PORTF_BASE_ADDRESS))
-#define GPIO_ENABLE  (*((volatile u32 *)(GPIO_RCC_ENABLE_BASE_ADDRESS)))
-#define GPIO_WAIT  (*((volatile u32 *)(GPIO_RCC_READY_FOR_ACCESS_ADDRESS)))
+#define GPIO_PORTA  (( GPIO_REGISTERES *)(GPIO_PORTA_BASE_ADDRESS))
+#define GPIO_PORTB  (( GPIO_REGISTERES *)(GPIO_PORTB_BASE_ADDRESS))
+#define GPIO_PORTC  (( GPIO_REGISTERES *)(GPIO_PORTC_BASE_ADDRESS))
+#define GPIO_PORTD  (( GPIO_REGISTERES *)(GPIO_PORTD_BASE_ADDRESS))
+#define GPIO_PORTE  (( GPIO_REGISTERES *)(GPIO_PORTE_BASE_ADDRESS))
+#define GPIO_PORTF  (( GPIO_REGISTERES *)(GPIO_PORTF_BASE_ADDRESS))
+#define GPIO_ENABLE  (*(( u32 *)(GPIO_RCC_ENABLE_BASE_ADDRESS)))
+#define GPIO_WAIT  (*(( u32 *)(GPIO_RCC_READY_FOR_ACCESS_ADDRESS)))
 
 
 

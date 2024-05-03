@@ -1,13 +1,13 @@
-/*******************************************************************/
-/*************   Author: ASU_EMBEDDED_TEAM_NO(?)      **************/
-/*************        date:  27 April 2024            **************/
-/*************           Version: 0.1                 **************/
-/*************    Module: MCAL_GPIO_proggramm.c       **************/
-/*******************************************************************/
-
+/***********************************************/
+/************* Author: ASU_EMBEDDED_TEAM_NO?!**************/
+/************* date:  11 April 2024 **************/
+/************* Version: 0.1       **************/
+/************* Module:MCAL_GPIO_proggramm.c ***********/
+/***********************************************/
 /*****************************< LIB *****************************/
 #include "BIT_MATH.h"
 #include "STD_TYPES.h"
+#include "stddef.h"
 /*****************************< MCAL_GPIO *****************************/
 #include "GPIO_Interface.h"
 #include "GPIO_Private.h"
@@ -18,22 +18,15 @@
 Std_ReturnType MCAL_GPIO_INIT(u32 Port, GPIO_REGISTERES *Copy_PortId)
 {
     Std_ReturnType Local_FunctionStatus = E_OK;
-    
-    GPIO_ENABLE |= 1 << Port;
 
-    // Add a check to see if enabling the GPIO port was successful
-    if (!(GPIO_ENABLE & (1 << Port))) {
-        Local_FunctionStatus = E_NOT_OK;
-    } else {
-    while ((GPIO_WAIT & 1 << Port) == 0); // Wait until port is ready
-    Copy_PortId->GPIOLOCK = LOCK_VALUE; // Unlock the port
-    Copy_PortId->GPIOCR |= 1 << Port; // Enable the port (set control register)
-    }
+    GPIO_ENABLE |= 1 << Port;
+    while ((GPIO_WAIT & 1 << Port) == 0)
+        ;
+    Copy_PortId->GPIOLOCK = LOCK_VALUE;
+    Copy_PortId->GPIOCR |= 1 << Port;
 
     return Local_FunctionStatus;
 }
-
-
 
 Std_ReturnType MCAL_GPIO_SetPinMode(GPIO_REGISTERES *Copy_PortId, u8 Copy_PinId, u8 Copy_PinDir, u8 Copy_PinMode)
 {
@@ -58,11 +51,10 @@ Std_ReturnType MCAL_GPIO_SetPinMode(GPIO_REGISTERES *Copy_PortId, u8 Copy_PinId,
     return Local_FunctionStatus;
 }
 
-
 Std_ReturnType MCAL_GPIO_SetPinValue(GPIO_REGISTERES *Gpio_Port, u8 Copy_PinId, u8 Copy_PinValue)
 {
     Std_ReturnType Local_FunctionStatus = E_NOT_OK;
-	Gpio_Port->GPIO_WRITE_DATA &= ~( 1 << Copy_PinId);
+	    Gpio_Port->GPIO_WRITE_DATA &= ~( 1 << Copy_PinId);
     Gpio_Port->GPIO_WRITE_DATA |= ((Copy_PinValue & 1) << Copy_PinId);
 
     return Local_FunctionStatus;
@@ -77,7 +69,7 @@ Std_ReturnType MCAL_GPIO_GetPinValue(GPIO_REGISTERES *Gpio_Port, u8 Copy_PinId, 
         *Copy_PinReturnValue = (Gpio_Port->GPIO_WRITE_DATA & 1 << Copy_PinId);
         *Copy_PinReturnValue>>=Copy_PinId;
     }
-    
+
     else
     {
         Local_FunctionStatus = E_NOT_OK;

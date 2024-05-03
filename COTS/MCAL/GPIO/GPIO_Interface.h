@@ -8,6 +8,7 @@
 #define GPIO_INTERFACE_H_
 #include "BIT_MATH.h"
 #include "STD_TYPES.h"
+#include "GPIO_Private.h"
 /**
  * @defgroup GPIO_Configuration GPIO Configuration
  * @brief Macros and definitions for configuring GPIO pins.
