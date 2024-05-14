@@ -1,0 +1,27 @@
+\doxysection{MCAL/\+NVIC(Core)/\+NVIC\+\_\+\+Program.c File Reference}
+\hypertarget{_n_v_i_c___program_8c}{}\label{_n_v_i_c___program_8c}\index{MCAL/NVIC(Core)/NVIC\_Program.c@{MCAL/NVIC(Core)/NVIC\_Program.c}}
+{\ttfamily \#include "{}../../\+LIB/\+STD\+\_\+\+TYPES.\+h"{}}\newline
+{\ttfamily \#include "{}../../\+LIB/\+BIT\+\_\+\+MATH.\+h"{}}\newline
+{\ttfamily \#include "{}NVIC\+\_\+interface.\+h"{}}\newline
+{\ttfamily \#include "{}NVIC\+\_\+private.\+h"{}}\newline
+{\ttfamily \#include "{}NVIC\+\_\+config.\+h"{}}\newline
+{\ttfamily \#include "{}../\+SCB/\+SCB\+\_\+interface.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___n_v_i_c___control_gac856ec462e2f1a83bc4cc7ab86407cbd}{MCAL\+\_\+\+NVIC\+\_\+\+Enable\+IRQ}} (\mbox{\hyperlink{group___n_v_i_c___types_ga52ad07211327aabffa8bea582ce95b14}{IRQn\+\_\+\+Type}} Copy\+\_\+\+IRQn)
+\begin{DoxyCompactList}\small\item\em Enable a specific interrupt in the NVIC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___n_v_i_c___control_ga3fc15413357f0f73f43ce39acd68ca41}{MCAL\+\_\+\+NVIC\+\_\+\+Disable\+IRQ}} (\mbox{\hyperlink{group___n_v_i_c___types_ga52ad07211327aabffa8bea582ce95b14}{IRQn\+\_\+\+Type}} Copy\+\_\+\+IRQn)
+\begin{DoxyCompactList}\small\item\em Disable a specific interrupt in the NVIC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___n_v_i_c___control_ga313324842cbd5bc6d241f7aeb9f7469c}{MCAL\+\_\+\+NVIC\+\_\+\+Set\+Pending\+IRQ}} (\mbox{\hyperlink{group___n_v_i_c___types_ga52ad07211327aabffa8bea582ce95b14}{IRQn\+\_\+\+Type}} Copy\+\_\+\+IRQn)
+\begin{DoxyCompactList}\small\item\em Set a specific interrupt as pending in the NVIC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___n_v_i_c___control_gacce418196550825f2d92bfedcaab4ce6}{MCAL\+\_\+\+NVIC\+\_\+\+Clear\+Pending\+IRQ}} (\mbox{\hyperlink{group___n_v_i_c___types_ga52ad07211327aabffa8bea582ce95b14}{IRQn\+\_\+\+Type}} Copy\+\_\+\+IRQn)
+\begin{DoxyCompactList}\small\item\em Clear the pending status of a specific interrupt in the NVIC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___n_v_i_c___control_gad429b507e06d210cec98a8f8f78200ad}{MCAL\+\_\+\+NVIC\+\_\+\+Get\+Pending\+IRQ}} (\mbox{\hyperlink{group___n_v_i_c___types_ga52ad07211327aabffa8bea582ce95b14}{IRQn\+\_\+\+Type}} Copy\+\_\+\+IRQn, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \texorpdfstring{$\ast$}{*}Copy\+\_\+\+Return\+Pending\+Flag)
+\begin{DoxyCompactList}\small\item\em Get the pending status of a specific interrupt in the NVIC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___n_v_i_c___control_gae0fcbcb6c4eff42417a68ec75114217c}{MCAL\+\_\+\+NVIC\+\_\+x\+Set\+Priority}} (\mbox{\hyperlink{group___n_v_i_c___types_ga52ad07211327aabffa8bea582ce95b14}{IRQn\+\_\+\+Type}} Copy\+\_\+\+IRQn, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Priority)
+\begin{DoxyCompactList}\small\item\em Set the priority of a specific interrupt in the NVIC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___n_v_i_c___control_ga37089b049983368ffefcb5ff668e13da}{MCAL\+\_\+\+NVIC\+\_\+v\+Set\+Priority}} (\mbox{\hyperlink{group___n_v_i_c___types_ga52ad07211327aabffa8bea582ce95b14}{IRQn\+\_\+\+Type}} Copy\+\_\+\+IRQn, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Group\+Priority, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Sub\+Priority)
+\begin{DoxyCompactList}\small\item\em Set the priority of a specific interrupt in the NVIC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___n_v_i_c___control_gaaa73b2686801dd9a29f64b325c772d5a}{MCAL\+\_\+\+NVIC\+\_\+x\+Get\+Priority}} (\mbox{\hyperlink{group___n_v_i_c___types_ga52ad07211327aabffa8bea582ce95b14}{IRQn\+\_\+\+Type}} Copy\+\_\+\+IRQn, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \texorpdfstring{$\ast$}{*}Copy\+\_\+\+Priority)
+\begin{DoxyCompactList}\small\item\em Get the priority of a specific interrupt in the NVIC. \end{DoxyCompactList}\end{DoxyCompactItemize}

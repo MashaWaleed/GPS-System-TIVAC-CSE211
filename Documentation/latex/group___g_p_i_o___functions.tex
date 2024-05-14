@@ -1,0 +1,115 @@
+\doxysection{GPIO Functions}
+\hypertarget{group___g_p_i_o___functions}{}\label{group___g_p_i_o___functions}\index{GPIO Functions@{GPIO Functions}}
+
+
+GPIO functions for controlling GPIO pins.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___g_p_i_o___functions_ga3b9aab2269cef9fb6f511e152354f0ea}{MCAL\+\_\+\+GPIO\+\_\+\+Set\+Pin\+Mode}} (\mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*}Copy\+\_\+\+Port\+Id, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Pin\+Id, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Pin\+Dir, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Pin\+Mode)
+\begin{DoxyCompactList}\small\item\em Sets the mode of a GPIO pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___g_p_i_o___functions_ga02f6219600ed6dc4bb775ee88d491150}{MCAL\+\_\+\+GPIO\+\_\+\+Set\+Pin\+Value}} (\mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*}Copy\+\_\+\+Port\+Id, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Pin\+Id, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Pin\+Value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a GPIO pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___g_p_i_o___functions_gabd2d06c4f319c632ca2fa289db8028b6}{MCAL\+\_\+\+GPIO\+\_\+\+Get\+Pin\+Value}} (\mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*}Copy\+\_\+\+Port\+Id, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Pin\+Id, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \texorpdfstring{$\ast$}{*}Copy\+\_\+\+Pin\+Return\+Value)
+\begin{DoxyCompactList}\small\item\em Gets the value of a GPIO pin. \textquotesingle{} This function reads the current value of a specified GPIO pin and stores it in the provided pointer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___g_p_i_o___functions_ga773cdba3fdbb4550614f365906c44f0c}{MCAL\+\_\+\+GPIO\+\_\+\+INIT}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___g_p_i_o___configuration_ga8e5b842171165ea1cf5175c2c8341add}{Port}}, \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*}Copy\+\_\+\+Port\+Id)
+\begin{DoxyCompactList}\small\item\em Initalize the PORT and open it\textquotesingle{}s Clock. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+GPIO functions for controlling GPIO pins. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group___g_p_i_o___functions_gabd2d06c4f319c632ca2fa289db8028b6}\label{group___g_p_i_o___functions_gabd2d06c4f319c632ca2fa289db8028b6} 
+\index{GPIO Functions@{GPIO Functions}!MCAL\_GPIO\_GetPinValue@{MCAL\_GPIO\_GetPinValue}}
+\index{MCAL\_GPIO\_GetPinValue@{MCAL\_GPIO\_GetPinValue}!GPIO Functions@{GPIO Functions}}
+\doxysubsubsection{\texorpdfstring{MCAL\_GPIO\_GetPinValue()}{MCAL\_GPIO\_GetPinValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} MCAL\+\_\+\+GPIO\+\_\+\+Get\+Pin\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*}}]{Copy\+\_\+\+Port\+Id,  }\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{Copy\+\_\+\+Pin\+Id,  }\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \texorpdfstring{$\ast$}{*}}]{Copy\+\_\+\+Pin\+Return\+Value }\end{DoxyParamCaption})}
+
+
+
+Gets the value of a GPIO pin. \textquotesingle{} This function reads the current value of a specified GPIO pin and stores it in the provided pointer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Port\+Id} & The ID of the GPIO port (e.\+g., GPIO\+\_\+\+PORTA, GPIO\+\_\+\+PORTB, etc.). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Pin\+Id} & The ID of the GPIO pin (e.\+g., GPIO\+\_\+\+PIN0, GPIO\+\_\+\+PIN1, etc.). \\
+\hline
+\mbox{\texttt{ out}}  & {\em Copy\+\_\+\+Pin\+Return\+Value} & Pointer to the variable where the pin value will be stored (GPIO\+\_\+\+HIGH or GPIO\+\_\+\+LOW). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Std\+\_\+\+Return\+Type Returns E\+\_\+\+OK if the operation was successful, or E\+\_\+\+NOT\+\_\+\+OK if an error occurred. 
+\end{DoxyReturn}
+\Hypertarget{group___g_p_i_o___functions_ga773cdba3fdbb4550614f365906c44f0c}\label{group___g_p_i_o___functions_ga773cdba3fdbb4550614f365906c44f0c} 
+\index{GPIO Functions@{GPIO Functions}!MCAL\_GPIO\_INIT@{MCAL\_GPIO\_INIT}}
+\index{MCAL\_GPIO\_INIT@{MCAL\_GPIO\_INIT}!GPIO Functions@{GPIO Functions}}
+\doxysubsubsection{\texorpdfstring{MCAL\_GPIO\_INIT()}{MCAL\_GPIO\_INIT()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} MCAL\+\_\+\+GPIO\+\_\+\+INIT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{Port,  }\item[{\mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*}}]{Copy\+\_\+\+Port\+Id }\end{DoxyParamCaption})}
+
+
+
+Initalize the PORT and open it\textquotesingle{}s Clock. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Port} & adding name of port from the enum above like PortA \\
+\hline
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Port\+Id} & Adding name of port like GPIO\+\_\+\+PORTA \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group___g_p_i_o___functions_ga3b9aab2269cef9fb6f511e152354f0ea}\label{group___g_p_i_o___functions_ga3b9aab2269cef9fb6f511e152354f0ea} 
+\index{GPIO Functions@{GPIO Functions}!MCAL\_GPIO\_SetPinMode@{MCAL\_GPIO\_SetPinMode}}
+\index{MCAL\_GPIO\_SetPinMode@{MCAL\_GPIO\_SetPinMode}!GPIO Functions@{GPIO Functions}}
+\doxysubsubsection{\texorpdfstring{MCAL\_GPIO\_SetPinMode()}{MCAL\_GPIO\_SetPinMode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} MCAL\+\_\+\+GPIO\+\_\+\+Set\+Pin\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*}}]{Copy\+\_\+\+Port\+Id,  }\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{Copy\+\_\+\+Pin\+Id,  }\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{Copy\+\_\+\+Pin\+Dir,  }\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{Copy\+\_\+\+Pin\+Mode }\end{DoxyParamCaption})}
+
+
+
+Sets the mode of a GPIO pin. 
+
+This function sets the mode of a specified GPIO pin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Port\+Id} & The ID of the GPIO port (e.\+g., GPIO\+\_\+\+PORTA, GPIO\+\_\+\+PORTB, etc.). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Pin\+Id} & The ID of the GPIO pin (e.\+g., GPIO\+\_\+\+PIN0, GPIO\+\_\+\+PIN1, etc.). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Pin\+Dir} & The Direct\textquotesingle{}ion of pin either it is input or output \\
+\hline
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Pin\+Mode} & The desired mode for the GPIO pin like pull up or pull down for inputs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Std\+\_\+\+Return\+Type Returns E\+\_\+\+OK if the operation was successful, or E\+\_\+\+NOT\+\_\+\+OK if an error occurred. 
+\end{DoxyReturn}
+\Hypertarget{group___g_p_i_o___functions_ga02f6219600ed6dc4bb775ee88d491150}\label{group___g_p_i_o___functions_ga02f6219600ed6dc4bb775ee88d491150} 
+\index{GPIO Functions@{GPIO Functions}!MCAL\_GPIO\_SetPinValue@{MCAL\_GPIO\_SetPinValue}}
+\index{MCAL\_GPIO\_SetPinValue@{MCAL\_GPIO\_SetPinValue}!GPIO Functions@{GPIO Functions}}
+\doxysubsubsection{\texorpdfstring{MCAL\_GPIO\_SetPinValue()}{MCAL\_GPIO\_SetPinValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} MCAL\+\_\+\+GPIO\+\_\+\+Set\+Pin\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*}}]{Copy\+\_\+\+Port\+Id,  }\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{Copy\+\_\+\+Pin\+Id,  }\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{Copy\+\_\+\+Pin\+Value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of a GPIO pin. 
+
+This function sets the value of a specified GPIO pin to either high or low.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Port\+Id} & The ID of the GPIO port (e.\+g., GPIO\+\_\+\+PORTA, GPIO\+\_\+\+PORTB, etc.). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Pin\+Id} & The ID of the GPIO pin (e.\+g., GPIO\+\_\+\+PIN0, GPIO\+\_\+\+PIN1, etc.). \\
+\hline
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Pin\+Value} & The desired value for the GPIO pin (GPIO\+\_\+\+HIGH or GPIO\+\_\+\+LOW). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Std\+\_\+\+Return\+Type Returns E\+\_\+\+OK if the operation was successful, or E\+\_\+\+NOT\+\_\+\+OK if an error occurred. 
+\end{DoxyReturn}

@@ -1,0 +1,40 @@
+\doxysection{LIB/\+BIT\+\_\+\+MATH.h File Reference}
+\hypertarget{_b_i_t___m_a_t_h_8h}{}\label{_b_i_t___m_a_t_h_8h}\index{LIB/BIT\_MATH.h@{LIB/BIT\_MATH.h}}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_a77dc2f92edf0bdd9e34a3e89ea3eefd2}{SET\+\_\+\+BIT}}(REG,  BIT\+\_\+\+NO)~REG \texorpdfstring{$\vert$}{|}= (1 $<$$<$ BIT\+\_\+\+NO)
+\item 
+\#define \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_a379ec38992225f59fb4d16a664e48c4f}{CLR\+\_\+\+BIT}}(REG,  BIT\+\_\+\+NO)~REG \&= \texorpdfstring{$\sim$}{\string~}(1 $<$$<$ BIT\+\_\+\+NO)
+\item 
+\#define \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_a458a964f2c820a83ec8054928c2f42c1}{TOG\+\_\+\+BIT}}(REG,  BIT\+\_\+\+NO)~REG \texorpdfstring{$^\wedge$}{\string^}= (1 $<$$<$ BIT\+\_\+\+NO)
+\item 
+\#define \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_ab9d6f95b3dad713de6d7f2ebe34ec1ad}{GET\+\_\+\+BIT}}(REG,  BIT\+\_\+\+NO)~(1 \& (REG $>$$>$ BIT\+\_\+\+NO))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_b_i_t___m_a_t_h_8h_a379ec38992225f59fb4d16a664e48c4f}\label{_b_i_t___m_a_t_h_8h_a379ec38992225f59fb4d16a664e48c4f} 
+\index{BIT\_MATH.h@{BIT\_MATH.h}!CLR\_BIT@{CLR\_BIT}}
+\index{CLR\_BIT@{CLR\_BIT}!BIT\_MATH.h@{BIT\_MATH.h}}
+\doxysubsubsection{\texorpdfstring{CLR\_BIT}{CLR\_BIT}}
+{\footnotesize\ttfamily \#define CLR\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{REG,  }\item[{}]{BIT\+\_\+\+NO }\end{DoxyParamCaption})~REG \&= \texorpdfstring{$\sim$}{\string~}(1 $<$$<$ BIT\+\_\+\+NO)}
+
+\Hypertarget{_b_i_t___m_a_t_h_8h_ab9d6f95b3dad713de6d7f2ebe34ec1ad}\label{_b_i_t___m_a_t_h_8h_ab9d6f95b3dad713de6d7f2ebe34ec1ad} 
+\index{BIT\_MATH.h@{BIT\_MATH.h}!GET\_BIT@{GET\_BIT}}
+\index{GET\_BIT@{GET\_BIT}!BIT\_MATH.h@{BIT\_MATH.h}}
+\doxysubsubsection{\texorpdfstring{GET\_BIT}{GET\_BIT}}
+{\footnotesize\ttfamily \#define GET\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{REG,  }\item[{}]{BIT\+\_\+\+NO }\end{DoxyParamCaption})~(1 \& (REG $>$$>$ BIT\+\_\+\+NO))}
+
+\Hypertarget{_b_i_t___m_a_t_h_8h_a77dc2f92edf0bdd9e34a3e89ea3eefd2}\label{_b_i_t___m_a_t_h_8h_a77dc2f92edf0bdd9e34a3e89ea3eefd2} 
+\index{BIT\_MATH.h@{BIT\_MATH.h}!SET\_BIT@{SET\_BIT}}
+\index{SET\_BIT@{SET\_BIT}!BIT\_MATH.h@{BIT\_MATH.h}}
+\doxysubsubsection{\texorpdfstring{SET\_BIT}{SET\_BIT}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{REG,  }\item[{}]{BIT\+\_\+\+NO }\end{DoxyParamCaption})~REG \texorpdfstring{$\vert$}{|}= (1 $<$$<$ BIT\+\_\+\+NO)}
+
+\Hypertarget{_b_i_t___m_a_t_h_8h_a458a964f2c820a83ec8054928c2f42c1}\label{_b_i_t___m_a_t_h_8h_a458a964f2c820a83ec8054928c2f42c1} 
+\index{BIT\_MATH.h@{BIT\_MATH.h}!TOG\_BIT@{TOG\_BIT}}
+\index{TOG\_BIT@{TOG\_BIT}!BIT\_MATH.h@{BIT\_MATH.h}}
+\doxysubsubsection{\texorpdfstring{TOG\_BIT}{TOG\_BIT}}
+{\footnotesize\ttfamily \#define TOG\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{REG,  }\item[{}]{BIT\+\_\+\+NO }\end{DoxyParamCaption})~REG \texorpdfstring{$^\wedge$}{\string^}= (1 $<$$<$ BIT\+\_\+\+NO)}
+

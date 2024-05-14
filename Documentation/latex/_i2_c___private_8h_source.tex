@@ -1,0 +1,58 @@
+\doxysection{I2\+C\+\_\+\+Private.\+h}
+\hypertarget{_i2_c___private_8h_source}{}\label{_i2_c___private_8h_source}\index{MCAL/I2C/I2C\_Private.h@{MCAL/I2C/I2C\_Private.h}}
+\mbox{\hyperlink{_i2_c___private_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/***********************************************/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*************\ Author:\ ASU\_EMBEDDED\_TEAM\_NO?!**************/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{/*************\ date:\ \ 25\ April\ 2024\ **************/}}
+\DoxyCodeLine{00004\ \textcolor{comment}{/*************\ Version:\ 0.1\ \ \ \ \ \ \ **************/}}
+\DoxyCodeLine{00005\ \textcolor{comment}{/*************\ Module:MCAL\_I2C\_private.h\ ***********/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{/***********************************************/}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ I2C\_PRIVATE\_H\_}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ I2C\_PRIVATE\_H\_}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ I2C\_Enable\_ADDRESS\ \ 0x400FE620}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ I2C\_READY\_ADDRESS\ \ \ 0x400FEA20}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ I2C\_Master\_Enable\ \ \ 0x00000010}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ I2C0\_SDA\ \ \ \ \ \ \ \ \ \ \ \ GPIO\_PIN3}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ I2C0\_SCL\ \ \ \ \ \ \ \ \ \ \ \ GPIO\_PIN2}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ I2C0\_Base\_Address\ \ \ 0x40020000}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ I2C1\_Base\_Address\ \ \ 0x40021000}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ I2C2\_Base\_Address\ \ \ 0x40022000}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ I2C3\_Base\_Address\ \ \ 0x40023000}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ TPR\_Value\_100Kbps\ \ \ 0x7}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ \ Slave\_Address\_Value\ \ \ 0x00000076}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ Bus\_Busy\_Bit\ \ \ \ \ \ \ \ \ 0x6}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ Error\_Checking\_Bit\ \ \ 0x1}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ Start\_Sending\_Byte\ 0x00000007}}
+\DoxyCodeLine{00025\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_i2_c___t_y_p_e_ae00f3846c47bc5e374692f5143e73d0c}{I2CMSA}};}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_i2_c___t_y_p_e_a8b4189ea1028182dc22582e21e261e6f}{I2CMCS}};}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_i2_c___t_y_p_e_aad99f81714a6b139cf1d0ef28ae8f660}{I2CMDR}};}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_i2_c___t_y_p_e_a9500b503cc608beeb240d60ba54ba996}{I2CMTPR}};}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_i2_c___t_y_p_e_a0e2e08888fab66da1444512ec778b664}{I2CMIMR}};}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_i2_c___t_y_p_e_a97753e2c6257e5f4aa7b6fe7a60ca512}{I2CMRIS}};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_i2_c___t_y_p_e_a44af36b1dd782593a1944569a6b95f9c}{I2CMMIS}};}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_i2_c___t_y_p_e_a2784eb2d838708502ed9f173db850b85}{I2CMICR}};}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_i2_c___t_y_p_e_ab86ac92c6d5a23bcab07661b3f211ace}{I2CMCR}};}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_i2_c___t_y_p_e_a7fb7dff76a32501b0b82a8252ce8e394}{I2CMCLKOCNT}};}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_i2_c___t_y_p_e_ab4d72b640da056f84dbab8488ea568d7}{I2CMBMON}};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//Didnot\ use\ Slave\ Registers}}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ PRESERVED[993];}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_i2_c___t_y_p_e_a8d61d179f6eaedb113a9ecdb4b8dd326}{I2CPP}};}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_i2_c___t_y_p_e_ab429db568db12f121d6751188bb515ac}{I2CPC}};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \}\mbox{\hyperlink{struct_i2_c___t_y_p_e}{I2C\_TYPE}}\ ;}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ I2C\_0\ ((volatile\ I2C\_TYPE*)(I2C0\_Base\_Address))}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ I2C\_1\ ((volatile\ I2C\_TYPE*)(I2C1\_Base\_Address))}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ I2C\_2\ ((volatile\ I2C\_TYPE*)(I2C2\_Base\_Address))}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ I2C\_3\ ((volatile\ I2C\_TYPE*)(I2C3\_Base\_Address))}}
+\DoxyCodeLine{00048\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{\mbox{\hyperlink{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287a8b606b29817406621b85b78b1ee9e653}{I2C0}},\mbox{\hyperlink{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287aeb0f494c71f34592c5a4500ee98ab4a2}{I2C1}},\mbox{\hyperlink{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287ae2cc6f0481e798aedb5fd5c6a2bfc01b}{I2C2}},\mbox{\hyperlink{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287a85b6fc15a9c27469c6bdcbf4bd2f1495}{I2C3}}\}\mbox{\hyperlink{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287}{I2C\_VALUES}};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ I2C\_Enable\ (*((volatile\ u32\ *)(I2C\_Enable\_ADDRESS)))}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#define\ I2C\_READY\ (*((volatile\ u32\ *)(I2C\_READY\_ADDRESS)))}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

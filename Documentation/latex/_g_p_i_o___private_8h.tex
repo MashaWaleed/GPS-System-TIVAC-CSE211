@@ -1,0 +1,48 @@
+\doxysection{MCAL/\+GPIO/\+GPIO\+\_\+\+Private.h File Reference}
+\hypertarget{_g_p_i_o___private_8h}{}\label{_g_p_i_o___private_8h}\index{MCAL/GPIO/GPIO\_Private.h@{MCAL/GPIO/GPIO\_Private.h}}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___base___addresses_ga309d34d42a30bf7021404bb99b09608e}{GPIO\+\_\+\+PORTA\+\_\+\+BASE\+\_\+\+ADDRESS}}~0x40004000U
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___base___addresses_ga453dba8550632082c40ef8a9ed37d7f6}{GPIO\+\_\+\+PORTB\+\_\+\+BASE\+\_\+\+ADDRESS}}~0x40005000U
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___base___addresses_gaa6f07106bfeb2140735dc641e379b2a5}{GPIO\+\_\+\+PORTC\+\_\+\+BASE\+\_\+\+ADDRESS}}~0x40006000U
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___base___addresses_ga286eb428695c0f6ebcf2f6495e35b8d4}{GPIO\+\_\+\+PORTD\+\_\+\+BASE\+\_\+\+ADDRESS}}~0x40007000U
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___base___addresses_ga5fa8f90fe329ef30ba694b25ac767618}{GPIO\+\_\+\+PORTE\+\_\+\+BASE\+\_\+\+ADDRESS}}~0x40024000U
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___base___addresses_ga6ea78e1b23123efd693344226db95e7f}{GPIO\+\_\+\+PORTF\+\_\+\+BASE\+\_\+\+ADDRESS}}~0x40025000U
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___base___addresses_gad0a996118720832750c827712eb336af}{GPIO\+\_\+\+RCC\+\_\+\+ENABLE\+\_\+\+BASE\+\_\+\+ADDRESS}}~(0x400\+FE608)
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___base___addresses_ga6feffd0132d34be1c63c55d36abc7e58}{GPIO\+\_\+\+RCC\+\_\+\+READY\+\_\+\+FOR\+\_\+\+ACCESS\+\_\+\+ADDRESS}}~(0x400\+FEA08 )
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___base___addresses_ga6faf63c7d3a41fd7aa67cb3f49112d58}{GPIO\+\_\+\+PORTF\+\_\+\+DATA\+\_\+R}}~(\texorpdfstring{$\ast$}{*}((volatile \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \texorpdfstring{$\ast$}{*})0x400253\+FC))
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___base___addresses_ga8489f3a5c386752ab29d05a0582b2e98}{LOCK\+\_\+\+VALUE}}~0x4\+C4\+F434B
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___base___addresses_ga6d323f7779ce47c1123f5607b9ff7a17}{I2\+C\+\_\+\+PCTL\+\_\+\+VALUE}}~0x3
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___registers___addresses_gace1f2998664b32913e0c7f9a76699060}{GPIO\+\_\+\+PORTA}}~((volatile \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{group___g_p_i_o___base___addresses_ga309d34d42a30bf7021404bb99b09608e}{GPIO\+\_\+\+PORTA\+\_\+\+BASE\+\_\+\+ADDRESS}}))
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___registers___addresses_gaf197726bc9dc7e610c663cf62d196923}{GPIO\+\_\+\+PORTB}}~((volatile \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{group___g_p_i_o___base___addresses_ga453dba8550632082c40ef8a9ed37d7f6}{GPIO\+\_\+\+PORTB\+\_\+\+BASE\+\_\+\+ADDRESS}}))
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___registers___addresses_ga1f67e53aff58af920fc394ec5d86faeb}{GPIO\+\_\+\+PORTC}}~((volatile \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{group___g_p_i_o___base___addresses_gaa6f07106bfeb2140735dc641e379b2a5}{GPIO\+\_\+\+PORTC\+\_\+\+BASE\+\_\+\+ADDRESS}}))
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___registers___addresses_ga48b89057f978f468d342fcdc2909444d}{GPIO\+\_\+\+PORTD}}~((volatile \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{group___g_p_i_o___base___addresses_ga286eb428695c0f6ebcf2f6495e35b8d4}{GPIO\+\_\+\+PORTD\+\_\+\+BASE\+\_\+\+ADDRESS}}))
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___registers___addresses_ga4dc5dc95d7e193b79824a081be2b79a4}{GPIO\+\_\+\+PORTE}}~((volatile \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{group___g_p_i_o___base___addresses_ga5fa8f90fe329ef30ba694b25ac767618}{GPIO\+\_\+\+PORTE\+\_\+\+BASE\+\_\+\+ADDRESS}}))
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___registers___addresses_ga301a89e3b434dde993963fbdfbca6fef}{GPIO\+\_\+\+PORTF}}~((volatile \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{group___g_p_i_o___base___addresses_ga6ea78e1b23123efd693344226db95e7f}{GPIO\+\_\+\+PORTF\+\_\+\+BASE\+\_\+\+ADDRESS}}))
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___registers___addresses_ga5a502812d9313243ea770a8d15c235d0}{GPIO\+\_\+\+ENABLE}}~(\texorpdfstring{$\ast$}{*}((volatile \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{group___g_p_i_o___base___addresses_gad0a996118720832750c827712eb336af}{GPIO\+\_\+\+RCC\+\_\+\+ENABLE\+\_\+\+BASE\+\_\+\+ADDRESS}})))
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___registers___addresses_gab06a9c4d6a753d2f98ca00814912c16c}{GPIO\+\_\+\+WAIT}}~(\texorpdfstring{$\ast$}{*}((volatile \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{group___g_p_i_o___base___addresses_ga6feffd0132d34be1c63c55d36abc7e58}{GPIO\+\_\+\+RCC\+\_\+\+READY\+\_\+\+FOR\+\_\+\+ACCESS\+\_\+\+ADDRESS}})))
+\end{DoxyCompactItemize}

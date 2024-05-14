@@ -1,0 +1,209 @@
+\doxysection{MCAL/\+I2\+C/\+I2\+C\+\_\+\+Private.h File Reference}
+\hypertarget{_i2_c___private_8h}{}\label{_i2_c___private_8h}\index{MCAL/I2C/I2C\_Private.h@{MCAL/I2C/I2C\_Private.h}}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_i2_c___t_y_p_e}{I2\+C\+\_\+\+TYPE}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_a7bb977182524f5cb3c65ff95632af3da}{I2\+C\+\_\+\+Enable\+\_\+\+ADDRESS}}~0x400\+FE620
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_a62ac1799e5ae1fc1d754841972f2c6ef}{I2\+C\+\_\+\+READY\+\_\+\+ADDRESS}}~0x400\+FEA20
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_a4f04efad934c45f774c1f14fd3a92929}{I2\+C\+\_\+\+Master\+\_\+\+Enable}}~0x00000010
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_af530325ce28cf25ce89308fbd9ac8c16}{I2\+C0\+\_\+\+SDA}}~\mbox{\hyperlink{group___g_p_i_o___pin_gabcf7b7e5a9111274f0754ba30f2f8c1d}{GPIO\+\_\+\+PIN3}}
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_a69f255245dd74fb6785ca39656cf9983}{I2\+C0\+\_\+\+SCL}}~\mbox{\hyperlink{group___g_p_i_o___pin_gaebf3be1d7b203c33417509d429207294}{GPIO\+\_\+\+PIN2}}
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_adcf3507b91b1be5b4e491bb47c7511c9}{I2\+C0\+\_\+\+Base\+\_\+\+Address}}~0x40020000
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_a46984f6fddfe33e99769dec037959983}{I2\+C1\+\_\+\+Base\+\_\+\+Address}}~0x40021000
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_a9617275a0f2948642aa1a1e8d6e916bb}{I2\+C2\+\_\+\+Base\+\_\+\+Address}}~0x40022000
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_a4e3a151ef0b75372abf1fb70070cfbb9}{I2\+C3\+\_\+\+Base\+\_\+\+Address}}~0x40023000
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_aa7bdb8c0a548349bc09fb17bf0102382}{TPR\+\_\+\+Value\+\_\+100\+Kbps}}~0x7
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_a15e9644ecc45678150cafdaa98cf403b}{Slave\+\_\+\+Address\+\_\+\+Value}}~0x00000076
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_aa0cb3634b7ebcddc6ace527e6456581e}{Bus\+\_\+\+Busy\+\_\+\+Bit}}~0x6
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_ac7d6e196c376c0431a23084c0e58ce64}{Error\+\_\+\+Checking\+\_\+\+Bit}}~0x1
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_a30bb3c71a37a7fc40807189c7709b05b}{Start\+\_\+\+Sending\+\_\+\+Byte}}~0x00000007
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_ac0680af5c545ed6616f95a7f3a39e895}{I2\+C\+\_\+0}}~((volatile \mbox{\hyperlink{struct_i2_c___t_y_p_e}{I2\+C\+\_\+\+TYPE}}\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{_i2_c___private_8h_adcf3507b91b1be5b4e491bb47c7511c9}{I2\+C0\+\_\+\+Base\+\_\+\+Address}}))
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_ada524f76870af82bdb7f6460c6e63a93}{I2\+C\+\_\+1}}~((volatile \mbox{\hyperlink{struct_i2_c___t_y_p_e}{I2\+C\+\_\+\+TYPE}}\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{_i2_c___private_8h_a46984f6fddfe33e99769dec037959983}{I2\+C1\+\_\+\+Base\+\_\+\+Address}}))
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_af29e55a8d85b5fb3c7ea095cc14af44e}{I2\+C\+\_\+2}}~((volatile \mbox{\hyperlink{struct_i2_c___t_y_p_e}{I2\+C\+\_\+\+TYPE}}\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{_i2_c___private_8h_a9617275a0f2948642aa1a1e8d6e916bb}{I2\+C2\+\_\+\+Base\+\_\+\+Address}}))
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_ad038555ec40bddf2736f01b9f7af5ec4}{I2\+C\+\_\+3}}~((volatile \mbox{\hyperlink{struct_i2_c___t_y_p_e}{I2\+C\+\_\+\+TYPE}}\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{_i2_c___private_8h_a4e3a151ef0b75372abf1fb70070cfbb9}{I2\+C3\+\_\+\+Base\+\_\+\+Address}}))
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_ae2e7151a4411eda845d5b0f5be2fe1eb}{I2\+C\+\_\+\+Enable}}~(\texorpdfstring{$\ast$}{*}((volatile \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{_i2_c___private_8h_a7bb977182524f5cb3c65ff95632af3da}{I2\+C\+\_\+\+Enable\+\_\+\+ADDRESS}})))
+\item 
+\#define \mbox{\hyperlink{_i2_c___private_8h_a7eddd9fda3af4dfea01c6ff00677deae}{I2\+C\+\_\+\+READY}}~(\texorpdfstring{$\ast$}{*}((volatile \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{_i2_c___private_8h_a62ac1799e5ae1fc1d754841972f2c6ef}{I2\+C\+\_\+\+READY\+\_\+\+ADDRESS}})))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287}{I2\+C\+\_\+\+VALUES}} \{ \mbox{\hyperlink{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287a8b606b29817406621b85b78b1ee9e653}{I2\+C0}}
+, \mbox{\hyperlink{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287aeb0f494c71f34592c5a4500ee98ab4a2}{I2\+C1}}
+, \mbox{\hyperlink{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287ae2cc6f0481e798aedb5fd5c6a2bfc01b}{I2\+C2}}
+, \mbox{\hyperlink{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287a85b6fc15a9c27469c6bdcbf4bd2f1495}{I2\+C3}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_i2_c___private_8h_aa0cb3634b7ebcddc6ace527e6456581e}\label{_i2_c___private_8h_aa0cb3634b7ebcddc6ace527e6456581e} 
+\index{I2C\_Private.h@{I2C\_Private.h}!Bus\_Busy\_Bit@{Bus\_Busy\_Bit}}
+\index{Bus\_Busy\_Bit@{Bus\_Busy\_Bit}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{Bus\_Busy\_Bit}{Bus\_Busy\_Bit}}
+{\footnotesize\ttfamily \#define Bus\+\_\+\+Busy\+\_\+\+Bit~0x6}
+
+\Hypertarget{_i2_c___private_8h_ac7d6e196c376c0431a23084c0e58ce64}\label{_i2_c___private_8h_ac7d6e196c376c0431a23084c0e58ce64} 
+\index{I2C\_Private.h@{I2C\_Private.h}!Error\_Checking\_Bit@{Error\_Checking\_Bit}}
+\index{Error\_Checking\_Bit@{Error\_Checking\_Bit}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{Error\_Checking\_Bit}{Error\_Checking\_Bit}}
+{\footnotesize\ttfamily \#define Error\+\_\+\+Checking\+\_\+\+Bit~0x1}
+
+\Hypertarget{_i2_c___private_8h_adcf3507b91b1be5b4e491bb47c7511c9}\label{_i2_c___private_8h_adcf3507b91b1be5b4e491bb47c7511c9} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C0\_Base\_Address@{I2C0\_Base\_Address}}
+\index{I2C0\_Base\_Address@{I2C0\_Base\_Address}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C0\_Base\_Address}{I2C0\_Base\_Address}}
+{\footnotesize\ttfamily \#define I2\+C0\+\_\+\+Base\+\_\+\+Address~0x40020000}
+
+\Hypertarget{_i2_c___private_8h_a69f255245dd74fb6785ca39656cf9983}\label{_i2_c___private_8h_a69f255245dd74fb6785ca39656cf9983} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C0\_SCL@{I2C0\_SCL}}
+\index{I2C0\_SCL@{I2C0\_SCL}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C0\_SCL}{I2C0\_SCL}}
+{\footnotesize\ttfamily \#define I2\+C0\+\_\+\+SCL~\mbox{\hyperlink{group___g_p_i_o___pin_gaebf3be1d7b203c33417509d429207294}{GPIO\+\_\+\+PIN2}}}
+
+\Hypertarget{_i2_c___private_8h_af530325ce28cf25ce89308fbd9ac8c16}\label{_i2_c___private_8h_af530325ce28cf25ce89308fbd9ac8c16} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C0\_SDA@{I2C0\_SDA}}
+\index{I2C0\_SDA@{I2C0\_SDA}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C0\_SDA}{I2C0\_SDA}}
+{\footnotesize\ttfamily \#define I2\+C0\+\_\+\+SDA~\mbox{\hyperlink{group___g_p_i_o___pin_gabcf7b7e5a9111274f0754ba30f2f8c1d}{GPIO\+\_\+\+PIN3}}}
+
+\Hypertarget{_i2_c___private_8h_a46984f6fddfe33e99769dec037959983}\label{_i2_c___private_8h_a46984f6fddfe33e99769dec037959983} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C1\_Base\_Address@{I2C1\_Base\_Address}}
+\index{I2C1\_Base\_Address@{I2C1\_Base\_Address}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C1\_Base\_Address}{I2C1\_Base\_Address}}
+{\footnotesize\ttfamily \#define I2\+C1\+\_\+\+Base\+\_\+\+Address~0x40021000}
+
+\Hypertarget{_i2_c___private_8h_a9617275a0f2948642aa1a1e8d6e916bb}\label{_i2_c___private_8h_a9617275a0f2948642aa1a1e8d6e916bb} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C2\_Base\_Address@{I2C2\_Base\_Address}}
+\index{I2C2\_Base\_Address@{I2C2\_Base\_Address}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C2\_Base\_Address}{I2C2\_Base\_Address}}
+{\footnotesize\ttfamily \#define I2\+C2\+\_\+\+Base\+\_\+\+Address~0x40022000}
+
+\Hypertarget{_i2_c___private_8h_a4e3a151ef0b75372abf1fb70070cfbb9}\label{_i2_c___private_8h_a4e3a151ef0b75372abf1fb70070cfbb9} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C3\_Base\_Address@{I2C3\_Base\_Address}}
+\index{I2C3\_Base\_Address@{I2C3\_Base\_Address}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C3\_Base\_Address}{I2C3\_Base\_Address}}
+{\footnotesize\ttfamily \#define I2\+C3\+\_\+\+Base\+\_\+\+Address~0x40023000}
+
+\Hypertarget{_i2_c___private_8h_ac0680af5c545ed6616f95a7f3a39e895}\label{_i2_c___private_8h_ac0680af5c545ed6616f95a7f3a39e895} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C\_0@{I2C\_0}}
+\index{I2C\_0@{I2C\_0}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_0}{I2C\_0}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+0~((volatile \mbox{\hyperlink{struct_i2_c___t_y_p_e}{I2\+C\+\_\+\+TYPE}}\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{_i2_c___private_8h_adcf3507b91b1be5b4e491bb47c7511c9}{I2\+C0\+\_\+\+Base\+\_\+\+Address}}))}
+
+\Hypertarget{_i2_c___private_8h_ada524f76870af82bdb7f6460c6e63a93}\label{_i2_c___private_8h_ada524f76870af82bdb7f6460c6e63a93} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C\_1@{I2C\_1}}
+\index{I2C\_1@{I2C\_1}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_1}{I2C\_1}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+1~((volatile \mbox{\hyperlink{struct_i2_c___t_y_p_e}{I2\+C\+\_\+\+TYPE}}\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{_i2_c___private_8h_a46984f6fddfe33e99769dec037959983}{I2\+C1\+\_\+\+Base\+\_\+\+Address}}))}
+
+\Hypertarget{_i2_c___private_8h_af29e55a8d85b5fb3c7ea095cc14af44e}\label{_i2_c___private_8h_af29e55a8d85b5fb3c7ea095cc14af44e} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C\_2@{I2C\_2}}
+\index{I2C\_2@{I2C\_2}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_2}{I2C\_2}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+2~((volatile \mbox{\hyperlink{struct_i2_c___t_y_p_e}{I2\+C\+\_\+\+TYPE}}\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{_i2_c___private_8h_a9617275a0f2948642aa1a1e8d6e916bb}{I2\+C2\+\_\+\+Base\+\_\+\+Address}}))}
+
+\Hypertarget{_i2_c___private_8h_ad038555ec40bddf2736f01b9f7af5ec4}\label{_i2_c___private_8h_ad038555ec40bddf2736f01b9f7af5ec4} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C\_3@{I2C\_3}}
+\index{I2C\_3@{I2C\_3}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_3}{I2C\_3}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+3~((volatile \mbox{\hyperlink{struct_i2_c___t_y_p_e}{I2\+C\+\_\+\+TYPE}}\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{_i2_c___private_8h_a4e3a151ef0b75372abf1fb70070cfbb9}{I2\+C3\+\_\+\+Base\+\_\+\+Address}}))}
+
+\Hypertarget{_i2_c___private_8h_ae2e7151a4411eda845d5b0f5be2fe1eb}\label{_i2_c___private_8h_ae2e7151a4411eda845d5b0f5be2fe1eb} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C\_Enable@{I2C\_Enable}}
+\index{I2C\_Enable@{I2C\_Enable}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_Enable}{I2C\_Enable}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+Enable~(\texorpdfstring{$\ast$}{*}((volatile \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{_i2_c___private_8h_a7bb977182524f5cb3c65ff95632af3da}{I2\+C\+\_\+\+Enable\+\_\+\+ADDRESS}})))}
+
+\Hypertarget{_i2_c___private_8h_a7bb977182524f5cb3c65ff95632af3da}\label{_i2_c___private_8h_a7bb977182524f5cb3c65ff95632af3da} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C\_Enable\_ADDRESS@{I2C\_Enable\_ADDRESS}}
+\index{I2C\_Enable\_ADDRESS@{I2C\_Enable\_ADDRESS}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_Enable\_ADDRESS}{I2C\_Enable\_ADDRESS}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+Enable\+\_\+\+ADDRESS~0x400\+FE620}
+
+\Hypertarget{_i2_c___private_8h_a4f04efad934c45f774c1f14fd3a92929}\label{_i2_c___private_8h_a4f04efad934c45f774c1f14fd3a92929} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C\_Master\_Enable@{I2C\_Master\_Enable}}
+\index{I2C\_Master\_Enable@{I2C\_Master\_Enable}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_Master\_Enable}{I2C\_Master\_Enable}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+Master\+\_\+\+Enable~0x00000010}
+
+\Hypertarget{_i2_c___private_8h_a7eddd9fda3af4dfea01c6ff00677deae}\label{_i2_c___private_8h_a7eddd9fda3af4dfea01c6ff00677deae} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C\_READY@{I2C\_READY}}
+\index{I2C\_READY@{I2C\_READY}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_READY}{I2C\_READY}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+READY~(\texorpdfstring{$\ast$}{*}((volatile \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{_i2_c___private_8h_a62ac1799e5ae1fc1d754841972f2c6ef}{I2\+C\+\_\+\+READY\+\_\+\+ADDRESS}})))}
+
+I2\+C\+\_\+\+PRIVATE\+\_\+\+H\+\_\+ \Hypertarget{_i2_c___private_8h_a62ac1799e5ae1fc1d754841972f2c6ef}\label{_i2_c___private_8h_a62ac1799e5ae1fc1d754841972f2c6ef} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C\_READY\_ADDRESS@{I2C\_READY\_ADDRESS}}
+\index{I2C\_READY\_ADDRESS@{I2C\_READY\_ADDRESS}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_READY\_ADDRESS}{I2C\_READY\_ADDRESS}}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+READY\+\_\+\+ADDRESS~0x400\+FEA20}
+
+\Hypertarget{_i2_c___private_8h_a15e9644ecc45678150cafdaa98cf403b}\label{_i2_c___private_8h_a15e9644ecc45678150cafdaa98cf403b} 
+\index{I2C\_Private.h@{I2C\_Private.h}!Slave\_Address\_Value@{Slave\_Address\_Value}}
+\index{Slave\_Address\_Value@{Slave\_Address\_Value}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{Slave\_Address\_Value}{Slave\_Address\_Value}}
+{\footnotesize\ttfamily \#define Slave\+\_\+\+Address\+\_\+\+Value~0x00000076}
+
+\Hypertarget{_i2_c___private_8h_a30bb3c71a37a7fc40807189c7709b05b}\label{_i2_c___private_8h_a30bb3c71a37a7fc40807189c7709b05b} 
+\index{I2C\_Private.h@{I2C\_Private.h}!Start\_Sending\_Byte@{Start\_Sending\_Byte}}
+\index{Start\_Sending\_Byte@{Start\_Sending\_Byte}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{Start\_Sending\_Byte}{Start\_Sending\_Byte}}
+{\footnotesize\ttfamily \#define Start\+\_\+\+Sending\+\_\+\+Byte~0x00000007}
+
+\Hypertarget{_i2_c___private_8h_aa7bdb8c0a548349bc09fb17bf0102382}\label{_i2_c___private_8h_aa7bdb8c0a548349bc09fb17bf0102382} 
+\index{I2C\_Private.h@{I2C\_Private.h}!TPR\_Value\_100Kbps@{TPR\_Value\_100Kbps}}
+\index{TPR\_Value\_100Kbps@{TPR\_Value\_100Kbps}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{TPR\_Value\_100Kbps}{TPR\_Value\_100Kbps}}
+{\footnotesize\ttfamily \#define TPR\+\_\+\+Value\+\_\+100\+Kbps~0x7}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287}\label{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287} 
+\index{I2C\_Private.h@{I2C\_Private.h}!I2C\_VALUES@{I2C\_VALUES}}
+\index{I2C\_VALUES@{I2C\_VALUES}!I2C\_Private.h@{I2C\_Private.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_VALUES}{I2C\_VALUES}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287}{I2\+C\+\_\+\+VALUES}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C0@{I2C0}!I2C\_Private.h@{I2C\_Private.h}}\index{I2C\_Private.h@{I2C\_Private.h}!I2C0@{I2C0}}}\Hypertarget{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287a8b606b29817406621b85b78b1ee9e653}\label{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287a8b606b29817406621b85b78b1ee9e653} 
+I2\+C0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C1@{I2C1}!I2C\_Private.h@{I2C\_Private.h}}\index{I2C\_Private.h@{I2C\_Private.h}!I2C1@{I2C1}}}\Hypertarget{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287aeb0f494c71f34592c5a4500ee98ab4a2}\label{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287aeb0f494c71f34592c5a4500ee98ab4a2} 
+I2\+C1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C2@{I2C2}!I2C\_Private.h@{I2C\_Private.h}}\index{I2C\_Private.h@{I2C\_Private.h}!I2C2@{I2C2}}}\Hypertarget{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287ae2cc6f0481e798aedb5fd5c6a2bfc01b}\label{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287ae2cc6f0481e798aedb5fd5c6a2bfc01b} 
+I2\+C2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C3@{I2C3}!I2C\_Private.h@{I2C\_Private.h}}\index{I2C\_Private.h@{I2C\_Private.h}!I2C3@{I2C3}}}\Hypertarget{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287a85b6fc15a9c27469c6bdcbf4bd2f1495}\label{_i2_c___private_8h_aa307665de43541ecc5e1d1dd5e15a287a85b6fc15a9c27469c6bdcbf4bd2f1495} 
+I2\+C3&\\
+\hline
+
+\end{DoxyEnumFields}

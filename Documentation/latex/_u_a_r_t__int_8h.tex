@@ -1,0 +1,183 @@
+\doxysection{MCAL/\+UART/\+UART\+\_\+int.h File Reference}
+\hypertarget{_u_a_r_t__int_8h}{}\label{_u_a_r_t__int_8h}\index{MCAL/UART/UART\_int.h@{MCAL/UART/UART\_int.h}}
+
+
+UART Interface Header File.  
+
+
+{\ttfamily \#include "{}BIT\+\_\+\+MATH.\+h"{}}\newline
+{\ttfamily \#include "{}stdint.\+h"{}}\newline
+{\ttfamily \#include "{}tm4c123gh6pme.\+h"{}}\newline
+{\ttfamily \#include "{}UART\+\_\+prv.\+h"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}}
+\begin{DoxyCompactList}\small\item\em UART Configuration Structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__uart_num_ga32330fca52a596483125c2b1e797538e}{UART\+\_\+\+Instance}}~\mbox{\hyperlink{struct_u_a_r_t___type}{UART\+\_\+\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__data_size_gab9263e62f0ac802881fbcba89efdf4af}{UART\+\_\+\+Data\+\_\+\+Bit}} \{ \mbox{\hyperlink{group__data_size_ggab9263e62f0ac802881fbcba89efdf4afa927785cb3b96a8365d68067cf1c58a64}{Data\+\_\+\+Bit\+\_\+5}} = UART\+\_\+\+LCRH\+\_\+\+WLEN\+\_\+5
+, \mbox{\hyperlink{group__data_size_ggab9263e62f0ac802881fbcba89efdf4afa8198ed924dfa6a90cec9830b879a3776}{Data\+\_\+\+Bit\+\_\+6}} = UART\+\_\+\+LCRH\+\_\+\+WLEN\+\_\+6
+, \mbox{\hyperlink{group__data_size_ggab9263e62f0ac802881fbcba89efdf4afadc5fc0f0640b9edb74dee1a497b3efea}{Data\+\_\+\+Bit\+\_\+7}} = UART\+\_\+\+LCRH\+\_\+\+WLEN\+\_\+7
+, \mbox{\hyperlink{group__data_size_ggab9263e62f0ac802881fbcba89efdf4afa05455821105f0c12ad9ebfecad68a51e}{Data\+\_\+\+Bit\+\_\+8}} = UART\+\_\+\+LCRH\+\_\+\+WLEN\+\_\+8
+ \}
+\item 
+enum \mbox{\hyperlink{group__stop_bits_ga6b5d35b86da24b622ac551dc0fb7d081}{UART\+\_\+\+Stop\+\_\+\+Bit}} \{ \mbox{\hyperlink{group__stop_bits_gga6b5d35b86da24b622ac551dc0fb7d081a04adaf1e8da1785622392201d50cc9b2}{Stop\+\_\+bit\+\_\+1}}
+, \mbox{\hyperlink{group__stop_bits_gga6b5d35b86da24b622ac551dc0fb7d081a96603d9e70004a41f6f656f7c46b21f3}{Stop\+\_\+bit\+\_\+2}}
+ \}
+\item 
+enum \mbox{\hyperlink{group__parity_gafdde0d1dd91ce599c9df7327b45986cc}{UART\+\_\+\+Parity}} \{ \mbox{\hyperlink{group__parity_ggafdde0d1dd91ce599c9df7327b45986cca7f8793a77510c21effe0d26902630324}{Parity\+\_\+\+None}}
+, \mbox{\hyperlink{group__parity_ggafdde0d1dd91ce599c9df7327b45986ccaa7f3ee8cb8b55bc6717c71ebd6e25571}{Parity\+\_\+\+Even}}
+, \mbox{\hyperlink{group__parity_ggafdde0d1dd91ce599c9df7327b45986ccaa2e2071e70283dcd41179b18e7702150}{Parity\+\_\+\+Odd}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_u_a_r_t__int_8h_ac7d20bbdce644f39e5759ed8b29400cc}{MCAL\+\_\+\+UART\+\_\+\+Init}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg)
+\begin{DoxyCompactList}\small\item\em Initializes the UART peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__int_8h_a55db0fb2142efcd645a49503afa1e1cc}{MCAL\+\_\+\+UART\+\_\+\+Send\+\_\+\+Byte\+\_\+\+Poll}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg, const uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Sends a byte via UART using polling mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{_u_a_r_t__int_8h_abddd8df30c11f26bc79c2f3ff2b36818}{MCAL\+\_\+\+UART\+\_\+\+Receive\+\_\+\+Byte\+\_\+\+Poll}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg)
+\begin{DoxyCompactList}\small\item\em Receives a byte via UART using polling mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__int_8h_a5f85e77a3c9c41f31dad00b9fcda76a7}{MCAL\+\_\+\+UART\+\_\+\+Send\+\_\+\+Byte\+\_\+\+IT}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg, const uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Sends a byte via UART using interrupt mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{_u_a_r_t__int_8h_af6cd308d8110b2d74e5ff42bbc8d42a7}{MCAL\+\_\+\+UART\+\_\+\+Receive\+\_\+\+Byte\+\_\+\+IT}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg)
+\begin{DoxyCompactList}\small\item\em Receives a byte via UART using interrupt mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__int_8h_abd3289aa6cc2b384436509e6f4a1954f}{MCAL\+\_\+\+UART\+\_\+\+Send\+\_\+\+String}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg, char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Sends a string via UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__int_8h_afc4b31ca161c109d11bbfc0c5291ad3e}{MCAL\+\_\+\+UART\+\_\+\+Receive\+\_\+\+String}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg, char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Receives a string via UART. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+UART Interface Header File. 
+
+This file contains function prototypes and configuration structures for UART initialization, transmission, and reception. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_u_a_r_t__int_8h_ac7d20bbdce644f39e5759ed8b29400cc}\label{_u_a_r_t__int_8h_ac7d20bbdce644f39e5759ed8b29400cc} 
+\index{UART\_int.h@{UART\_int.h}!MCAL\_UART\_Init@{MCAL\_UART\_Init}}
+\index{MCAL\_UART\_Init@{MCAL\_UART\_Init}!UART\_int.h@{UART\_int.h}}
+\doxysubsubsection{\texorpdfstring{MCAL\_UART\_Init()}{MCAL\_UART\_Init()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+UART\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg }\end{DoxyParamCaption})}
+
+
+
+Initializes the UART peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & Pointer to the UART configuration structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_u_a_r_t__int_8h_af6cd308d8110b2d74e5ff42bbc8d42a7}\label{_u_a_r_t__int_8h_af6cd308d8110b2d74e5ff42bbc8d42a7} 
+\index{UART\_int.h@{UART\_int.h}!MCAL\_UART\_Receive\_Byte\_IT@{MCAL\_UART\_Receive\_Byte\_IT}}
+\index{MCAL\_UART\_Receive\_Byte\_IT@{MCAL\_UART\_Receive\_Byte\_IT}!UART\_int.h@{UART\_int.h}}
+\doxysubsubsection{\texorpdfstring{MCAL\_UART\_Receive\_Byte\_IT()}{MCAL\_UART\_Receive\_Byte\_IT()}}
+{\footnotesize\ttfamily uint8\+\_\+t MCAL\+\_\+\+UART\+\_\+\+Receive\+\_\+\+Byte\+\_\+\+IT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg }\end{DoxyParamCaption})}
+
+
+
+Receives a byte via UART using interrupt mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & Pointer to the UART configuration structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Received byte. 
+\end{DoxyReturn}
+\Hypertarget{_u_a_r_t__int_8h_abddd8df30c11f26bc79c2f3ff2b36818}\label{_u_a_r_t__int_8h_abddd8df30c11f26bc79c2f3ff2b36818} 
+\index{UART\_int.h@{UART\_int.h}!MCAL\_UART\_Receive\_Byte\_Poll@{MCAL\_UART\_Receive\_Byte\_Poll}}
+\index{MCAL\_UART\_Receive\_Byte\_Poll@{MCAL\_UART\_Receive\_Byte\_Poll}!UART\_int.h@{UART\_int.h}}
+\doxysubsubsection{\texorpdfstring{MCAL\_UART\_Receive\_Byte\_Poll()}{MCAL\_UART\_Receive\_Byte\_Poll()}}
+{\footnotesize\ttfamily uint8\+\_\+t MCAL\+\_\+\+UART\+\_\+\+Receive\+\_\+\+Byte\+\_\+\+Poll (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg }\end{DoxyParamCaption})}
+
+
+
+Receives a byte via UART using polling mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & Pointer to the UART configuration structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Received byte. 
+\end{DoxyReturn}
+\Hypertarget{_u_a_r_t__int_8h_afc4b31ca161c109d11bbfc0c5291ad3e}\label{_u_a_r_t__int_8h_afc4b31ca161c109d11bbfc0c5291ad3e} 
+\index{UART\_int.h@{UART\_int.h}!MCAL\_UART\_Receive\_String@{MCAL\_UART\_Receive\_String}}
+\index{MCAL\_UART\_Receive\_String@{MCAL\_UART\_Receive\_String}!UART\_int.h@{UART\_int.h}}
+\doxysubsubsection{\texorpdfstring{MCAL\_UART\_Receive\_String()}{MCAL\_UART\_Receive\_String()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+UART\+\_\+\+Receive\+\_\+\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg,  }\item[{char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+
+
+Receives a string via UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & Pointer to the UART configuration structure. \\
+\hline
+{\em str} & Pointer to the buffer to store the received string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_u_a_r_t__int_8h_a5f85e77a3c9c41f31dad00b9fcda76a7}\label{_u_a_r_t__int_8h_a5f85e77a3c9c41f31dad00b9fcda76a7} 
+\index{UART\_int.h@{UART\_int.h}!MCAL\_UART\_Send\_Byte\_IT@{MCAL\_UART\_Send\_Byte\_IT}}
+\index{MCAL\_UART\_Send\_Byte\_IT@{MCAL\_UART\_Send\_Byte\_IT}!UART\_int.h@{UART\_int.h}}
+\doxysubsubsection{\texorpdfstring{MCAL\_UART\_Send\_Byte\_IT()}{MCAL\_UART\_Send\_Byte\_IT()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+UART\+\_\+\+Send\+\_\+\+Byte\+\_\+\+IT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg,  }\item[{const uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Sends a byte via UART using interrupt mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & Pointer to the UART configuration structure. \\
+\hline
+{\em data} & Byte to be sent. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_u_a_r_t__int_8h_a55db0fb2142efcd645a49503afa1e1cc}\label{_u_a_r_t__int_8h_a55db0fb2142efcd645a49503afa1e1cc} 
+\index{UART\_int.h@{UART\_int.h}!MCAL\_UART\_Send\_Byte\_Poll@{MCAL\_UART\_Send\_Byte\_Poll}}
+\index{MCAL\_UART\_Send\_Byte\_Poll@{MCAL\_UART\_Send\_Byte\_Poll}!UART\_int.h@{UART\_int.h}}
+\doxysubsubsection{\texorpdfstring{MCAL\_UART\_Send\_Byte\_Poll()}{MCAL\_UART\_Send\_Byte\_Poll()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+UART\+\_\+\+Send\+\_\+\+Byte\+\_\+\+Poll (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg,  }\item[{const uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Sends a byte via UART using polling mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & Pointer to the UART configuration structure. \\
+\hline
+{\em data} & Byte to be sent. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_u_a_r_t__int_8h_abd3289aa6cc2b384436509e6f4a1954f}\label{_u_a_r_t__int_8h_abd3289aa6cc2b384436509e6f4a1954f} 
+\index{UART\_int.h@{UART\_int.h}!MCAL\_UART\_Send\_String@{MCAL\_UART\_Send\_String}}
+\index{MCAL\_UART\_Send\_String@{MCAL\_UART\_Send\_String}!UART\_int.h@{UART\_int.h}}
+\doxysubsubsection{\texorpdfstring{MCAL\_UART\_Send\_String()}{MCAL\_UART\_Send\_String()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+UART\+\_\+\+Send\+\_\+\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg,  }\item[{char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+
+
+Sends a string via UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & Pointer to the UART configuration structure. \\
+\hline
+{\em str} & Pointer to the string to be sent. \\
+\hline
+\end{DoxyParams}

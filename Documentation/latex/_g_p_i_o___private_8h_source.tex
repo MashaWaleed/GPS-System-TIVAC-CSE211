@@ -1,0 +1,63 @@
+\doxysection{GPIO\+\_\+\+Private.\+h}
+\hypertarget{_g_p_i_o___private_8h_source}{}\label{_g_p_i_o___private_8h_source}\index{MCAL/GPIO/GPIO\_Private.h@{MCAL/GPIO/GPIO\_Private.h}}
+\mbox{\hyperlink{_g_p_i_o___private_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/***********************************************/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*************\ Author:\ ASU\_EMBEDDED\_TEAM\_NO?!**************/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{/*************\ date:\ \ 11\ April\ 2024\ **************/}}
+\DoxyCodeLine{00004\ \textcolor{comment}{/*************\ Version:\ 0.1\ \ \ \ \ \ \ **************/}}
+\DoxyCodeLine{00005\ \textcolor{comment}{/*************\ Module:MCAL\_GPIO\_private.h\ ***********/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{/***********************************************/}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ GPIO\_PRIVATE\_H\_}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ GPIO\_PRIVATE\_H\_}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s_a18bcbad3332108ddfe32a601efd3bfa4}{GPIODATA}};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ Non\_Usable\_Space[254]\ ;}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s_a530b7f0b59bfba124c6d298456255ffe}{GPIO\_WRITE\_DATA}};}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s_a2b83f5ee1e15c0ce1f005bfed380830f}{GPIODIR}};}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ Non\_Usable\_Space2[7]\ ;}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s_a88702dd046a8fdc799307e6c2773d06a}{GPIOAFSEL}};}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ Non\_Usable\_Space3[58]\ ;}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s_ac2f19ce50149e9ec7f3dd40940278a25}{GPIOODR}};}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s_a2816a991aab8dc84024c226cfbaea02f}{GPIOPUR}};}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s_a4ae92c17e8d3ca9ee2b6630be23fe452}{GPIOPDR}};}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s_a8bb0d42a2f1e27b206282aa20224c690}{GPIOSLR}};}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s_a9bc69ebfb6687be0c48e521cfe243896}{GPIODEN}};}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s_a836df994d8650f0bcd84826e092695a7}{GPIOLOCK}};}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s_afff00261a994088d6b8f7be7307a8593}{GPIOCR}};}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s_a120a146ac24476e319a27ab9dceb9464}{GPIOAMSEL}};}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s_a2a5afa4b6648bb37a4f8199513a6976e}{GPIOPCTL}};}
+\DoxyCodeLine{00033\ \}\mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\_REGISTERES}};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ GPIO\_PORTA\_BASE\_ADDRESS\ 0x40004000U\ }}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ GPIO\_PORTB\_BASE\_ADDRESS\ 0x40005000U\ }}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ GPIO\_PORTC\_BASE\_ADDRESS\ 0x40006000U\ }}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ GPIO\_PORTD\_BASE\_ADDRESS\ 0x40007000U\ }}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ GPIO\_PORTE\_BASE\_ADDRESS\ 0x40024000U\ }}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ GPIO\_PORTF\_BASE\_ADDRESS\ 0x40025000U\ }}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ GPIO\_RCC\_ENABLE\_BASE\_ADDRESS\ (0x400FE608)}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ GPIO\_RCC\_READY\_FOR\_ACCESS\_ADDRESS\ (0x400FEA08\ )}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ GPIO\_PORTF\_DATA\_R\ \ \ \ \ \ \ (*((volatile\ u32\ *)0x400253FC))}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ \ LOCK\_VALUE\ 0x4C4F434B}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ I2C\_PCTL\_VALUE\ 0x3}}
+\DoxyCodeLine{00058\ \textcolor{comment}{/******************************************<\ REGISTERS\ ADDRESSES\ FOR\ PORT\ A\ ******************************************/}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#define\ GPIO\_PORTA\ \ ((volatile\ GPIO\_REGISTERES\ *)(GPIO\_PORTA\_BASE\_ADDRESS))}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#define\ GPIO\_PORTB\ \ ((volatile\ GPIO\_REGISTERES\ *)(GPIO\_PORTB\_BASE\_ADDRESS))}}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#define\ GPIO\_PORTC\ \ ((volatile\ GPIO\_REGISTERES\ *)(GPIO\_PORTC\_BASE\_ADDRESS))}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#define\ GPIO\_PORTD\ \ ((volatile\ GPIO\_REGISTERES\ *)(GPIO\_PORTD\_BASE\_ADDRESS))}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#define\ GPIO\_PORTE\ \ ((volatile\ GPIO\_REGISTERES\ *)(GPIO\_PORTE\_BASE\_ADDRESS))}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#define\ GPIO\_PORTF\ \ ((volatile\ GPIO\_REGISTERES\ *)(GPIO\_PORTF\_BASE\_ADDRESS))}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#define\ GPIO\_ENABLE\ \ (*((volatile\ u32\ *)(GPIO\_RCC\_ENABLE\_BASE\_ADDRESS)))}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#define\ GPIO\_WAIT\ \ (*((volatile\ u32\ *)(GPIO\_RCC\_READY\_FOR\_ACCESS\_ADDRESS)))}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00072\ \textcolor{comment}{//\ End\ of\ GPIO\_Registers\_Addresses\ group}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

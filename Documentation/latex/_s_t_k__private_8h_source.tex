@@ -1,0 +1,55 @@
+\doxysection{STK\+\_\+private.\+h}
+\hypertarget{_s_t_k__private_8h_source}{}\label{_s_t_k__private_8h_source}\index{MCAL/STK(Core)/STK\_private.h@{MCAL/STK(Core)/STK\_private.h}}
+\mbox{\hyperlink{_s_t_k__private_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*************\ Author:\ ASU\_EMBEDDED\_TEAM\_NO?!**************/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{/*******\ Date\ \ \ \ \ \ :\ 20\ April\ 2024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00004\ \textcolor{comment}{/*******\ Version\ \ \ :\ 0.1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00005\ \textcolor{comment}{/*******\ File\ Name\ :\ STK\_private.h\ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ STK\_PRIVATE\_H\_}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ STK\_PRIVATE\_H\_}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{/*********************<\ Register\ Definitions\ **********************/}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ STK\_BASE\_ADDRESS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0xE000E010U}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_s_t_k___reg_def__t}{STK\_RegDef\_t}}\{}
+\DoxyCodeLine{00014\ \ \ \textcolor{keyword}{volatile}\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_s_t_k___reg_def__t_a09c61947f50c7c11c0b590ff8312b11e}{CTRL}};}
+\DoxyCodeLine{00015\ \ \ \textcolor{keyword}{volatile}\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_s_t_k___reg_def__t_a38709acd4090f60e7de62c84b389c7c4}{LOAD}};}
+\DoxyCodeLine{00016\ \ \ \textcolor{keyword}{volatile}\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_s_t_k___reg_def__t_a376569642235fd4d109e0ffeeba20ca4}{VAL}};}
+\DoxyCodeLine{00017\ \ \ \textcolor{keyword}{volatile}\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{struct_s_t_k___reg_def__t_a0ecaf5168fa1bfe14e3d71dd390106fb}{CALIB}};}
+\DoxyCodeLine{00018\ \}\ \mbox{\hyperlink{_s_t_k__private_8h_a0bbb3562bfc3375e5b226fa258b47557}{STK\_RegDef\_t}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ STK\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((STK\_RegDef\_t\ *)STK\_BASE\_ADDRESS)}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{comment}{/*********************<\ The\ following\ are\ defines\ for\ the\ bit\ fields\ in\ the\ STK\_CTRL\ register.\ **********************/}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ STK\_CTRL\_ENABLE\_MASK\ \ \ \ \ \ \ \ \ \ \ \ \ 0x00000001\ \ \ \ \ \ }}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ STK\_CTRL\_TICKINT\_MASK\ \ \ \ \ \ \ \ \ \ \ \ 0x00000002\ \ \ \ \ \ }}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ STK\_CTRL\_CLKSOURCE\_MASK\ \ \ \ \ \ \ \ \ \ 0x00000004\ \ \ \ \ \ }}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ STK\_CTRL\_COUNTFLAG\_MASK\ \ \ \ \ \ \ \ \ \ 0x00010000\ \ \ \ \ \ }}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ STK\_CTRL\_CLKSOURCE\_1\ \ \ \ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ STK\_CTRL\_CLKSOURCE\_8\ \ \ \ \ \ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ STK\_CTRL\_TICKINT\_ENABLE\ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#define\ STK\_CTRL\_TICKINT\_DISABLE\ \ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#define\ STK\_SINGLE\_INTERVAL\ \ \ \ \ \ \ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#define\ STK\_PERIOD\_INTERVAL\ \ \ \ \ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#if\ STK\_CTRL\_CLKSOURCE\ ==\ STK\_CTRL\_CLKSOURCE\_1}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\ \ \ \ \#define\ STK\_AHB\_CLK\ \ \ \ \ \ \ 8000000\ \ \ }}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#elif\ STK\_CTRL\_CLKSOURCE\ ==\ STK\_CTRL\_CLKSOURCE\_8}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\ \ \ \ \#define\ STK\_AHB\_CLK\ \ \ \ \ \ \ 1000000\ \ \ }}
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\ \ \ \ \#error\ "{}You\ chose\ a\ wrong\ clock\ source\ for\ the\ SysTick"{}}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

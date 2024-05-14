@@ -1,0 +1,65 @@
+\doxysection{MCAL/\+STK(Core)/\+STK\+\_\+config.h File Reference}
+\hypertarget{_s_t_k__config_8h}{}\label{_s_t_k__config_8h}\index{MCAL/STK(Core)/STK\_config.h@{MCAL/STK(Core)/STK\_config.h}}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_s_t_k__config_8h_ac9907e5cfaab9cdd79a0dfc991b64b9d}{STK\+\_\+\+CTRL\+\_\+\+CLKSOURCE}}~\mbox{\hyperlink{_s_t_k__private_8h_a3cc3eef1ba1650fce32214db3cd5f4f8}{STK\+\_\+\+CTRL\+\_\+\+CLKSOURCE\+\_\+8}}
+\begin{DoxyCompactList}\small\item\em Specifies the clock source for the Sys\+Tick timer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_s_t_k__config_8h_a6236c3e2e19f815302f80e6c837d3fc0}{STK\+\_\+\+CTRL\+\_\+\+TICKINT}}~\mbox{\hyperlink{_s_t_k__private_8h_ae589a254fdfbe569d563484e2753cf42}{STK\+\_\+\+CTRL\+\_\+\+TICKINT\+\_\+\+ENABLE}}
+\begin{DoxyCompactList}\small\item\em Specifies whether the Sys\+Tick timer exception request is enabled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_s_t_k__config_8h_ac9907e5cfaab9cdd79a0dfc991b64b9d}\label{_s_t_k__config_8h_ac9907e5cfaab9cdd79a0dfc991b64b9d} 
+\index{STK\_config.h@{STK\_config.h}!STK\_CTRL\_CLKSOURCE@{STK\_CTRL\_CLKSOURCE}}
+\index{STK\_CTRL\_CLKSOURCE@{STK\_CTRL\_CLKSOURCE}!STK\_config.h@{STK\_config.h}}
+\doxysubsubsection{\texorpdfstring{STK\_CTRL\_CLKSOURCE}{STK\_CTRL\_CLKSOURCE}}
+{\footnotesize\ttfamily \#define STK\+\_\+\+CTRL\+\_\+\+CLKSOURCE~\mbox{\hyperlink{_s_t_k__private_8h_a3cc3eef1ba1650fce32214db3cd5f4f8}{STK\+\_\+\+CTRL\+\_\+\+CLKSOURCE\+\_\+8}}}
+
+
+
+Specifies the clock source for the Sys\+Tick timer. 
+
+This option determines whether the Sys\+Tick timer uses the processor clock or an external clock source.
+
+\begin{DoxyNote}{Note}
+The external clock source must be connected to the STKCLK pin on the microcontroller.
+
+This option is only applicable if the Sys\+Tick timer is configured to use an external clock source (STK\+\_\+\+CLKSOURCE = STK\+\_\+\+CLKSOURCE\+\_\+\+EXT).
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em STK\+\_\+\+CTRL\+\_\+\+CLKSOURCE\+\_\+1} & Clock source is the clock of STK. \\
+\hline
+{\em STK\+\_\+\+CTRL\+\_\+\+CLKSOURCE\+\_\+8} & Clock source/8 is the clock of STK.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{_s_t_k__config_8h_a6236c3e2e19f815302f80e6c837d3fc0}\label{_s_t_k__config_8h_a6236c3e2e19f815302f80e6c837d3fc0} 
+\index{STK\_config.h@{STK\_config.h}!STK\_CTRL\_TICKINT@{STK\_CTRL\_TICKINT}}
+\index{STK\_CTRL\_TICKINT@{STK\_CTRL\_TICKINT}!STK\_config.h@{STK\_config.h}}
+\doxysubsubsection{\texorpdfstring{STK\_CTRL\_TICKINT}{STK\_CTRL\_TICKINT}}
+{\footnotesize\ttfamily \#define STK\+\_\+\+CTRL\+\_\+\+TICKINT~\mbox{\hyperlink{_s_t_k__private_8h_ae589a254fdfbe569d563484e2753cf42}{STK\+\_\+\+CTRL\+\_\+\+TICKINT\+\_\+\+ENABLE}}}
+
+
+
+Specifies whether the Sys\+Tick timer exception request is enabled. 
+
+This option determines whether the Sys\+Tick timer asserts an exception request when the counter reaches zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em STK\+\_\+\+CTRL\+\_\+\+TICKINT\+\_\+\+ENABLE} & Counting down to zero asserts the Sys\+Tick exception request. \\
+\hline
+{\em STK\+\_\+\+CTRL\+\_\+\+TICKINT\+\_\+\+DISABLE} & Counting down to zero does not assert the Sys\+Tick exception request.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & STK\+\_\+\+CONFIG\+\_\+\+H\+\_\+ \\
+\hline
+\end{DoxyRetVals}

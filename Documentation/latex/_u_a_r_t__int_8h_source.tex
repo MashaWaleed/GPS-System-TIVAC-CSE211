@@ -1,0 +1,58 @@
+\doxysection{UART\+\_\+int.\+h}
+\hypertarget{_u_a_r_t__int_8h_source}{}\label{_u_a_r_t__int_8h_source}\index{MCAL/UART/UART\_int.h@{MCAL/UART/UART\_int.h}}
+\mbox{\hyperlink{_u_a_r_t__int_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ UART\_INT\_H\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UART\_INT\_H\_}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_b_i_t___m_a_t_h_8h}{BIT\_MATH.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}stdint.h"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}tm4c123gh6pme.h"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t__prv_8h}{UART\_prv.h}}"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ UART\_Instance\ \ \ \ \ \ \ UART\_Type\ }}
+\DoxyCodeLine{00028\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{group__data_size_ggab9263e62f0ac802881fbcba89efdf4afa927785cb3b96a8365d68067cf1c58a64}{Data\_Bit\_5}}\ =\ \mbox{\hyperlink{tm4c123gh6pm_8h_a2b26de9efce73ee468f7060ef685bf85}{UART\_LCRH\_WLEN\_5}},\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{group__data_size_ggab9263e62f0ac802881fbcba89efdf4afa8198ed924dfa6a90cec9830b879a3776}{Data\_Bit\_6}}\ =\ \mbox{\hyperlink{tm4c123gh6pm_8h_a6458da85c7d1c15e3f1b6a70893ab906}{UART\_LCRH\_WLEN\_6}},\ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{group__data_size_ggab9263e62f0ac802881fbcba89efdf4afadc5fc0f0640b9edb74dee1a497b3efea}{Data\_Bit\_7}}\ =\ \mbox{\hyperlink{tm4c123gh6pm_8h_a3c312edc8c30df376cbb7a702d799c12}{UART\_LCRH\_WLEN\_7}},\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{group__data_size_ggab9263e62f0ac802881fbcba89efdf4afa05455821105f0c12ad9ebfecad68a51e}{Data\_Bit\_8}}\ =\ \mbox{\hyperlink{tm4c123gh6pm_8h_ae0e27af519dfbffe6d6a50942bdf30f7}{UART\_LCRH\_WLEN\_8}}\ \ }
+\DoxyCodeLine{00034\ \}\mbox{\hyperlink{group__data_size_gab9263e62f0ac802881fbcba89efdf4af}{UART\_Data\_Bit}};}
+\DoxyCodeLine{00041\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00042\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{group__stop_bits_gga6b5d35b86da24b622ac551dc0fb7d081a04adaf1e8da1785622392201d50cc9b2}{Stop\_bit\_1}},\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{group__stop_bits_gga6b5d35b86da24b622ac551dc0fb7d081a96603d9e70004a41f6f656f7c46b21f3}{Stop\_bit\_2}}\ \ }
+\DoxyCodeLine{00045\ \}\mbox{\hyperlink{group__stop_bits_ga6b5d35b86da24b622ac551dc0fb7d081}{UART\_Stop\_Bit}};}
+\DoxyCodeLine{00052\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ }
+\DoxyCodeLine{00053\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{group__parity_ggafdde0d1dd91ce599c9df7327b45986cca7f8793a77510c21effe0d26902630324}{Parity\_None}},\ }
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{group__parity_ggafdde0d1dd91ce599c9df7327b45986ccaa7f3ee8cb8b55bc6717c71ebd6e25571}{Parity\_Even}},\ }
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{group__parity_ggafdde0d1dd91ce599c9df7327b45986ccaa2e2071e70283dcd41179b18e7702150}{Parity\_Odd}}\ \ \ }
+\DoxyCodeLine{00057\ \}\mbox{\hyperlink{group__parity_gafdde0d1dd91ce599c9df7327b45986cc}{UART\_Parity}};}
+\DoxyCodeLine{00063\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00064\ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{group__uart_num_ga32330fca52a596483125c2b1e797538e}{UART\_Instance}}\ \ *\ \mbox{\hyperlink{struct_u_a_r_t___config_type_ad35a467f42d2962d3291ebcee38d639c}{Instance}};\ \ \ }
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{group__data_size_gab9263e62f0ac802881fbcba89efdf4af}{UART\_Data\_Bit}}\ \ \mbox{\hyperlink{struct_u_a_r_t___config_type_aeb2c2272b111921a02e0ad372ec2f336}{Data\_Bit}};\ \ \ \ }
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{group__stop_bits_ga6b5d35b86da24b622ac551dc0fb7d081}{UART\_Stop\_Bit}}\ \ \mbox{\hyperlink{struct_u_a_r_t___config_type_a5f543009b309f32ac70007b65266aa67}{Stop\_Bit}};\ \ \ \ }
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{group__parity_gafdde0d1dd91ce599c9df7327b45986cc}{UART\_Parity}}\ \ \ \ \mbox{\hyperlink{struct_u_a_r_t___config_type_a5a2c987231c56585a5f25270fbedb06b}{Parity}};\ \ \ \ \ \ }
+\DoxyCodeLine{00069\ \ \ \ \ uint32\_t\ \ \ \ \ \ \ \mbox{\hyperlink{struct_u_a_r_t___config_type_aaad609733f3fd8146c8745e953a91b2a}{BaudRate}};\ \ \ \ }
+\DoxyCodeLine{00070\ \}\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_u_a_r_t__int_8h_ac7d20bbdce644f39e5759ed8b29400cc}{MCAL\_UART\_Init}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_u_a_r_t__int_8h_a55db0fb2142efcd645a49503afa1e1cc}{MCAL\_UART\_Send\_Byte\_Poll}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg,\ \textcolor{keyword}{const}\ uint8\_t\ data);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00090\ uint8\_t\ \mbox{\hyperlink{_u_a_r_t__int_8h_abddd8df30c11f26bc79c2f3ff2b36818}{MCAL\_UART\_Receive\_Byte\_Poll}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00097\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_u_a_r_t__int_8h_a5f85e77a3c9c41f31dad00b9fcda76a7}{MCAL\_UART\_Send\_Byte\_IT}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg,\ \textcolor{keyword}{const}\ uint8\_t\ data);}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00104\ uint8\_t\ \mbox{\hyperlink{_u_a_r_t__int_8h_af6cd308d8110b2d74e5ff42bbc8d42a7}{MCAL\_UART\_Receive\_Byte\_IT}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg);}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00111\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_u_a_r_t__int_8h_abd3289aa6cc2b384436509e6f4a1954f}{MCAL\_UART\_Send\_String}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg,\ \textcolor{keywordtype}{char}\ *\ str);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00118\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_u_a_r_t__int_8h_afc4b31ca161c109d11bbfc0c5291ad3e}{MCAL\_UART\_Receive\_String}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg,\ \textcolor{keywordtype}{char}\ *\ str);}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ UART\_INT\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

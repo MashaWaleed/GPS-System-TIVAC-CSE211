@@ -1,0 +1,331 @@
+\doxysection{STK Driver}
+\hypertarget{group___public___functions}{}\label{group___public___functions}\index{STK Driver@{STK Driver}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___public___functions_ga3d9bdcdb7150ece04877eec8535a1987}{MCAL\+\_\+\+STK\+\_\+\+Init}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} Copy\+\_\+\+Ticks)
+\begin{DoxyCompactList}\small\item\em Initializes the Sys\+Tick timer with the specified reload value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___public___functions_ga6d9b2bad80763d8a1623743659c8397d}{MCAL\+\_\+\+STK\+\_\+\+Start}} (void)
+\begin{DoxyCompactList}\small\item\em Starts the Sys\+Tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___public___functions_ga592aeb16efe0e879d78c9a07a83d692a}{MCAL\+\_\+\+STK\+\_\+\+Stop}} (void)
+\begin{DoxyCompactList}\small\item\em Stops the Sys\+Tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___public___functions_ga567e23c903ff82e925a996ca8e1c1ffe}{MCAL\+\_\+\+STK\+\_\+\+Reset}} (void)
+\begin{DoxyCompactList}\small\item\em Resets the Sys\+Tick timer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___public___functions_gaae26eb76b717c22c05dfc59a2eb02ca3}{MCAL\+\_\+\+STK\+\_\+\+Get\+Remaining\+Counts}} (void)
+\begin{DoxyCompactList}\small\item\em Gets the current value of the Sys\+Tick timer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___public___functions_ga1b3223dbdd93ebdef19fde05f1a1b5ee}{MCAL\+\_\+\+STK\+\_\+\+Get\+Elapsed\+Counts}} (void)
+\begin{DoxyCompactList}\small\item\em Get the number of elapsed ticks since the last Sys\+Tick timer reset. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___public___functions_ga72b3af2084e1c3e379f8077125e0a52e}{MCAL\+\_\+\+STK\+\_\+\+Set\+Busy\+Wait}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} Copy\+\_\+\+Microseconds)
+\begin{DoxyCompactList}\small\item\em Blocks the CPU for the specified number of microseconds. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___public___functions_ga41e5bf22427f900ea6800b362c469e9b}{MCAL\+\_\+\+STK\+\_\+\+Set\+Delay\+\_\+ms}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} Copy\+\_\+\+Milliseconds)
+\begin{DoxyCompactList}\small\item\em Blocks the CPU for the specified number of milliseconds. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___public___functions_gae155efc657036fd581b1b7b9cf905d87}{MCAL\+\_\+\+STK\+\_\+\+Set\+XDelay\+\_\+ms}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} Copy\+\_\+\+Milliseconds)
+\begin{DoxyCompactList}\small\item\em Blocks the CPU for the specified number of milliseconds. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___public___functions_gabb5a6fcd6316f303eca35e2cba1a14f2}{MCAL\+\_\+\+STK\+\_\+\+Set\+Interval\+Single}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} Copy\+\_\+\+Microseconds, void(\texorpdfstring{$\ast$}{*}Copy\+\_\+\+Callback)(void))
+\begin{DoxyCompactList}\small\item\em Set a single-\/shot interval with a specified callback function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___public___functions_ga1afb8fa743344babefeba99d20429f83}{MCAL\+\_\+\+STK\+\_\+\+Set\+Interval\+Periodic}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} Copy\+\_\+\+Microseconds, void(\texorpdfstring{$\ast$}{*}Copy\+\_\+\+Callback)(void))
+\begin{DoxyCompactList}\small\item\em Set a periodic interval with a specified callback function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group___public___functions_ga1b3223dbdd93ebdef19fde05f1a1b5ee}\label{group___public___functions_ga1b3223dbdd93ebdef19fde05f1a1b5ee} 
+\index{STK Driver@{STK Driver}!MCAL\_STK\_GetElapsedCounts@{MCAL\_STK\_GetElapsedCounts}}
+\index{MCAL\_STK\_GetElapsedCounts@{MCAL\_STK\_GetElapsedCounts}!STK Driver@{STK Driver}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_GetElapsedCounts()}{MCAL\_STK\_GetElapsedCounts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} MCAL\+\_\+\+STK\+\_\+\+Get\+Elapsed\+Counts (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of elapsed ticks since the last Sys\+Tick timer reset. 
+
+This function calculates the number of ticks that have elapsed since the last reset of the Sys\+Tick timer. The elapsed time is calculated as the difference between the value of the Sys\+Tick timer when this function is called and the initial value of the timer when it was last reset.
+
+\begin{DoxyNote}{Note}
+This function assumes that the Sys\+Tick timer is running and has not overflowed since it was last reset. If the timer has overflowed, the elapsed ticks value will be incorrect and the function may return unexpected results.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of elapsed ticks as an unsigned 32-\/bit integer. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Store the previous Sys\+Tick timer value
+
+\texorpdfstring{$<$}{<} Get the current Sys\+Tick timer value
+
+\texorpdfstring{$<$}{<} Check if the timer has wrapped around (current value is less than the previous value)
+
+\texorpdfstring{$<$}{<} Calculate elapsed ticks considering timer overflow
+
+\texorpdfstring{$<$}{<} Calculate elapsed ticks without timer overflow\Hypertarget{group___public___functions_gaae26eb76b717c22c05dfc59a2eb02ca3}\label{group___public___functions_gaae26eb76b717c22c05dfc59a2eb02ca3} 
+\index{STK Driver@{STK Driver}!MCAL\_STK\_GetRemainingCounts@{MCAL\_STK\_GetRemainingCounts}}
+\index{MCAL\_STK\_GetRemainingCounts@{MCAL\_STK\_GetRemainingCounts}!STK Driver@{STK Driver}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_GetRemainingCounts()}{MCAL\_STK\_GetRemainingCounts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} MCAL\+\_\+\+STK\+\_\+\+Get\+Remaining\+Counts (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current value of the Sys\+Tick timer. 
+
+This function gets the current value of the Sys\+Tick timer. The timer value represents the number of ticks remaining until the timer reaches zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current value of the Sys\+Tick timer. 
+\end{DoxyReturn}
+\Hypertarget{group___public___functions_ga3d9bdcdb7150ece04877eec8535a1987}\label{group___public___functions_ga3d9bdcdb7150ece04877eec8535a1987} 
+\index{STK Driver@{STK Driver}!MCAL\_STK\_Init@{MCAL\_STK\_Init}}
+\index{MCAL\_STK\_Init@{MCAL\_STK\_Init}!STK Driver@{STK Driver}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_Init()}{MCAL\_STK\_Init()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+STK\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{Copy\+\_\+\+Ticks }\end{DoxyParamCaption})}
+
+
+
+Initializes the Sys\+Tick timer with the specified reload value. 
+
+This function initializes the Sys\+Tick timer with the specified reload value. The timer is configured to use the processor clock or a divided clock source based on the configuration settings. It also allows generating an interrupt when the timer reaches zero. This function sets the initial value of the timer and prepares it for counting down.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Ticks} & The number of clock cycles to reload the Sys\+Tick timer with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The actual time duration for the timer to reach zero depends on the clock frequency and the value passed as {\ttfamily Copy\+\_\+\+Ticks}.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+This function should be used carefully, as improper configuration may lead to unexpected behavior.
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Disable Sys\+Tick timer
+
+\texorpdfstring{$<$}{<} Configure Sys\+Tick timer to use the processor clock
+
+\texorpdfstring{$<$}{<} Clear bit 2 to use the processor clock/8
+
+\texorpdfstring{$<$}{<} Generate interrupt when it reaches zero
+
+\texorpdfstring{$<$}{<} Set bit 1 to enable interrupt when the counter reaches zero
+
+\texorpdfstring{$<$}{<} Load the initial value into the Sys\+Tick timer\Hypertarget{group___public___functions_ga567e23c903ff82e925a996ca8e1c1ffe}\label{group___public___functions_ga567e23c903ff82e925a996ca8e1c1ffe} 
+\index{STK Driver@{STK Driver}!MCAL\_STK\_Reset@{MCAL\_STK\_Reset}}
+\index{MCAL\_STK\_Reset@{MCAL\_STK\_Reset}!STK Driver@{STK Driver}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_Reset()}{MCAL\_STK\_Reset()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+STK\+\_\+\+Reset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Resets the Sys\+Tick timer. 
+
+This function disables the Sys\+Tick timer, clears the current value, sets the reload value to 0, and clears the count flag.
+
+
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Disable Sys\+Tick timer
+
+\texorpdfstring{$<$}{<} Clear the current value
+
+\texorpdfstring{$<$}{<} Set the reload value to 0
+
+\texorpdfstring{$<$}{<} Clear the count flag\Hypertarget{group___public___functions_ga72b3af2084e1c3e379f8077125e0a52e}\label{group___public___functions_ga72b3af2084e1c3e379f8077125e0a52e} 
+\index{STK Driver@{STK Driver}!MCAL\_STK\_SetBusyWait@{MCAL\_STK\_SetBusyWait}}
+\index{MCAL\_STK\_SetBusyWait@{MCAL\_STK\_SetBusyWait}!STK Driver@{STK Driver}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_SetBusyWait()}{MCAL\_STK\_SetBusyWait()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} MCAL\+\_\+\+STK\+\_\+\+Set\+Busy\+Wait (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{Copy\+\_\+\+Microseconds }\end{DoxyParamCaption})}
+
+
+
+Blocks the CPU for the specified number of microseconds. 
+
+This function blocks the CPU for the specified number of microseconds using the Sys\+Tick timer. The function calculates the number of ticks required to wait for the specified number of microseconds based on the current system clock frequency and the reload value of the Sys\+Tick timer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+u32\+Microseconds} & The number of microseconds to wait. This value should be less than or equal to 16777215 (0x00\+FFFFFF).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The maximum delay achievable with this function, when the Sys\+Tick timer clock is 1 MHz, is approximately 16 seconds.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+E\+\_\+\+OK if the delay was successful, E\+\_\+\+NOT\+\_\+\+OK if an error occurred. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Calculate the number of ticks required for the given microseconds
+
+\texorpdfstring{$<$}{<} Check if the ticks required is within the valid range
+
+\texorpdfstring{$<$}{<} Set the reload value of the Sys\+Tick timer
+
+\texorpdfstring{$<$}{<} Enable the Sys\+Tick timer
+
+\texorpdfstring{$<$}{<} Wait until the COUNTFLAG bit is set (indicates timer has counted down to zero)
+
+\texorpdfstring{$<$}{<} Disable the Sys\+Tick timer
+
+\texorpdfstring{$<$}{<} Reset the timer value\Hypertarget{group___public___functions_ga41e5bf22427f900ea6800b362c469e9b}\label{group___public___functions_ga41e5bf22427f900ea6800b362c469e9b} 
+\index{STK Driver@{STK Driver}!MCAL\_STK\_SetDelay\_ms@{MCAL\_STK\_SetDelay\_ms}}
+\index{MCAL\_STK\_SetDelay\_ms@{MCAL\_STK\_SetDelay\_ms}!STK Driver@{STK Driver}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_SetDelay\_ms()}{MCAL\_STK\_SetDelay\_ms()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} MCAL\+\_\+\+STK\+\_\+\+Set\+Delay\+\_\+ms (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{Copy\+\_\+\+Milliseconds }\end{DoxyParamCaption})}
+
+
+
+Blocks the CPU for the specified number of milliseconds. 
+
+This function blocks the CPU for the specified number of milliseconds using the Sys\+Tick timer. The function calculates the number of ticks required to wait for the specified number of milliseconds based on the current system clock frequency and the reload value of the Sys\+Tick timer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Milliseconds} & The number of milliseconds to wait. This value should be less than or equal to 16777215 (0x00\+FFFFFF).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The maximum delay achievable with this function, when the Sys\+Tick timer clock is 1 MHz, is approximately 16 seconds.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+E\+\_\+\+OK if the delay was successful, E\+\_\+\+NOT\+\_\+\+OK if an error occurred. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Calculate the number of ticks required to wait for the specified number of milliseconds
+
+\texorpdfstring{$<$}{<} Check if Ticks\+Required is within the valid range
+
+\texorpdfstring{$<$}{<} Configure Sys\+Tick timer with the calculated number of ticks
+
+\texorpdfstring{$<$}{<} Enable Sys\+Tick timer
+
+\texorpdfstring{$<$}{<} Wait until the Sys\+Tick timer reaches zero
+
+\texorpdfstring{$<$}{<} Disable Sys\+Tick timer
+
+\texorpdfstring{$<$}{<} Reset the timer value
+
+\texorpdfstring{$<$}{<} Return success status
+
+\texorpdfstring{$<$}{<} Return error status\Hypertarget{group___public___functions_ga1afb8fa743344babefeba99d20429f83}\label{group___public___functions_ga1afb8fa743344babefeba99d20429f83} 
+\index{STK Driver@{STK Driver}!MCAL\_STK\_SetIntervalPeriodic@{MCAL\_STK\_SetIntervalPeriodic}}
+\index{MCAL\_STK\_SetIntervalPeriodic@{MCAL\_STK\_SetIntervalPeriodic}!STK Driver@{STK Driver}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_SetIntervalPeriodic()}{MCAL\_STK\_SetIntervalPeriodic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} MCAL\+\_\+\+STK\+\_\+\+Set\+Interval\+Periodic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{Copy\+\_\+\+Microseconds,  }\item[{void(\texorpdfstring{$\ast$}{*})(void)}]{Copy\+\_\+\+Callback }\end{DoxyParamCaption})}
+
+
+
+Set a periodic interval with a specified callback function. 
+
+This function configures the Sys\+Tick timer to generate periodic intervals with the specified duration in microseconds. When each interval elapses, the provided callback function will be called.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Microseconds} & The duration of each interval in microseconds. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Callback} & A pointer to the callback function to execute for each interval.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+\_\+\+OK if the interval configuration was successful, E\+\_\+\+NOT\+\_\+\+OK if an error occurred. STK\+\_\+\+INTERFACE\+\_\+\+H\+\_\+ 
+\end{DoxyReturn}
+\Hypertarget{group___public___functions_gabb5a6fcd6316f303eca35e2cba1a14f2}\label{group___public___functions_gabb5a6fcd6316f303eca35e2cba1a14f2} 
+\index{STK Driver@{STK Driver}!MCAL\_STK\_SetIntervalSingle@{MCAL\_STK\_SetIntervalSingle}}
+\index{MCAL\_STK\_SetIntervalSingle@{MCAL\_STK\_SetIntervalSingle}!STK Driver@{STK Driver}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_SetIntervalSingle()}{MCAL\_STK\_SetIntervalSingle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} MCAL\+\_\+\+STK\+\_\+\+Set\+Interval\+Single (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{Copy\+\_\+\+Microseconds,  }\item[{void(\texorpdfstring{$\ast$}{*})(void)}]{Copy\+\_\+\+Callback }\end{DoxyParamCaption})}
+
+
+
+Set a single-\/shot interval with a specified callback function. 
+
+This function configures the Sys\+Tick timer to generate a single-\/shot interval after the specified number of microseconds. When the interval elapses, the provided callback function will be called.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Microseconds} & The duration of the interval in microseconds. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Callback} & A pointer to the callback function to execute when the interval elapses.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+\_\+\+OK if the interval configuration was successful, E\+\_\+\+NOT\+\_\+\+OK if an error occurred. 
+\end{DoxyReturn}
+\Hypertarget{group___public___functions_gae155efc657036fd581b1b7b9cf905d87}\label{group___public___functions_gae155efc657036fd581b1b7b9cf905d87} 
+\index{STK Driver@{STK Driver}!MCAL\_STK\_SetXDelay\_ms@{MCAL\_STK\_SetXDelay\_ms}}
+\index{MCAL\_STK\_SetXDelay\_ms@{MCAL\_STK\_SetXDelay\_ms}!STK Driver@{STK Driver}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_SetXDelay\_ms()}{MCAL\_STK\_SetXDelay\_ms()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} MCAL\+\_\+\+STK\+\_\+\+Set\+XDelay\+\_\+ms (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{Copy\+\_\+\+Milliseconds }\end{DoxyParamCaption})}
+
+
+
+Blocks the CPU for the specified number of milliseconds. 
+
+This function blocks the CPU for the specified number of milliseconds using the Sys\+Tick timer. The function calculates the number of ticks required to wait for the specified number of milliseconds based on the current system clock frequency and the reload value of the Sys\+Tick timer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Copy\+\_\+\+Milliseconds} & The number of milliseconds to wait. This value could be any\+Intger number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+\_\+\+OK if the delay was successful, E\+\_\+\+NOT\+\_\+\+OK if an error occurred. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Configure Sys\+Tick timer with the calculated number of ticks
+
+\texorpdfstring{$<$}{<} Enable Sys\+Tick timer
+
+\texorpdfstring{$<$}{<} Reset the timer value
+
+\texorpdfstring{$<$}{<} Return success status\Hypertarget{group___public___functions_ga6d9b2bad80763d8a1623743659c8397d}\label{group___public___functions_ga6d9b2bad80763d8a1623743659c8397d} 
+\index{STK Driver@{STK Driver}!MCAL\_STK\_Start@{MCAL\_STK\_Start}}
+\index{MCAL\_STK\_Start@{MCAL\_STK\_Start}!STK Driver@{STK Driver}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_Start()}{MCAL\_STK\_Start()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+STK\+\_\+\+Start (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Starts the Sys\+Tick timer. 
+
+This function starts the Sys\+Tick timer. Once the timer is started, it will count down from the reload value specified in the "{}\+STK\+\_\+\+Init"{} function until it reaches zero. When the timer reaches zero, it will generate an interrupt and reload with the initial value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Enable Sys\+Tick timer\Hypertarget{group___public___functions_ga592aeb16efe0e879d78c9a07a83d692a}\label{group___public___functions_ga592aeb16efe0e879d78c9a07a83d692a} 
+\index{STK Driver@{STK Driver}!MCAL\_STK\_Stop@{MCAL\_STK\_Stop}}
+\index{MCAL\_STK\_Stop@{MCAL\_STK\_Stop}!STK Driver@{STK Driver}}
+\doxysubsubsection{\texorpdfstring{MCAL\_STK\_Stop()}{MCAL\_STK\_Stop()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+STK\+\_\+\+Stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Stops the Sys\+Tick timer. 
+
+This function stops the Sys\+Tick timer. Once the timer is stopped, it will no longer count down or generate interrupts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Disable Sys\+Tick timer

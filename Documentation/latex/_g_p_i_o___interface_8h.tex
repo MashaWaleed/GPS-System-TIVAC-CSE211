@@ -1,0 +1,77 @@
+\doxysection{MCAL/\+GPIO/\+GPIO\+\_\+\+Interface.h File Reference}
+\hypertarget{_g_p_i_o___interface_8h}{}\label{_g_p_i_o___interface_8h}\index{MCAL/GPIO/GPIO\_Interface.h@{MCAL/GPIO/GPIO\_Interface.h}}
+{\ttfamily \#include "{}BIT\+\_\+\+MATH.\+h"{}}\newline
+{\ttfamily \#include "{}STD\+\_\+\+TYPES.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___configuration_ga8f5a90320aa8e50896d1f6dbeb0b8531}{GPIO\+\_\+\+LOCK\+\_\+\+VALUE}}~0x4\+C4\+F434B
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___values_ga088e681cae6659dfd317afdf4d61e302}{GPIO\+\_\+\+LOW}}~0
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___values_ga72520b0ab0d18377eb6a481029d0b01e}{GPIO\+\_\+\+HIGH}}~1
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___d_i_r_e_c_t_i_o_n_gaaba3c3d6a54814218165f0994425a963}{GPIO\+\_\+\+PIN\+\_\+\+INPUT}}~0
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___d_i_r_e_c_t_i_o_n_gaa91560b23a4da3a195982d9c4654580a}{GPIO\+\_\+\+PIN\+\_\+\+OUTPUT}}~1
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_ga67f2e6c6f1966ab9a91d24145905feaf}{GPIO\+\_\+\+PIN0}}~0
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_ga2dc81f879c206e185859e16a1d183d20}{GPIO\+\_\+\+PIN1}}~1
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_gaebf3be1d7b203c33417509d429207294}{GPIO\+\_\+\+PIN2}}~2
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_gabcf7b7e5a9111274f0754ba30f2f8c1d}{GPIO\+\_\+\+PIN3}}~3
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_gac495e8033fa04b85308efe349e7d82e6}{GPIO\+\_\+\+PIN4}}~4
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_gafb54cfe4db898aff180c3a187469e8cf}{GPIO\+\_\+\+PIN5}}~5
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_ga6dc2613b3902598dd9bedea1588547d0}{GPIO\+\_\+\+PIN6}}~6
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_gad8c9677b2629cc4f2086e730df92208e}{GPIO\+\_\+\+PIN7}}~7
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_ga0a6a0329e3a1f4580abdba7ea88bde2e}{GPIO\+\_\+\+PIN8}}~8
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_ga36ea3f65f6d277c35ac3e164a98db1aa}{GPIO\+\_\+\+PIN9}}~9
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_gad2801886720d62e87a3dcfc62e9bae95}{GPIO\+\_\+\+PIN10}}~10
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_ga7f093153e7358f4325de71c9d0309492}{GPIO\+\_\+\+PIN11}}~11
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_ga0b32a7c1889c071ee4634eefb9511ac2}{GPIO\+\_\+\+PIN12}}~12
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_gab7d59c1ff20366d38f2597afedd75c19}{GPIO\+\_\+\+PIN13}}~13
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_ga04575bab91f31a10e29a9397b87b38f7}{GPIO\+\_\+\+PIN14}}~14
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___pin_ga979c8b086aa708c5301f6d73c16d5b0b}{GPIO\+\_\+\+PIN15}}~15
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___input_modes_gad246c3771e158e889cae5428a7a16bc0}{GPIO\+\_\+\+INPUT\+\_\+\+PULL\+\_\+\+DOWN\+\_\+\+MOD}}~0
+\item 
+\#define \mbox{\hyperlink{group___g_p_i_o___input_modes_gae3e93c3a2318345452d601e62ead99ba}{GPIO\+\_\+\+INPUT\+\_\+\+PULL\+\_\+\+UP\+\_\+\+MOD}}~1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___g_p_i_o___configuration_ga8e5b842171165ea1cf5175c2c8341add}{Port}} \{ \newline
+\mbox{\hyperlink{group___g_p_i_o___configuration_gga8e5b842171165ea1cf5175c2c8341adda14a06735f7c30f2eece0bf8b5f86cf3b}{PortA}}
+, \mbox{\hyperlink{group___g_p_i_o___configuration_gga8e5b842171165ea1cf5175c2c8341adda6196d78f61fc4e54bd299cf9944421bd}{PortB}}
+, \mbox{\hyperlink{group___g_p_i_o___configuration_gga8e5b842171165ea1cf5175c2c8341adda7a93181b9b6cb3f0c0ef2e4c4b20542b}{PortC}}
+, \mbox{\hyperlink{group___g_p_i_o___configuration_gga8e5b842171165ea1cf5175c2c8341addae4afd1b2213c739f3413f899893971c1}{PortD}}
+, \newline
+\mbox{\hyperlink{group___g_p_i_o___configuration_gga8e5b842171165ea1cf5175c2c8341addabdf5fffebe4f01d75b75f8341f82f423}{PortE}}
+, \mbox{\hyperlink{group___g_p_i_o___configuration_gga8e5b842171165ea1cf5175c2c8341adda9889b8a69b0fddb0a988f7bdcaac7782}{PortF}}
+ \}
+\begin{DoxyCompactList}\small\item\em GPIO ports as numbers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___g_p_i_o___functions_ga3b9aab2269cef9fb6f511e152354f0ea}{MCAL\+\_\+\+GPIO\+\_\+\+Set\+Pin\+Mode}} (\mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*}Copy\+\_\+\+Port\+Id, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Pin\+Id, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Pin\+Dir, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Pin\+Mode)
+\begin{DoxyCompactList}\small\item\em Sets the mode of a GPIO pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___g_p_i_o___functions_ga02f6219600ed6dc4bb775ee88d491150}{MCAL\+\_\+\+GPIO\+\_\+\+Set\+Pin\+Value}} (\mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*}Copy\+\_\+\+Port\+Id, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Pin\+Id, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Pin\+Value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a GPIO pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___g_p_i_o___functions_gabd2d06c4f319c632ca2fa289db8028b6}{MCAL\+\_\+\+GPIO\+\_\+\+Get\+Pin\+Value}} (\mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*}Copy\+\_\+\+Port\+Id, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} Copy\+\_\+\+Pin\+Id, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \texorpdfstring{$\ast$}{*}Copy\+\_\+\+Pin\+Return\+Value)
+\begin{DoxyCompactList}\small\item\em Gets the value of a GPIO pin. \textquotesingle{} This function reads the current value of a specified GPIO pin and stores it in the provided pointer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___g_p_i_o___functions_ga773cdba3fdbb4550614f365906c44f0c}{MCAL\+\_\+\+GPIO\+\_\+\+INIT}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___g_p_i_o___configuration_ga8e5b842171165ea1cf5175c2c8341add}{Port}}, \mbox{\hyperlink{struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s}{GPIO\+\_\+\+REGISTERES}} \texorpdfstring{$\ast$}{*}Copy\+\_\+\+Port\+Id)
+\begin{DoxyCompactList}\small\item\em Initalize the PORT and open it\textquotesingle{}s Clock. \end{DoxyCompactList}\end{DoxyCompactItemize}

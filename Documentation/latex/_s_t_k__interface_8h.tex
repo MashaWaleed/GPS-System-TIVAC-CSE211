@@ -1,0 +1,27 @@
+\doxysection{MCAL/\+STK(Core)/\+STK\+\_\+interface.h File Reference}
+\hypertarget{_s_t_k__interface_8h}{}\label{_s_t_k__interface_8h}\index{MCAL/STK(Core)/STK\_interface.h@{MCAL/STK(Core)/STK\_interface.h}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___public___functions_ga3d9bdcdb7150ece04877eec8535a1987}{MCAL\+\_\+\+STK\+\_\+\+Init}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} Copy\+\_\+\+Ticks)
+\begin{DoxyCompactList}\small\item\em Initializes the Sys\+Tick timer with the specified reload value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___public___functions_ga6d9b2bad80763d8a1623743659c8397d}{MCAL\+\_\+\+STK\+\_\+\+Start}} (void)
+\begin{DoxyCompactList}\small\item\em Starts the Sys\+Tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___public___functions_ga592aeb16efe0e879d78c9a07a83d692a}{MCAL\+\_\+\+STK\+\_\+\+Stop}} (void)
+\begin{DoxyCompactList}\small\item\em Stops the Sys\+Tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___public___functions_ga567e23c903ff82e925a996ca8e1c1ffe}{MCAL\+\_\+\+STK\+\_\+\+Reset}} (void)
+\begin{DoxyCompactList}\small\item\em Resets the Sys\+Tick timer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___public___functions_gaae26eb76b717c22c05dfc59a2eb02ca3}{MCAL\+\_\+\+STK\+\_\+\+Get\+Remaining\+Counts}} (void)
+\begin{DoxyCompactList}\small\item\em Gets the current value of the Sys\+Tick timer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{group___public___functions_ga1b3223dbdd93ebdef19fde05f1a1b5ee}{MCAL\+\_\+\+STK\+\_\+\+Get\+Elapsed\+Counts}} (void)
+\begin{DoxyCompactList}\small\item\em Get the number of elapsed ticks since the last Sys\+Tick timer reset. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___public___functions_ga72b3af2084e1c3e379f8077125e0a52e}{MCAL\+\_\+\+STK\+\_\+\+Set\+Busy\+Wait}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} Copy\+\_\+\+Microseconds)
+\begin{DoxyCompactList}\small\item\em Blocks the CPU for the specified number of microseconds. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___public___functions_ga41e5bf22427f900ea6800b362c469e9b}{MCAL\+\_\+\+STK\+\_\+\+Set\+Delay\+\_\+ms}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} Copy\+\_\+\+Milliseconds)
+\begin{DoxyCompactList}\small\item\em Blocks the CPU for the specified number of milliseconds. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___public___functions_gae155efc657036fd581b1b7b9cf905d87}{MCAL\+\_\+\+STK\+\_\+\+Set\+XDelay\+\_\+ms}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} Copy\+\_\+\+Milliseconds)
+\begin{DoxyCompactList}\small\item\em Blocks the CPU for the specified number of milliseconds. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___public___functions_gabb5a6fcd6316f303eca35e2cba1a14f2}{MCAL\+\_\+\+STK\+\_\+\+Set\+Interval\+Single}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} Copy\+\_\+\+Microseconds, void(\texorpdfstring{$\ast$}{*}Copy\+\_\+\+Callback)(void))
+\begin{DoxyCompactList}\small\item\em Set a single-\/shot interval with a specified callback function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\+\_\+\+Return\+Type}} \mbox{\hyperlink{group___public___functions_ga1afb8fa743344babefeba99d20429f83}{MCAL\+\_\+\+STK\+\_\+\+Set\+Interval\+Periodic}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} Copy\+\_\+\+Microseconds, void(\texorpdfstring{$\ast$}{*}Copy\+\_\+\+Callback)(void))
+\begin{DoxyCompactList}\small\item\em Set a periodic interval with a specified callback function. \end{DoxyCompactList}\end{DoxyCompactItemize}

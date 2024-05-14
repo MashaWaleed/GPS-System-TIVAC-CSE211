@@ -1,0 +1,28 @@
+\doxysection{HAL/\+GPS\+\_\+\+Module/\+GPS.h File Reference}
+\hypertarget{_g_p_s_8h}{}\label{_g_p_s_8h}\index{HAL/GPS\_Module/GPS.h@{HAL/GPS\_Module/GPS.h}}
+{\ttfamily \#include "{}stdint.\+h"{}}\newline
+{\ttfamily \#include "{}UART\+\_\+prv.\+h"{}}\newline
+{\ttfamily \#include "{}UART\+\_\+cfg.\+h"{}}\newline
+{\ttfamily \#include "{}UART\+\_\+int.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_g_p_s_8h_a28ad727a87c71dc250146578f8a462c4}{parse\+\_\+\+GPS\+\_\+data}} (char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{_g_p_s_8c_a40909410e475f536e6f17d7db4551b76}{GPS\+\_\+\+Sentence}}, \mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg, float \texorpdfstring{$\ast$}{*}latitude, float \texorpdfstring{$\ast$}{*}longitude)
+\item 
+void \mbox{\hyperlink{_g_p_s_8h_a3d1fa3971eeca6802434517b9c07fc31}{HAL\+\_\+\+GPS\+\_\+\+Read}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg, float \texorpdfstring{$\ast$}{*}latitude, float \texorpdfstring{$\ast$}{*}longitude)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_g_p_s_8h_a3d1fa3971eeca6802434517b9c07fc31}\label{_g_p_s_8h_a3d1fa3971eeca6802434517b9c07fc31} 
+\index{GPS.h@{GPS.h}!HAL\_GPS\_Read@{HAL\_GPS\_Read}}
+\index{HAL\_GPS\_Read@{HAL\_GPS\_Read}!GPS.h@{GPS.h}}
+\doxysubsubsection{\texorpdfstring{HAL\_GPS\_Read()}{HAL\_GPS\_Read()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+GPS\+\_\+\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg,  }\item[{float \texorpdfstring{$\ast$}{*}}]{latitude,  }\item[{float \texorpdfstring{$\ast$}{*}}]{longitude }\end{DoxyParamCaption})}
+
+\Hypertarget{_g_p_s_8h_a28ad727a87c71dc250146578f8a462c4}\label{_g_p_s_8h_a28ad727a87c71dc250146578f8a462c4} 
+\index{GPS.h@{GPS.h}!parse\_GPS\_data@{parse\_GPS\_data}}
+\index{parse\_GPS\_data@{parse\_GPS\_data}!GPS.h@{GPS.h}}
+\doxysubsubsection{\texorpdfstring{parse\_GPS\_data()}{parse\_GPS\_data()}}
+{\footnotesize\ttfamily void parse\+\_\+\+GPS\+\_\+data (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{GPS\+\_\+\+Sentence,  }\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg,  }\item[{float \texorpdfstring{$\ast$}{*}}]{latitude,  }\item[{float \texorpdfstring{$\ast$}{*}}]{longitude }\end{DoxyParamCaption})}
+
