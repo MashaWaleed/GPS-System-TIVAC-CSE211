@@ -15,7 +15,8 @@ The goal is to create a GPS tracking system that collects real-time positional c
 - **Data Transfer:** Sends the collected data to a PC via UART when commanded ⬆️.
 
 ## 🏁 First Milestone
-- [**`Documentation`**](./Documentation.pdf): A detailed project report including screenshots of our simulations and results.
+- [**`Documentation`**](https://mashawaleed.github.io/GPS-System-TIVAC-CSE211/): A detailed documentation of the project, including the system architecture, hardware and software requirements, and the setup and operation instructions.
+- [**`Report`**](./Documentation.pdf): A print-friendly version of the documentation, briefly summarizing the project's objectives and outcomes.
 - [**`COTS/MCAL/GPIO`**](./COTS/MCAL/GPIO): Full GPIO driver implementation (initalization and control) for the TivaC TM4C123G microcontroller.
 - [**`COTS/MCAL/UART`**](./COTS/MCAL/UART): Full UART driver configuration (initalization and control) for the TivaC TM4C123G microcontroller.
 - [**`COTS/HAL/GPS`**](./COTS/HAL/GPS): GPS module driver configuration, parsing and proper reading.
