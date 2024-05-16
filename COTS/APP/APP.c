@@ -47,3 +47,43 @@ float APP_Compute_Distance(float lat1, float long1, float lat2, float long2)
 
    return distance;
 }
+
+void APP_Destination_Reached(UART_ConfigType *cfg)
+{
+	// Open Red LED and stop when destination is reached
+	HAL_LED_SET(RED);
+	MCAL_STK_Delay_ms(1000);
+	
+	// LCD visual assurance
+	APP_LCD_Clear_Write("Destination Reached", 0, 0);
+	MCAL_STK_Delay_ms(5000);
+	
+	// Dumping prompt 
+   APP_LCD_Write("Dump Log : U", 0, 1);
+	
+      
+   if(MCAL_UART_Receive_Byte_Poll(cfg) == 'U')
+   {
+      APP_LCD_Clear_Write("Dumping.....", 0, 0);
+      
+      //test_send_sentences();
+      APP_Send_Sentences(cfg);
+      
+      APP_LCD_Clear_Write("Finished Dump", 0, 0);
+      MCAL_STK_Delay_ms(5000);
+   }
+}
+
+
+void APP_System_Init(UART_ConfigType *cfg1, UART_Type * instance1, UART_ConfigType *cfg2, UART_Type * instance2)
+{
+   HAL_LEDS_INIT();
+	APP_UART_INIT(cfg1, instance1);
+	APP_UART_INIT(cfg2, instance2);
+	MCAL_EEPROM_INIT();
+	HAL_LCD_Init();
+}
+
+
+
+/*****************************< End of APP.c >***************************/
