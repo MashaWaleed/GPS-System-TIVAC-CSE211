@@ -1,5 +1,14 @@
+/*****************************************************************/
+/******* Author     : ASU_EMBEDDED_TEAM_NO 3     *****************/
+/******* Date       : 20 April 2024              *****************/
+/******* Version    : 0.1                        *****************/
+/******* File Name  : UART_prv.h                 *****************/
+/*****************************************************************/
+
 #ifndef UART_PRV_H_
 #define UART_PRV_H_
+
+#include <stdint.h>
 
 #define UART_CLK   16000000
 
@@ -23,7 +32,7 @@ typedef struct {                                   			 /*!< UART0 Structure     
   volatile uint32_t  IM;                                /*!< UART Interrupt Mask                                                   */
   volatile uint32_t  RIS;                               /*!< UART Raw Interrupt Status                                             */
   volatile uint32_t  MIS;                               /*!< UART Masked Interrupt Status                                          */
-  volatile  uint32_t  ICR;                               /*!< UART Interrupt Clear                                                  */
+  volatile  uint32_t ICR;                               /*!< UART Interrupt Clear                                                  */
   volatile uint32_t  DMACTL;                            /*!< UART DMA Control                                                      */
   volatile const  uint32_t  RESERVED2[22];
   volatile uint32_t  _9BITADDR;                         /*!< UART 9-Bit Self Address                                               */
