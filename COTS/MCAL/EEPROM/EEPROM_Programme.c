@@ -59,3 +59,25 @@ void MCAL_EEPROM_Config_BlockOffset(u32 addr)
     EEPROM_EEBLOCK_R = (addr >> 4);   
     EEPROM_EEOFFSET_R = (addr & 0xF); 
 }
+
+u32 MCAL_EEPROM_Read(u32 addr)
+{
+    MCAL_EEPROM_Wait();
+    MCAL_EEPROM_Config_BlockOffset(addr);
+    return EEPROM_EERDWR_R; 
+}
+
+void MCAL_EEPROM_Write(u32 addr, u32 data)
+{
+    MCAL_EEPROM_Wait();
+    MCAL_EEPROM_Config_BlockOffset(addr);
+    EEPROM_EERDWR_R = data;
+}
+
+u8 MCAL_EEPROM_Mass_Erase(void)
+{
+    MCAL_EEPROM_Wait();
+    EEPROM_EEDBGME_R = 0xE37B0001;
+    MCAL_EEPROM_Wait();
+    return EEPROM_OK;
+}
