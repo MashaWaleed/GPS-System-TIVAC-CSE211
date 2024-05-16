@@ -128,6 +128,36 @@ class BluetoothController(tk.Tk):
         
         # Connect to the serial port
         self.establish_connection()                    
+    
+    def establish_connection(self):
+        while True:
+            try:
+                self.send_port = serial.Serial('COM' + self.COM_num, 9600)  
+                messagebox.showinfo("Success", "Connected to COM" + self.COM_num)
+                self.send_port.timeout = 1
+                
+                # Create a thread for receiving data
+                self.receive_thread = threading.Thread(target=self.receive_data)
+                self.receive_thread.daemon = True
+                self.receive_thread.start()
+                break
+            except:
+                messagebox.showerror("Error", "Could not connect to COM" + self.COM_num + ". Check the COM port number and try again.")
+                self.COM_num = None
+                self.check_com_port()
+                
+    def send_command(self):
+        try:
+            self.send_port.write(b'U\n\r')  # Sending 'U' command with newline and carriage return
+        except:
+            messagebox.showerror("Error", "Could not send command. Exiting program.")
+            self.destroy()
+    def send_choice(self, choice):
+        try:
+            self.send_port.write(choice.encode() + b'\n\r')  # Sending 'Y' or 'N' choice with newline and carriage return
+        except:
+            messagebox.showerror("Error", "Could not send choice. Please check your COM connection.")
+
 
 
 
