@@ -1,0 +1,84 @@
+\doxysection{APP/\+APP.h File Reference}
+\hypertarget{_a_p_p_8h}{}\label{_a_p_p_8h}\index{APP/APP.h@{APP/APP.h}}
+
+
+This file is to be used as a service layer for the project.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include "{}../\+LIB/\+BIT\+\_\+\+MATH.\+h"{}}\newline
+{\ttfamily \#include "{}../\+LIB/\+STD\+\_\+\+TYPES.\+h"{}}\newline
+{\ttfamily \#include "{}../\+LIB/tm4c123gh6pm.\+h"{}}\newline
+{\ttfamily \#include "{}../\+HAL/\+GPS/\+GPS.\+h"{}}\newline
+{\ttfamily \#include "{}../\+HAL/\+LCD/\+LCD.\+h"{}}\newline
+{\ttfamily \#include "{}../\+HAL/\+LED/\+LED.\+h"{}}\newline
+{\ttfamily \#include "{}../\+HAL/\+SWITCH/\+SWITCH.\+h"{}}\newline
+{\ttfamily \#include "{}../\+MCAL/\+GPIO/\+GPIO\+\_\+\+Interface.\+h"{}}\newline
+{\ttfamily \#include "{}../\+MCAL/\+UART/\+UART\+\_\+int.\+h"{}}\newline
+{\ttfamily \#include "{}../\+MCAL/\+Systick/\+STK\+\_\+interface.\+h"{}}\newline
+{\ttfamily \#include "{}../\+MCAL/\+EEPROM/\+EEPROM\+\_\+\+Interface.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_a_p_p_8h_ae71449b1cc6e6250b91f539153a7a0d3}{M\+\_\+\+PI}}~3.\+14159265358979323846
+\item 
+\#define \mbox{\hyperlink{_a_p_p_8h_aacdf1719d113d68a71127426f7c730cd}{EARTH\+\_\+\+RADIUS}}~6371000
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{group___a_p_p___functions_ga63cf8bd70dbd9bf1e9aa32dd6757c6d5}{APP\+\_\+\+To\+\_\+\+Degree}} (float angle)
+\begin{DoxyCompactList}\small\item\em Convert angle from NMEA format \mbox{[}DDDMM.\+MMMM\mbox{]} to decimal degree. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{group___a_p_p___functions_gaccd274cff1554a18a652a3594e0384ba}{APP\+\_\+\+To\+\_\+\+Radian}} (float angle)
+\begin{DoxyCompactList}\small\item\em Convert angle from degree to radian. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{group___a_p_p___functions_gaa80339508e620691a1dc5d80624afb4a}{APP\+\_\+\+Compute\+\_\+\+Distance}} (float lat1, float long1, float lat2, float long2)
+\begin{DoxyCompactList}\small\item\em Compute distance between two GPS coordinates using Haversine formula. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___a_p_p___functions_ga337bc369f0a6f75b8991a7226ae76168}{APP\+\_\+\+Float\+\_\+\+To\+\_\+\+Int}} (float x)
+\begin{DoxyCompactList}\small\item\em Convert float GPS reading to uint32\+\_\+t value. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{group___a_p_p___functions_gae041ad88b36daffc0f1122b797e4239a}{APP\+\_\+\+Int\+\_\+\+To\+\_\+\+Float}} (int x)
+\begin{DoxyCompactList}\small\item\em Convert uint32\+\_\+t GPS reading to float value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_ga4e3142bf7efdfa08ba0de79bbb2eecee}{APP\+\_\+\+Write\+\_\+\+Point}} (int \texorpdfstring{$\ast$}{*}counter, int latitude, int longitude)
+\begin{DoxyCompactList}\small\item\em Write GPS point to EEPROM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_gade17de81dbc56f14d234b0029bf7e959}{APP\+\_\+\+Read\+\_\+\+Point}} (int \texorpdfstring{$\ast$}{*}address, int \texorpdfstring{$\ast$}{*}latitude, int \texorpdfstring{$\ast$}{*}longitude)
+\begin{DoxyCompactList}\small\item\em Read GPS point from EEPROM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_gac578dbfb49b577fe016dd230e15e15e3}{APP\+\_\+\+UART\+\_\+\+INIT}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg, \mbox{\hyperlink{struct_u_a_r_t___type}{UART\+\_\+\+Type}} instance)
+\begin{DoxyCompactList}\small\item\em Initialize UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_gafb2e1ec868944691aa12b8c62327615a}{APP\+\_\+\+Send\+\_\+\+Sentences}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg)
+\begin{DoxyCompactList}\small\item\em Send sentences to UART. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group___a_p_p___functions_ga49362c8c00cbc29c452ee07d4e9823fe}{APP\+\_\+\+Prompt\+\_\+\+Dump\+\_\+\+Read}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg)
+\begin{DoxyCompactList}\small\item\em Prompt user to dump previous travel data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_ga218bbf65e1c96945b182f717625bfe96}{APP\+\_\+\+LCD\+\_\+\+Clear\+\_\+\+Write}} (char \texorpdfstring{$\ast$}{*}str, int x, int y)
+\begin{DoxyCompactList}\small\item\em Clear LCD and write string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_ga56c75e1355e5693ffae0e9b7704cd3a8}{APP\+\_\+\+LCD\+\_\+\+Write}} (char \texorpdfstring{$\ast$}{*}str, int x, int y)
+\begin{DoxyCompactList}\small\item\em Write string to LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_ga0ab56b3a365d9b9385ec725448cedb7d}{APP\+\_\+\+LCD\+\_\+\+Write\+\_\+\+Number}} (int number, int x, int y)
+\begin{DoxyCompactList}\small\item\em Write number to LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_gaebf442c1e5ce61d3123568c341b40b61}{APP\+\_\+\+Destination\+\_\+\+Reached}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg)
+\begin{DoxyCompactList}\small\item\em Prompt user to dump previous travel data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file is to be used as a service layer for the project. 
+
+This file contains the functions declarations and prototypes to interact with all the modules in the project.
+
+\begin{DoxyNote}{Note}
+This file is to be included in the application layer 
+\end{DoxyNote}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_a_p_p_8h_aacdf1719d113d68a71127426f7c730cd}\label{_a_p_p_8h_aacdf1719d113d68a71127426f7c730cd} 
+\index{APP.h@{APP.h}!EARTH\_RADIUS@{EARTH\_RADIUS}}
+\index{EARTH\_RADIUS@{EARTH\_RADIUS}!APP.h@{APP.h}}
+\doxysubsubsection{\texorpdfstring{EARTH\_RADIUS}{EARTH\_RADIUS}}
+{\footnotesize\ttfamily \#define EARTH\+\_\+\+RADIUS~6371000}
+
+\Hypertarget{_a_p_p_8h_ae71449b1cc6e6250b91f539153a7a0d3}\label{_a_p_p_8h_ae71449b1cc6e6250b91f539153a7a0d3} 
+\index{APP.h@{APP.h}!M\_PI@{M\_PI}}
+\index{M\_PI@{M\_PI}!APP.h@{APP.h}}
+\doxysubsubsection{\texorpdfstring{M\_PI}{M\_PI}}
+{\footnotesize\ttfamily \#define M\+\_\+\+PI~3.\+14159265358979323846}
+

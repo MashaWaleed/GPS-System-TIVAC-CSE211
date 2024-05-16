@@ -1,36 +1,47 @@
 \doxysection{STK\+\_\+interface.\+h}
-\hypertarget{_s_t_k__interface_8h_source}{}\label{_s_t_k__interface_8h_source}\index{MCAL/STK(Core)/STK\_interface.h@{MCAL/STK(Core)/STK\_interface.h}}
+\hypertarget{_s_t_k__interface_8h_source}{}\label{_s_t_k__interface_8h_source}\index{MCAL/Systick/STK\_interface.h@{MCAL/Systick/STK\_interface.h}}
 \mbox{\hyperlink{_s_t_k__interface_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/****************************************************************/}}
-\DoxyCodeLine{00002\ \textcolor{comment}{/*************\ Author:\ ASU\_EMBEDDED\_TEAM\_NO?!**************/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*******\ Author\ \ \ \ :\ ASU\_EMBEDDED\_TEAM\_NO\ 3\ \ \ \ \ *****************/}}
 \DoxyCodeLine{00003\ \textcolor{comment}{/*******\ Date\ \ \ \ \ \ :\ 20\ April\ 2024\ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
 \DoxyCodeLine{00004\ \textcolor{comment}{/*******\ Version\ \ \ :\ 0.1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
 \DoxyCodeLine{00005\ \textcolor{comment}{/*******\ File\ Name\ :\ STK\_interface.h\ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
 \DoxyCodeLine{00006\ \textcolor{comment}{/****************************************************************/}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ STK\_INTERFACE\_H\_}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ STK\_INTERFACE\_H\_}}
-\DoxyCodeLine{00009\ }
-\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___public___functions_ga3d9bdcdb7150ece04877eec8535a1987}{MCAL\_STK\_Init}}(\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ Copy\_Ticks);}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00038\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___public___functions_ga6d9b2bad80763d8a1623743659c8397d}{MCAL\_STK\_Start}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ STK\_INTERFACE\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ STK\_INTERFACE\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{/*****************************<\ LIB\ >*****************************/}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h}{../../LIB/STD\_TYPES.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{comment}{/*****************************<\ MCAL\ >*****************************/}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_s_t_k__private_8h}{STK\_private.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_s_t_k__config_8h}{STK\_config.h}}"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{comment}{/*****************************<\ Function\ Declarations\ >*****************************/}}
+\DoxyCodeLine{00038\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___public___functions_ga3d9bdcdb7150ece04877eec8535a1987}{MCAL\_STK\_Init}}(\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ Copy\_Ticks);}
 \DoxyCodeLine{00039\ }
-\DoxyCodeLine{00049\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___public___functions_ga592aeb16efe0e879d78c9a07a83d692a}{MCAL\_STK\_Stop}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00061\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___public___functions_ga567e23c903ff82e925a996ca8e1c1ffe}{MCAL\_STK\_Reset}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00062\ }
-\DoxyCodeLine{00073\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{group___public___functions_gaae26eb76b717c22c05dfc59a2eb02ca3}{MCAL\_STK\_GetRemainingCounts}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00089\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{group___public___functions_ga1b3223dbdd93ebdef19fde05f1a1b5ee}{MCAL\_STK\_GetElapsedCounts}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00104\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\_ReturnType}}\ \mbox{\hyperlink{group___public___functions_ga72b3af2084e1c3e379f8077125e0a52e}{MCAL\_STK\_SetBusyWait}}(\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ Copy\_Microseconds);}
-\DoxyCodeLine{00105\ }
-\DoxyCodeLine{00119\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\_ReturnType}}\ \mbox{\hyperlink{group___public___functions_ga41e5bf22427f900ea6800b362c469e9b}{MCAL\_STK\_SetDelay\_ms}}(\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}\ Copy\_Milliseconds);}
-\DoxyCodeLine{00132\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\_ReturnType}}\ \mbox{\hyperlink{group___public___functions_gae155efc657036fd581b1b7b9cf905d87}{MCAL\_STK\_SetXDelay\_ms}}(\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}\ Copy\_Milliseconds);}
-\DoxyCodeLine{00144\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\_ReturnType}}\ \mbox{\hyperlink{group___public___functions_gabb5a6fcd6316f303eca35e2cba1a14f2}{MCAL\_STK\_SetIntervalSingle}}(\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ Copy\_Microseconds,\ \textcolor{keywordtype}{void}\ (*Copy\_Callback)(\textcolor{keywordtype}{void}));}
-\DoxyCodeLine{00145\ }
-\DoxyCodeLine{00157\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\_ReturnType}}\ \mbox{\hyperlink{group___public___functions_ga1afb8fa743344babefeba99d20429f83}{MCAL\_STK\_SetIntervalPeriodic}}(\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ Copy\_Microseconds,\ \textcolor{keywordtype}{void}\ (*Copy\_Callback)(\textcolor{keywordtype}{void}));}
-\DoxyCodeLine{00158\ }
-\DoxyCodeLine{00159\ \textcolor{preprocessor}{\#endif\ }}
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___public___functions_ga6d9b2bad80763d8a1623743659c8397d}{MCAL\_STK\_Start}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00062\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___public___functions_ga592aeb16efe0e879d78c9a07a83d692a}{MCAL\_STK\_Stop}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00074\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___public___functions_ga567e23c903ff82e925a996ca8e1c1ffe}{MCAL\_STK\_Reset}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00086\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{group___public___functions_gaae26eb76b717c22c05dfc59a2eb02ca3}{MCAL\_STK\_GetRemainingCounts}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00102\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{group___public___functions_ga1b3223dbdd93ebdef19fde05f1a1b5ee}{MCAL\_STK\_GetElapsedCounts}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00117\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\_ReturnType}}\ \mbox{\hyperlink{group___public___functions_ga72b3af2084e1c3e379f8077125e0a52e}{MCAL\_STK\_SetBusyWait}}(\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ Copy\_Microseconds);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00132\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\_ReturnType}}\ \mbox{\hyperlink{group___public___functions_ga66d4b84c354f764655b270676339c1f7}{STK\_wait}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{_e_e_p_r_o_m___programme_8c_af4ac3264a2e6d3e043993dad2127bf1d}{delay}});}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00146\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\_ReturnType}}\ \mbox{\hyperlink{group___public___functions_gaa9b74be39da760b2388a5b538b935a1c}{MCAL\_STK\_Delay\_ms}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ Delayinms);}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00159\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\_ReturnType}}\ \mbox{\hyperlink{group___public___functions_gabb5a6fcd6316f303eca35e2cba1a14f2}{MCAL\_STK\_SetIntervalSingle}}(\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ Copy\_Microseconds,\ \textcolor{keywordtype}{void}\ (*Copy\_Callback)(\textcolor{keywordtype}{void}));}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00172\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a93fdb4cf6ea7ec3c7be88614dff5f842}{Std\_ReturnType}}\ \mbox{\hyperlink{group___public___functions_ga1afb8fa743344babefeba99d20429f83}{MCAL\_STK\_SetIntervalPeriodic}}(\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ Copy\_Microseconds,\ \textcolor{keywordtype}{void}\ (*Copy\_Callback)(\textcolor{keywordtype}{void}));}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \textcolor{preprocessor}{\#endif\ }}
 
 \end{DoxyCode}

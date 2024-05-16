@@ -2,31 +2,39 @@
 \hypertarget{_l_e_d_8h_source}{}\label{_l_e_d_8h_source}\index{HAL/LED/LED.h@{HAL/LED/LED.h}}
 \mbox{\hyperlink{_l_e_d_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{comment}{/***********************************************/}}
-\DoxyCodeLine{00002\ \textcolor{comment}{/*************\ Author:\ ASU\_EMBEDDED\_TEAM\_NO?!**************/}}
-\DoxyCodeLine{00003\ \textcolor{comment}{/*************\ date:\ \ 25\ April\ 2024\ **************/}}
-\DoxyCodeLine{00004\ \textcolor{comment}{/*************\ Version:\ 0.1\ \ \ \ \ \ \ **************/}}
-\DoxyCodeLine{00005\ \textcolor{comment}{/*************\ Module:LED.h\ ***********/}}
-\DoxyCodeLine{00006\ \textcolor{comment}{/***********************************************/}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ LED\_H\_}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ LED\_H\_}}
-\DoxyCodeLine{00009\ }
-\DoxyCodeLine{00010\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{\mbox{\hyperlink{_l_e_d_8h_ab983350d6d1201c0ebd709320e7a0d50af80f9a890089d211842d59625e561f88}{RED}}=1,\mbox{\hyperlink{_l_e_d_8h_ab983350d6d1201c0ebd709320e7a0d50af5e09dd1da4088464f264b7a3118bff8}{Blue}},\mbox{\hyperlink{_l_e_d_8h_ab983350d6d1201c0ebd709320e7a0d50aa60bd322f93178d68184e30e162571ca}{GREEN}}\}}
-\DoxyCodeLine{00011\ \mbox{\hyperlink{_l_e_d_8h_ab983350d6d1201c0ebd709320e7a0d50}{COLORS}};}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}\ \ \mbox{\hyperlink{_l_e_d_8h_a4e7e9203991f8773adcf36da98629b84}{LED\_COLOR}}\ ;}
-\DoxyCodeLine{00014\ }
-\DoxyCodeLine{00015\ \mbox{\hyperlink{_l_e_d_8h_a79041185703dec5ef414dcb4bef8485f}{HAL\_LEDS\_INIT}}();}
-\DoxyCodeLine{00016\ \mbox{\hyperlink{_l_e_d_8h_a445a67dbddc864f5e9858624b6ae4654}{HAL\_LED\_SET}}(\mbox{\hyperlink{_l_e_d_8h_a4e7e9203991f8773adcf36da98629b84}{LED\_COLOR}}\ Color);}
-\DoxyCodeLine{00017\ \mbox{\hyperlink{_l_e_d_8h_a86305eb71884681385fe5ba9abdac73e}{HAL\_LED\_RESET}}(\mbox{\hyperlink{_l_e_d_8h_a4e7e9203991f8773adcf36da98629b84}{LED\_COLOR}}\ Color);}
-\DoxyCodeLine{00018\ \mbox{\hyperlink{_l_e_d_8h_abbbfc98d65a53592d646d05998ceb49e}{HAL\_LED\_TOGGLE}}(\mbox{\hyperlink{_l_e_d_8h_a4e7e9203991f8773adcf36da98629b84}{LED\_COLOR}}\ Color);}
-\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00001\ \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*******\ Author\ \ \ \ :\ ASU\_EMBEDDED\_TEAM\_NO\ 3\ \ \ \ \ *****************/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{/*******\ Date\ \ \ \ \ \ :\ 11\ April\ 2024\ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00004\ \textcolor{comment}{/*******\ Version\ \ \ :\ 0.1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00005\ \textcolor{comment}{/*******\ File\ Name\ :\ LED.h\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ LED\_H\_}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ LED\_H\_}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{/*****************************<\ LIB\ >*****************************/}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h}{../../LIB/STD\_TYPES.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{comment}{/*****************************<\ MCAL\ >****************************/}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_g_p_i_o___interface_8h}{../../MCAL/GPIO/GPIO\_Interface.h}}"{}}}
 \DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00025\ \textcolor{comment}{//\ End\ of\ GPIO\_Registers\_Addresses\ group}}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif\ }}
+\DoxyCodeLine{00021\ \textcolor{comment}{/*****************<\ Functions\ Implementations\ >*******************/}}
+\DoxyCodeLine{00025\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{_l_e_d_8h_ab983350d6d1201c0ebd709320e7a0d50af80f9a890089d211842d59625e561f88}{RED}}\ =\ 1,\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{_l_e_d_8h_ab983350d6d1201c0ebd709320e7a0d50a35d6719cb4d7577c031b3d79057a1b79}{BLUE}},\ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{_l_e_d_8h_ab983350d6d1201c0ebd709320e7a0d50aa60bd322f93178d68184e30e162571ca}{GREEN}}\ \ \ \ }
+\DoxyCodeLine{00030\ \}\ \mbox{\hyperlink{_l_e_d_8h_ab983350d6d1201c0ebd709320e7a0d50}{COLORS}};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{_l_e_d_8h_a95d058c7a7d7287f9a7c3d4c6c2f96cf}{LED\_COLOR}};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_l_e_d_8h_a20416b55d8efd226dab399cb5a4261fa}{HAL\_LEDS\_INIT}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_l_e_d_8h_a3b12b92a7c572679f21495b29671cd8d}{HAL\_LED\_SET}}(\mbox{\hyperlink{_l_e_d_8h_a95d058c7a7d7287f9a7c3d4c6c2f96cf}{LED\_COLOR}}\ Color);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_l_e_d_8h_a5fb9ba81c502c07776b071b4f921b818}{HAL\_LED\_RESET}}(\mbox{\hyperlink{_l_e_d_8h_a95d058c7a7d7287f9a7c3d4c6c2f96cf}{LED\_COLOR}}\ Color);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_l_e_d_8h_a7e0858576c1a7b4bcc274844029d227a}{HAL\_LED\_TOGGLE}}(\mbox{\hyperlink{_l_e_d_8h_a95d058c7a7d7287f9a7c3d4c6c2f96cf}{LED\_COLOR}}\ Color);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ LED\_H\_\ */}\textcolor{preprocessor}{}}
 
 \end{DoxyCode}

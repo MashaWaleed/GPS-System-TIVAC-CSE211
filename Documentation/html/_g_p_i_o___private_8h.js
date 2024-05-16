@@ -1,6 +1,5 @@
 var _g_p_i_o___private_8h =
 [
-    [ "GPIO_REGISTERES", "struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s.html", "struct_g_p_i_o___r_e_g_i_s_t_e_r_e_s" ],
     [ "GPIO_ENABLE", "group___g_p_i_o___registers___addresses.html#ga5a502812d9313243ea770a8d15c235d0", null ],
     [ "GPIO_PORTA", "group___g_p_i_o___registers___addresses.html#gace1f2998664b32913e0c7f9a76699060", null ],
     [ "GPIO_PORTA_BASE_ADDRESS", "group___g_p_i_o___base___addresses.html#ga309d34d42a30bf7021404bb99b09608e", null ],
@@ -18,6 +17,5 @@ var _g_p_i_o___private_8h =
     [ "GPIO_RCC_ENABLE_BASE_ADDRESS", "group___g_p_i_o___base___addresses.html#gad0a996118720832750c827712eb336af", null ],
     [ "GPIO_RCC_READY_FOR_ACCESS_ADDRESS", "group___g_p_i_o___base___addresses.html#ga6feffd0132d34be1c63c55d36abc7e58", null ],
     [ "GPIO_WAIT", "group___g_p_i_o___registers___addresses.html#gab06a9c4d6a753d2f98ca00814912c16c", null ],
-    [ "I2C_PCTL_VALUE", "group___g_p_i_o___base___addresses.html#ga6d323f7779ce47c1123f5607b9ff7a17", null ],
     [ "LOCK_VALUE", "group___g_p_i_o___base___addresses.html#ga8489f3a5c386752ab29d05a0582b2e98", null ]
 ];

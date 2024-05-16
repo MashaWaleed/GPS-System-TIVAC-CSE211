@@ -1,5 +1,6 @@
-\doxysection{MCAL/\+STK(Core)/\+STK\+\_\+private.h File Reference}
-\hypertarget{_s_t_k__private_8h}{}\label{_s_t_k__private_8h}\index{MCAL/STK(Core)/STK\_private.h@{MCAL/STK(Core)/STK\_private.h}}
+\doxysection{MCAL/\+Systick/\+STK\+\_\+private.h File Reference}
+\hypertarget{_s_t_k__private_8h}{}\label{_s_t_k__private_8h}\index{MCAL/Systick/STK\_private.h@{MCAL/Systick/STK\_private.h}}
+{\ttfamily \#include "{}../../\+LIB/\+STD\+\_\+\+TYPES.\+h"{}}\newline
 \doxysubsubsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
@@ -22,8 +23,6 @@ struct \mbox{\hyperlink{struct_s_t_k___reg_def__t}{STK\+\_\+\+Reg\+Def\+\_\+t}}
 \item 
 \#define \mbox{\hyperlink{_s_t_k__private_8h_a218c225075b6db58ae4e4c09d294de78}{STK\+\_\+\+CTRL\+\_\+\+CLKSOURCE\+\_\+1}}~1
 \begin{DoxyCompactList}\small\item\em Specifies the clock source for the Sys\+Tick timer. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{_s_t_k__private_8h_a3cc3eef1ba1650fce32214db3cd5f4f8}{STK\+\_\+\+CTRL\+\_\+\+CLKSOURCE\+\_\+8}}~0
-\item 
 \#define \mbox{\hyperlink{_s_t_k__private_8h_ae589a254fdfbe569d563484e2753cf42}{STK\+\_\+\+CTRL\+\_\+\+TICKINT\+\_\+\+ENABLE}}~1
 \begin{DoxyCompactList}\small\item\em Specifies whether the Sys\+Tick timer exception request is enabled. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{_s_t_k__private_8h_a89390cce01c6ac69ebd3517d94ed05ef}{STK\+\_\+\+CTRL\+\_\+\+TICKINT\+\_\+\+DISABLE}}~0
@@ -32,8 +31,14 @@ struct \mbox{\hyperlink{struct_s_t_k___reg_def__t}{STK\+\_\+\+Reg\+Def\+\_\+t}}
 \item 
 \#define \mbox{\hyperlink{_s_t_k__private_8h_a5bdbc85bcbba823c657f36f316bfdc02}{STK\+\_\+\+PERIOD\+\_\+\+INTERVAL}}~1
 \item 
-\#define \mbox{\hyperlink{_s_t_k__private_8h_ac235a4c99195270ab3de52764a35a076}{STK\+\_\+\+AHB\+\_\+\+CLK}}~1000000
-\begin{DoxyCompactList}\small\item\em Sets the system clock frequency for the Sys\+Tick peripheral. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\#define \mbox{\hyperlink{_s_t_k__private_8h_ac235a4c99195270ab3de52764a35a076}{STK\+\_\+\+AHB\+\_\+\+CLK}}~16000000
+\begin{DoxyCompactList}\small\item\em Sets the system clock frequency for the Sys\+Tick peripheral. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_s_t_k__private_8h_a31c5fc9ee38424defb09685926d22849}{Enable\+\_\+\+Systick\+\_\+with\+\_\+\+System\+Clk}}~0x05
+\item 
+\#define \mbox{\hyperlink{_s_t_k__private_8h_ab29db35038cdd41abde84913865ee0ca}{No\+\_\+\+Of\+\_\+\+Tick\+\_\+\+To\+\_\+\+Delay\+\_\+1ms}}~16000
+\item 
+\#define \mbox{\hyperlink{_s_t_k__private_8h_a3db225161e5e9b8bd630944d7bc6c64f}{Counter\+\_\+\+Reached\+\_\+0\+\_\+since\+\_\+\+Last\+\_\+\+Read}}~0x00010000
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
@@ -42,6 +47,24 @@ typedef struct STK\+\_\+\+Reg\+Def\+\_\+t \mbox{\hyperlink{_s_t_k__private_8h_a0
 
 
 \doxysubsection{Macro Definition Documentation}
+\Hypertarget{_s_t_k__private_8h_a3db225161e5e9b8bd630944d7bc6c64f}\label{_s_t_k__private_8h_a3db225161e5e9b8bd630944d7bc6c64f} 
+\index{STK\_private.h@{STK\_private.h}!Counter\_Reached\_0\_since\_Last\_Read@{Counter\_Reached\_0\_since\_Last\_Read}}
+\index{Counter\_Reached\_0\_since\_Last\_Read@{Counter\_Reached\_0\_since\_Last\_Read}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{\texorpdfstring{Counter\_Reached\_0\_since\_Last\_Read}{Counter\_Reached\_0\_since\_Last\_Read}}
+{\footnotesize\ttfamily \#define Counter\+\_\+\+Reached\+\_\+0\+\_\+since\+\_\+\+Last\+\_\+\+Read~0x00010000}
+
+STK\+\_\+\+PRIVATE\+\_\+\+H\+\_\+ \Hypertarget{_s_t_k__private_8h_a31c5fc9ee38424defb09685926d22849}\label{_s_t_k__private_8h_a31c5fc9ee38424defb09685926d22849} 
+\index{STK\_private.h@{STK\_private.h}!Enable\_Systick\_with\_SystemClk@{Enable\_Systick\_with\_SystemClk}}
+\index{Enable\_Systick\_with\_SystemClk@{Enable\_Systick\_with\_SystemClk}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{\texorpdfstring{Enable\_Systick\_with\_SystemClk}{Enable\_Systick\_with\_SystemClk}}
+{\footnotesize\ttfamily \#define Enable\+\_\+\+Systick\+\_\+with\+\_\+\+System\+Clk~0x05}
+
+\Hypertarget{_s_t_k__private_8h_ab29db35038cdd41abde84913865ee0ca}\label{_s_t_k__private_8h_ab29db35038cdd41abde84913865ee0ca} 
+\index{STK\_private.h@{STK\_private.h}!No\_Of\_Tick\_To\_Delay\_1ms@{No\_Of\_Tick\_To\_Delay\_1ms}}
+\index{No\_Of\_Tick\_To\_Delay\_1ms@{No\_Of\_Tick\_To\_Delay\_1ms}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{\texorpdfstring{No\_Of\_Tick\_To\_Delay\_1ms}{No\_Of\_Tick\_To\_Delay\_1ms}}
+{\footnotesize\ttfamily \#define No\+\_\+\+Of\+\_\+\+Tick\+\_\+\+To\+\_\+\+Delay\+\_\+1ms~16000}
+
 \Hypertarget{_s_t_k__private_8h_abbfd9a2b36c64f065ab28c8330bc5010}\label{_s_t_k__private_8h_abbfd9a2b36c64f065ab28c8330bc5010} 
 \index{STK\_private.h@{STK\_private.h}!STK@{STK}}
 \index{STK@{STK}!STK\_private.h@{STK\_private.h}}
@@ -52,7 +75,7 @@ typedef struct STK\+\_\+\+Reg\+Def\+\_\+t \mbox{\hyperlink{_s_t_k__private_8h_a0
 \index{STK\_private.h@{STK\_private.h}!STK\_AHB\_CLK@{STK\_AHB\_CLK}}
 \index{STK\_AHB\_CLK@{STK\_AHB\_CLK}!STK\_private.h@{STK\_private.h}}
 \doxysubsubsection{\texorpdfstring{STK\_AHB\_CLK}{STK\_AHB\_CLK}}
-{\footnotesize\ttfamily \#define STK\+\_\+\+AHB\+\_\+\+CLK~1000000}
+{\footnotesize\ttfamily \#define STK\+\_\+\+AHB\+\_\+\+CLK~16000000}
 
 
 
@@ -69,7 +92,7 @@ The available options for STK\+\_\+\+CTRL\+\_\+\+CLKSOURCE are\+:
 \end{DoxyNote}
 
 \begin{DoxyRetVals}{Return values}
-{\em None} & Processor clock (AHB clock) divided by 8 STK\+\_\+\+PRIVATE\+\_\+\+H\+\_\+ \\
+{\em None} & Processor clock (AHB clock) divided by 1 \\
 \hline
 \end{DoxyRetVals}
 \Hypertarget{_s_t_k__private_8h_af58ecf965bfd15e83bf6c3c445fc38e5}\label{_s_t_k__private_8h_af58ecf965bfd15e83bf6c3c445fc38e5} 
@@ -102,12 +125,6 @@ This option determines whether the Sys\+Tick timer uses the processor clock or a
 {\em None} & \\
 \hline
 \end{DoxyRetVals}
-\Hypertarget{_s_t_k__private_8h_a3cc3eef1ba1650fce32214db3cd5f4f8}\label{_s_t_k__private_8h_a3cc3eef1ba1650fce32214db3cd5f4f8} 
-\index{STK\_private.h@{STK\_private.h}!STK\_CTRL\_CLKSOURCE\_8@{STK\_CTRL\_CLKSOURCE\_8}}
-\index{STK\_CTRL\_CLKSOURCE\_8@{STK\_CTRL\_CLKSOURCE\_8}!STK\_private.h@{STK\_private.h}}
-\doxysubsubsection{\texorpdfstring{STK\_CTRL\_CLKSOURCE\_8}{STK\_CTRL\_CLKSOURCE\_8}}
-{\footnotesize\ttfamily \#define STK\+\_\+\+CTRL\+\_\+\+CLKSOURCE\+\_\+8~0}
-
 \Hypertarget{_s_t_k__private_8h_a85773e6966bc7c72016f5704234c64dd}\label{_s_t_k__private_8h_a85773e6966bc7c72016f5704234c64dd} 
 \index{STK\_private.h@{STK\_private.h}!STK\_CTRL\_CLKSOURCE\_MASK@{STK\_CTRL\_CLKSOURCE\_MASK}}
 \index{STK\_CTRL\_CLKSOURCE\_MASK@{STK\_CTRL\_CLKSOURCE\_MASK}!STK\_private.h@{STK\_private.h}}

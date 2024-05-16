@@ -1,0 +1,68 @@
+\doxysection{HAL/\+SWITCH/\+SWITCH.h File Reference}
+\hypertarget{_s_w_i_t_c_h_8h}{}\label{_s_w_i_t_c_h_8h}\index{HAL/SWITCH/SWITCH.h@{HAL/SWITCH/SWITCH.h}}
+{\ttfamily \#include "{}../../\+LIB/\+STD\+\_\+\+TYPES.\+h"{}}\newline
+{\ttfamily \#include "{}../../\+MCAL/\+GPIO/\+GPIO\+\_\+\+Interface.\+h"{}}\newline
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_s_w_i_t_c_h_8h_aa87203a5637fb4759a378b579aaebff6}{SWITCHES}} \{ \mbox{\hyperlink{_s_w_i_t_c_h_8h_aa87203a5637fb4759a378b579aaebff6a5362d6fa6cbccb91404100f1739a73c7}{SW\+\_\+1}} = 4
+, \mbox{\hyperlink{_s_w_i_t_c_h_8h_aa87203a5637fb4759a378b579aaebff6a1b3596bc15310b3e6b67b1e625f4dcda}{SW\+\_\+2}} = 0
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_s_w_i_t_c_h_8h_a0ee41d33191f9467cab80609a7dc2971}{HAL\+\_\+\+SWITCH\+\_\+\+INIT}} ()
+\begin{DoxyCompactList}\small\item\em Enumeration defining SWITCHES. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{_s_w_i_t_c_h_8h_a533222c49931574ae99efafbb5f0dba8}{HAL\+\_\+\+SWITCH\+\_\+\+GET}} (\mbox{\hyperlink{_s_w_i_t_c_h_8h_aa87203a5637fb4759a378b579aaebff6}{SWITCHES}} Switch)
+\begin{DoxyCompactList}\small\item\em Get the state of the specified SWITCH. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_s_w_i_t_c_h_8h_aa87203a5637fb4759a378b579aaebff6}\label{_s_w_i_t_c_h_8h_aa87203a5637fb4759a378b579aaebff6} 
+\index{SWITCH.h@{SWITCH.h}!SWITCHES@{SWITCHES}}
+\index{SWITCHES@{SWITCHES}!SWITCH.h@{SWITCH.h}}
+\doxysubsubsection{\texorpdfstring{SWITCHES}{SWITCHES}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_s_w_i_t_c_h_8h_aa87203a5637fb4759a378b579aaebff6}{SWITCHES}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SW\_1@{SW\_1}!SWITCH.h@{SWITCH.h}}\index{SWITCH.h@{SWITCH.h}!SW\_1@{SW\_1}}}\Hypertarget{_s_w_i_t_c_h_8h_aa87203a5637fb4759a378b579aaebff6a5362d6fa6cbccb91404100f1739a73c7}\label{_s_w_i_t_c_h_8h_aa87203a5637fb4759a378b579aaebff6a5362d6fa6cbccb91404100f1739a73c7} 
+SW\+\_\+1&Switch 1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SW\_2@{SW\_2}!SWITCH.h@{SWITCH.h}}\index{SWITCH.h@{SWITCH.h}!SW\_2@{SW\_2}}}\Hypertarget{_s_w_i_t_c_h_8h_aa87203a5637fb4759a378b579aaebff6a1b3596bc15310b3e6b67b1e625f4dcda}\label{_s_w_i_t_c_h_8h_aa87203a5637fb4759a378b579aaebff6a1b3596bc15310b3e6b67b1e625f4dcda} 
+SW\+\_\+2&Switch 2 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_s_w_i_t_c_h_8h_a533222c49931574ae99efafbb5f0dba8}\label{_s_w_i_t_c_h_8h_a533222c49931574ae99efafbb5f0dba8} 
+\index{SWITCH.h@{SWITCH.h}!HAL\_SWITCH\_GET@{HAL\_SWITCH\_GET}}
+\index{HAL\_SWITCH\_GET@{HAL\_SWITCH\_GET}!SWITCH.h@{SWITCH.h}}
+\doxysubsubsection{\texorpdfstring{HAL\_SWITCH\_GET()}{HAL\_SWITCH\_GET()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} HAL\+\_\+\+SWITCH\+\_\+\+GET (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_w_i_t_c_h_8h_aa87203a5637fb4759a378b579aaebff6}{SWITCHES}}}]{Switch }\end{DoxyParamCaption})}
+
+
+
+Get the state of the specified SWITCH. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Switch} & Switch to get its state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+u8 State of the SWITCH 
+\end{DoxyReturn}
+\Hypertarget{_s_w_i_t_c_h_8h_a0ee41d33191f9467cab80609a7dc2971}\label{_s_w_i_t_c_h_8h_a0ee41d33191f9467cab80609a7dc2971} 
+\index{SWITCH.h@{SWITCH.h}!HAL\_SWITCH\_INIT@{HAL\_SWITCH\_INIT}}
+\index{HAL\_SWITCH\_INIT@{HAL\_SWITCH\_INIT}!SWITCH.h@{SWITCH.h}}
+\doxysubsubsection{\texorpdfstring{HAL\_SWITCH\_INIT()}{HAL\_SWITCH\_INIT()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+SWITCH\+\_\+\+INIT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enumeration defining SWITCHES. 
+

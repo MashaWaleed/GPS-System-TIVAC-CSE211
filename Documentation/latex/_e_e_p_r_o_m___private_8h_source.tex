@@ -1,0 +1,26 @@
+\doxysection{EEPROM\+\_\+\+Private.\+h}
+\hypertarget{_e_e_p_r_o_m___private_8h_source}{}\label{_e_e_p_r_o_m___private_8h_source}\index{MCAL/EEPROM/EEPROM\_Private.h@{MCAL/EEPROM/EEPROM\_Private.h}}
+\mbox{\hyperlink{_e_e_p_r_o_m___private_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*******\ Author\ \ \ \ :\ ASU\_EMBEDDED\_TEAM\_NO\ 3\ \ \ \ \ *****************/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{/*******\ Date\ \ \ \ \ \ :\ 28\ April\ 2024\ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00004\ \textcolor{comment}{/*******\ Version\ \ \ :\ 0.1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00005\ \textcolor{comment}{/*******\ File\ Name\ :\ EEPROM\_Private.h\ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ EEPROM\_PRIVATE\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ EEPROM\_PRIVATE\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{/*************************<\ Defines\ >****************************/}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ MCAL\_EEPROM\_Wait()\ while(WORKING)\{\}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ WORKING\ (EEPROM\_EEDONE\_R\ \&\ EEPROM\_EEDONE\_WORKING)}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ PRETRY\ (EEPROM\_EESUPP\_R\ \&\ EEPROM\_EESUPP\_PRETRY)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ ERETRY\ (EEPROM\_EESUPP\_R\ \&\ EEPROM\_EESUPP\_ERETRY)}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ EEPROM\_OK\ 0}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ EEPROM\_ERROR\ 1}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ EEPROM\_PRIVATE\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

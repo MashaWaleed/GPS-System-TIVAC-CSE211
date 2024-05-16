@@ -4,5 +4,7 @@ var searchData=
   ['stk_5fconfig_2eh_1',['STK_config.h',['../_s_t_k__config_8h.html',1,'']]],
   ['stk_5finterface_2eh_2',['STK_interface.h',['../_s_t_k__interface_8h.html',1,'']]],
   ['stk_5fprivate_2eh_3',['STK_private.h',['../_s_t_k__private_8h.html',1,'']]],
-  ['stk_5fprogram_2ec_4',['STK_program.c',['../_s_t_k__program_8c.html',1,'']]]
+  ['stk_5fprogram_2ec_4',['STK_program.c',['../_s_t_k__program_8c.html',1,'']]],
+  ['switch_2ec_5',['SWITCH.c',['../_s_w_i_t_c_h_8c.html',1,'']]],
+  ['switch_2eh_6',['SWITCH.h',['../_s_w_i_t_c_h_8h.html',1,'']]]
 ];

@@ -1,15 +1,15 @@
-\doxysection{HAL/\+GPS\+\_\+\+Module/\+GPS.c File Reference}
-\hypertarget{_g_p_s_8c}{}\label{_g_p_s_8c}\index{HAL/GPS\_Module/GPS.c@{HAL/GPS\_Module/GPS.c}}
+\doxysection{HAL/\+GPS/\+GPS.c File Reference}
+\hypertarget{_g_p_s_8c}{}\label{_g_p_s_8c}\index{HAL/GPS/GPS.c@{HAL/GPS/GPS.c}}
 {\ttfamily \#include "{}GPS.\+h"{}}\newline
 {\ttfamily \#include "{}string.\+h"{}}\newline
 {\ttfamily \#include "{}stdlib.\+h"{}}\newline
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{_g_p_s_8c_a28ad727a87c71dc250146578f8a462c4}{parse\+\_\+\+GPS\+\_\+data}} (char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{_g_p_s_8c_a40909410e475f536e6f17d7db4551b76}{GPS\+\_\+\+Sentence}}, \mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg, float \texorpdfstring{$\ast$}{*}latitude, float \texorpdfstring{$\ast$}{*}longitude)
-\item 
-void \mbox{\hyperlink{_g_p_s_8c_a3d1fa3971eeca6802434517b9c07fc31}{HAL\+\_\+\+GPS\+\_\+\+Read}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg, float \texorpdfstring{$\ast$}{*}latitude, float \texorpdfstring{$\ast$}{*}longitude)
-\end{DoxyCompactItemize}
+uint8\+\_\+t \mbox{\hyperlink{_g_p_s_8c_a1c390ddda246b49ed057597948aed528}{parse\+\_\+\+GPS\+\_\+data}} (char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{_g_p_s_8c_a40909410e475f536e6f17d7db4551b76}{GPS\+\_\+\+Sentence}}, \mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg, float \texorpdfstring{$\ast$}{*}latitude, float \texorpdfstring{$\ast$}{*}longitude)
+\begin{DoxyCompactList}\small\item\em Parses GPS data from a NMEA sentence. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{_g_p_s_8c_ae089f41213fe052c05d7750b226edc5c}{HAL\+\_\+\+GPS\+\_\+\+Read}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg, float \texorpdfstring{$\ast$}{*}latitude, float \texorpdfstring{$\ast$}{*}longitude)
+\begin{DoxyCompactList}\small\item\em Reads GPS data from UART. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -18,18 +18,52 @@ uint8\+\_\+t \mbox{\hyperlink{_g_p_s_8c_a40909410e475f536e6f17d7db4551b76}{GPS\+
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{_g_p_s_8c_a3d1fa3971eeca6802434517b9c07fc31}\label{_g_p_s_8c_a3d1fa3971eeca6802434517b9c07fc31} 
+\Hypertarget{_g_p_s_8c_ae089f41213fe052c05d7750b226edc5c}\label{_g_p_s_8c_ae089f41213fe052c05d7750b226edc5c} 
 \index{GPS.c@{GPS.c}!HAL\_GPS\_Read@{HAL\_GPS\_Read}}
 \index{HAL\_GPS\_Read@{HAL\_GPS\_Read}!GPS.c@{GPS.c}}
 \doxysubsubsection{\texorpdfstring{HAL\_GPS\_Read()}{HAL\_GPS\_Read()}}
-{\footnotesize\ttfamily void HAL\+\_\+\+GPS\+\_\+\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg,  }\item[{float \texorpdfstring{$\ast$}{*}}]{latitude,  }\item[{float \texorpdfstring{$\ast$}{*}}]{longitude }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily uint8\+\_\+t HAL\+\_\+\+GPS\+\_\+\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg,  }\item[{float \texorpdfstring{$\ast$}{*}}]{latitude,  }\item[{float \texorpdfstring{$\ast$}{*}}]{longitude }\end{DoxyParamCaption})}
 
-\Hypertarget{_g_p_s_8c_a28ad727a87c71dc250146578f8a462c4}\label{_g_p_s_8c_a28ad727a87c71dc250146578f8a462c4} 
+
+
+Reads GPS data from UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & Pointer to UART configuration \\
+\hline
+{\em latitude} & Pointer to store latitude value \\
+\hline
+{\em longitude} & Pointer to store longitude value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if GPS data was successfully read and parsed, 0 otherwise 
+\end{DoxyReturn}
+\Hypertarget{_g_p_s_8c_a1c390ddda246b49ed057597948aed528}\label{_g_p_s_8c_a1c390ddda246b49ed057597948aed528} 
 \index{GPS.c@{GPS.c}!parse\_GPS\_data@{parse\_GPS\_data}}
 \index{parse\_GPS\_data@{parse\_GPS\_data}!GPS.c@{GPS.c}}
 \doxysubsubsection{\texorpdfstring{parse\_GPS\_data()}{parse\_GPS\_data()}}
-{\footnotesize\ttfamily void parse\+\_\+\+GPS\+\_\+data (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{GPS\+\_\+\+Sentence,  }\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg,  }\item[{float \texorpdfstring{$\ast$}{*}}]{latitude,  }\item[{float \texorpdfstring{$\ast$}{*}}]{longitude }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily uint8\+\_\+t parse\+\_\+\+GPS\+\_\+data (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{GPS\+\_\+\+Sentence,  }\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg,  }\item[{float \texorpdfstring{$\ast$}{*}}]{latitude,  }\item[{float \texorpdfstring{$\ast$}{*}}]{longitude }\end{DoxyParamCaption})}
 
+
+
+Parses GPS data from a NMEA sentence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em GPS\+\_\+\+Sentence} & Pointer to the GPS sentence string \\
+\hline
+{\em cfg} & Pointer to UART configuration \\
+\hline
+{\em latitude} & Pointer to store latitude value \\
+\hline
+{\em longitude} & Pointer to store longitude value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if parsing was successful, 0 otherwise 
+\end{DoxyReturn}
 
 
 \doxysubsection{Variable Documentation}

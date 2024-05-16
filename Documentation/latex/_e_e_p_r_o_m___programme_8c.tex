@@ -1,0 +1,128 @@
+\doxysection{MCAL/\+EEPROM/\+EEPROM\+\_\+\+Programme.c File Reference}
+\hypertarget{_e_e_p_r_o_m___programme_8c}{}\label{_e_e_p_r_o_m___programme_8c}\index{MCAL/EEPROM/EEPROM\_Programme.c@{MCAL/EEPROM/EEPROM\_Programme.c}}
+{\ttfamily \#include "{}../../\+LIB/\+STD\+\_\+\+TYPES.\+h"{}}\newline
+{\ttfamily \#include "{}EEPROM\+\_\+\+Interface.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{_e_e_p_r_o_m___programme_8c_ab795b720e01b6e5a5b6501dd9b307191}{MCAL\+\_\+\+EEPROM\+\_\+\+INIT}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize EEPROM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_e_e_p_r_o_m___programme_8c_acb7e4bc4ff0419b5aaab7d7deb662d75}{MCAL\+\_\+\+EEPROM\+\_\+\+Software\+\_\+\+Reset}} ()
+\begin{DoxyCompactList}\small\item\em Perform software reset on EEPROM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_e_e_p_r_o_m___programme_8c_a5b6e36970c02e10e18fc52c8e06bdcbe}{MCAL\+\_\+\+EEPROM\+\_\+\+Fix\+\_\+\+Error}} (void)
+\begin{DoxyCompactList}\small\item\em Fix EEPROM errors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_e_e_p_r_o_m___programme_8c_af4ac3264a2e6d3e043993dad2127bf1d}{delay}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} count)
+\item 
+void \mbox{\hyperlink{_e_e_p_r_o_m___programme_8c_a95d060e59e2039e8196e8f37c4c426ad}{MCAL\+\_\+\+EEPROM\+\_\+\+Config\+\_\+\+Block\+Offset}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} addr)
+\begin{DoxyCompactList}\small\item\em Configure EEPROM block and offset. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{_e_e_p_r_o_m___programme_8c_a025cba1ae8dd04ebabf3179208bae1c1}{MCAL\+\_\+\+EEPROM\+\_\+\+Read}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} addr)
+\begin{DoxyCompactList}\small\item\em Read data from EEPROM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_e_e_p_r_o_m___programme_8c_a44a5087407f0dbba18f97f71a168d8f6}{MCAL\+\_\+\+EEPROM\+\_\+\+Write}} (\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} addr, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} data)
+\begin{DoxyCompactList}\small\item\em Write data to EEPROM. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} \mbox{\hyperlink{_e_e_p_r_o_m___programme_8c_a040eb506d2149139c20bdda79bb64806}{MCAL\+\_\+\+EEPROM\+\_\+\+Mass\+\_\+\+Erase}} (void)
+\begin{DoxyCompactList}\small\item\em Perform mass erase of EEPROM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_e_e_p_r_o_m___programme_8c_af4ac3264a2e6d3e043993dad2127bf1d}\label{_e_e_p_r_o_m___programme_8c_af4ac3264a2e6d3e043993dad2127bf1d} 
+\index{EEPROM\_Programme.c@{EEPROM\_Programme.c}!delay@{delay}}
+\index{delay@{delay}!EEPROM\_Programme.c@{EEPROM\_Programme.c}}
+\doxysubsubsection{\texorpdfstring{delay()}{delay()}}
+{\footnotesize\ttfamily void delay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}]{count }\end{DoxyParamCaption})}
+
+\Hypertarget{_e_e_p_r_o_m___programme_8c_a95d060e59e2039e8196e8f37c4c426ad}\label{_e_e_p_r_o_m___programme_8c_a95d060e59e2039e8196e8f37c4c426ad} 
+\index{EEPROM\_Programme.c@{EEPROM\_Programme.c}!MCAL\_EEPROM\_Config\_BlockOffset@{MCAL\_EEPROM\_Config\_BlockOffset}}
+\index{MCAL\_EEPROM\_Config\_BlockOffset@{MCAL\_EEPROM\_Config\_BlockOffset}!EEPROM\_Programme.c@{EEPROM\_Programme.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_EEPROM\_Config\_BlockOffset()}{MCAL\_EEPROM\_Config\_BlockOffset()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+EEPROM\+\_\+\+Config\+\_\+\+Block\+Offset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{addr }\end{DoxyParamCaption})}
+
+
+
+Configure EEPROM block and offset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Block offset address \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_e_e_p_r_o_m___programme_8c_a5b6e36970c02e10e18fc52c8e06bdcbe}\label{_e_e_p_r_o_m___programme_8c_a5b6e36970c02e10e18fc52c8e06bdcbe} 
+\index{EEPROM\_Programme.c@{EEPROM\_Programme.c}!MCAL\_EEPROM\_Fix\_Error@{MCAL\_EEPROM\_Fix\_Error}}
+\index{MCAL\_EEPROM\_Fix\_Error@{MCAL\_EEPROM\_Fix\_Error}!EEPROM\_Programme.c@{EEPROM\_Programme.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_EEPROM\_Fix\_Error()}{MCAL\_EEPROM\_Fix\_Error()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+EEPROM\+\_\+\+Fix\+\_\+\+Error (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fix EEPROM errors. 
+
+\Hypertarget{_e_e_p_r_o_m___programme_8c_ab795b720e01b6e5a5b6501dd9b307191}\label{_e_e_p_r_o_m___programme_8c_ab795b720e01b6e5a5b6501dd9b307191} 
+\index{EEPROM\_Programme.c@{EEPROM\_Programme.c}!MCAL\_EEPROM\_INIT@{MCAL\_EEPROM\_INIT}}
+\index{MCAL\_EEPROM\_INIT@{MCAL\_EEPROM\_INIT}!EEPROM\_Programme.c@{EEPROM\_Programme.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_EEPROM\_INIT()}{MCAL\_EEPROM\_INIT()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} MCAL\+\_\+\+EEPROM\+\_\+\+INIT (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize EEPROM. 
+
+\begin{DoxyReturn}{Returns}
+Status of initialization (EEPROM\+\_\+\+OK or EEPROM\+\_\+\+ERROR) 
+\end{DoxyReturn}
+\Hypertarget{_e_e_p_r_o_m___programme_8c_a040eb506d2149139c20bdda79bb64806}\label{_e_e_p_r_o_m___programme_8c_a040eb506d2149139c20bdda79bb64806} 
+\index{EEPROM\_Programme.c@{EEPROM\_Programme.c}!MCAL\_EEPROM\_Mass\_Erase@{MCAL\_EEPROM\_Mass\_Erase}}
+\index{MCAL\_EEPROM\_Mass\_Erase@{MCAL\_EEPROM\_Mass\_Erase}!EEPROM\_Programme.c@{EEPROM\_Programme.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_EEPROM\_Mass\_Erase()}{MCAL\_EEPROM\_Mass\_Erase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}} MCAL\+\_\+\+EEPROM\+\_\+\+Mass\+\_\+\+Erase (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Perform mass erase of EEPROM. 
+
+\begin{DoxyReturn}{Returns}
+Status of mass erase operation (EEPROM\+\_\+\+OK or EEPROM\+\_\+\+ERROR) 
+\end{DoxyReturn}
+\Hypertarget{_e_e_p_r_o_m___programme_8c_a025cba1ae8dd04ebabf3179208bae1c1}\label{_e_e_p_r_o_m___programme_8c_a025cba1ae8dd04ebabf3179208bae1c1} 
+\index{EEPROM\_Programme.c@{EEPROM\_Programme.c}!MCAL\_EEPROM\_Read@{MCAL\_EEPROM\_Read}}
+\index{MCAL\_EEPROM\_Read@{MCAL\_EEPROM\_Read}!EEPROM\_Programme.c@{EEPROM\_Programme.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_EEPROM\_Read()}{MCAL\_EEPROM\_Read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} MCAL\+\_\+\+EEPROM\+\_\+\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{addr }\end{DoxyParamCaption})}
+
+
+
+Read data from EEPROM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data read from EEPROM 
+\end{DoxyReturn}
+\Hypertarget{_e_e_p_r_o_m___programme_8c_acb7e4bc4ff0419b5aaab7d7deb662d75}\label{_e_e_p_r_o_m___programme_8c_acb7e4bc4ff0419b5aaab7d7deb662d75} 
+\index{EEPROM\_Programme.c@{EEPROM\_Programme.c}!MCAL\_EEPROM\_Software\_Reset@{MCAL\_EEPROM\_Software\_Reset}}
+\index{MCAL\_EEPROM\_Software\_Reset@{MCAL\_EEPROM\_Software\_Reset}!EEPROM\_Programme.c@{EEPROM\_Programme.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_EEPROM\_Software\_Reset()}{MCAL\_EEPROM\_Software\_Reset()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+EEPROM\+\_\+\+Software\+\_\+\+Reset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Perform software reset on EEPROM. 
+
+\Hypertarget{_e_e_p_r_o_m___programme_8c_a44a5087407f0dbba18f97f71a168d8f6}\label{_e_e_p_r_o_m___programme_8c_a44a5087407f0dbba18f97f71a168d8f6} 
+\index{EEPROM\_Programme.c@{EEPROM\_Programme.c}!MCAL\_EEPROM\_Write@{MCAL\_EEPROM\_Write}}
+\index{MCAL\_EEPROM\_Write@{MCAL\_EEPROM\_Write}!EEPROM\_Programme.c@{EEPROM\_Programme.c}}
+\doxysubsubsection{\texorpdfstring{MCAL\_EEPROM\_Write()}{MCAL\_EEPROM\_Write()}}
+{\footnotesize\ttfamily void MCAL\+\_\+\+EEPROM\+\_\+\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{addr,  }\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Write data to EEPROM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to write to \\
+\hline
+{\em data} & Data to be written \\
+\hline
+\end{DoxyParams}

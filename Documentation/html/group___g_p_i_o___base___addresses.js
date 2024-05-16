@@ -9,6 +9,5 @@ var group___g_p_i_o___base___addresses =
     [ "GPIO_PORTF_DATA_R", "group___g_p_i_o___base___addresses.html#ga6faf63c7d3a41fd7aa67cb3f49112d58", null ],
     [ "GPIO_RCC_ENABLE_BASE_ADDRESS", "group___g_p_i_o___base___addresses.html#gad0a996118720832750c827712eb336af", null ],
     [ "GPIO_RCC_READY_FOR_ACCESS_ADDRESS", "group___g_p_i_o___base___addresses.html#ga6feffd0132d34be1c63c55d36abc7e58", null ],
-    [ "I2C_PCTL_VALUE", "group___g_p_i_o___base___addresses.html#ga6d323f7779ce47c1123f5607b9ff7a17", null ],
     [ "LOCK_VALUE", "group___g_p_i_o___base___addresses.html#ga8489f3a5c386752ab29d05a0582b2e98", null ]
 ];

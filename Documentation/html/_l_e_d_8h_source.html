@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: HAL/LED/LED.h Source File</title>
+<title>Gps_Tracking_System_Project: HAL/LED/LED.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project<span id="projectnumber">&#160;1</span>
+   <div id="projectname">Gps_Tracking_System_Project
    </div>
   </td>
  </tr>
@@ -99,42 +99,53 @@ $(function(){initNavTree('_l_e_d_8h_source.html',''); initResizable(); });
   <div class="headertitle"><div class="title">LED.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_l_e_d_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/***********************************************/</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">/************* Author: ASU_EMBEDDED_TEAM_NO?!**************/</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">/************* date:  25 April 2024 **************/</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/************* Version: 0.1       **************/</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">/************* Module:LED.h ***********/</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/***********************************************/</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef LED_H_</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define LED_H_</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50af5e09dd1da4088464f264b7a3118bff8">   10</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {<a class="code hl_enumvalue" href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50af80f9a890089d211842d59625e561f88">RED</a>=1,<a class="code hl_enumvalue" href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50af5e09dd1da4088464f264b7a3118bff8">Blue</a>,<a class="code hl_enumvalue" href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50aa60bd322f93178d68184e30e162571ca">GREEN</a>}</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><a class="code hl_enumeration" href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50">COLORS</a>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="_l_e_d_8h.html#a4e7e9203991f8773adcf36da98629b84">   13</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="_s_t_d___t_y_p_e_s_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>  <a class="code hl_typedef" href="_l_e_d_8h.html#a4e7e9203991f8773adcf36da98629b84">LED_COLOR</a> ;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><a class="code hl_function" href="_l_e_d_8h.html#a79041185703dec5ef414dcb4bef8485f">HAL_LEDS_INIT</a>();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><a class="code hl_function" href="_l_e_d_8h.html#a445a67dbddc864f5e9858624b6ae4654">HAL_LED_SET</a>(<a class="code hl_typedef" href="_l_e_d_8h.html#a4e7e9203991f8773adcf36da98629b84">LED_COLOR</a> Color);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><a class="code hl_function" href="_l_e_d_8h.html#a86305eb71884681385fe5ba9abdac73e">HAL_LED_RESET</a>(<a class="code hl_typedef" href="_l_e_d_8h.html#a4e7e9203991f8773adcf36da98629b84">LED_COLOR</a> Color);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><a class="code hl_function" href="_l_e_d_8h.html#abbbfc98d65a53592d646d05998ceb49e">HAL_LED_TOGGLE</a>(<a class="code hl_typedef" href="_l_e_d_8h.html#a4e7e9203991f8773adcf36da98629b84">LED_COLOR</a> Color);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<a href="_l_e_d_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/****************************************************************/</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">/******* Author    : ASU_EMBEDDED_TEAM_NO 3     *****************/</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">/******* Date      : 11 April 2024              *****************/</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/******* Version   : 0.1                        *****************/</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">/******* File Name : LED.h                      *****************/</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/****************************************************************/</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef LED_H_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define LED_H_</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/*****************************&lt; LIB &gt;*****************************/</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="_s_t_d___t_y_p_e_s_8h.html">../../LIB/STD_TYPES.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/*****************************&lt; MCAL &gt;****************************/</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="_g_p_i_o___interface_8h.html">../../MCAL/GPIO/GPIO_Interface.h</a>&quot;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// End of GPIO_Registers_Addresses group</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span></div>
-<div class="ttc" id="a_l_e_d_8h_html_a445a67dbddc864f5e9858624b6ae4654"><div class="ttname"><a href="_l_e_d_8h.html#a445a67dbddc864f5e9858624b6ae4654">HAL_LED_SET</a></div><div class="ttdeci">HAL_LED_SET(LED_COLOR Color)</div><div class="ttdef"><b>Definition</b> LED.c:17</div></div>
-<div class="ttc" id="a_l_e_d_8h_html_a4e7e9203991f8773adcf36da98629b84"><div class="ttname"><a href="_l_e_d_8h.html#a4e7e9203991f8773adcf36da98629b84">LED_COLOR</a></div><div class="ttdeci">u8 LED_COLOR</div><div class="ttdef"><b>Definition</b> LED.h:13</div></div>
-<div class="ttc" id="a_l_e_d_8h_html_a79041185703dec5ef414dcb4bef8485f"><div class="ttname"><a href="_l_e_d_8h.html#a79041185703dec5ef414dcb4bef8485f">HAL_LEDS_INIT</a></div><div class="ttdeci">HAL_LEDS_INIT()</div><div class="ttdef"><b>Definition</b> LED.c:10</div></div>
-<div class="ttc" id="a_l_e_d_8h_html_a86305eb71884681385fe5ba9abdac73e"><div class="ttname"><a href="_l_e_d_8h.html#a86305eb71884681385fe5ba9abdac73e">HAL_LED_RESET</a></div><div class="ttdeci">HAL_LED_RESET(LED_COLOR Color)</div><div class="ttdef"><b>Definition</b> LED.c:22</div></div>
-<div class="ttc" id="a_l_e_d_8h_html_ab983350d6d1201c0ebd709320e7a0d50"><div class="ttname"><a href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50">COLORS</a></div><div class="ttdeci">COLORS</div><div class="ttdef"><b>Definition</b> LED.h:10</div></div>
-<div class="ttc" id="a_l_e_d_8h_html_ab983350d6d1201c0ebd709320e7a0d50aa60bd322f93178d68184e30e162571ca"><div class="ttname"><a href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50aa60bd322f93178d68184e30e162571ca">GREEN</a></div><div class="ttdeci">@ GREEN</div><div class="ttdef"><b>Definition</b> LED.h:10</div></div>
-<div class="ttc" id="a_l_e_d_8h_html_ab983350d6d1201c0ebd709320e7a0d50af5e09dd1da4088464f264b7a3118bff8"><div class="ttname"><a href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50af5e09dd1da4088464f264b7a3118bff8">Blue</a></div><div class="ttdeci">@ Blue</div><div class="ttdef"><b>Definition</b> LED.h:10</div></div>
-<div class="ttc" id="a_l_e_d_8h_html_ab983350d6d1201c0ebd709320e7a0d50af80f9a890089d211842d59625e561f88"><div class="ttname"><a href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50af80f9a890089d211842d59625e561f88">RED</a></div><div class="ttdeci">@ RED</div><div class="ttdef"><b>Definition</b> LED.h:10</div></div>
-<div class="ttc" id="a_l_e_d_8h_html_abbbfc98d65a53592d646d05998ceb49e"><div class="ttname"><a href="_l_e_d_8h.html#abbbfc98d65a53592d646d05998ceb49e">HAL_LED_TOGGLE</a></div><div class="ttdeci">HAL_LED_TOGGLE(LED_COLOR Color)</div><div class="ttdef"><b>Definition</b> LED.c:27</div></div>
-<div class="ttc" id="a_s_t_d___t_y_p_e_s_8h_html_aed742c436da53c1080638ce6ef7d13de"><div class="ttname"><a href="_s_t_d___t_y_p_e_s_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition</b> STD_TYPES.h:9</div></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/*****************&lt; Functions Implementations &gt;*******************/</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50">   25</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50af80f9a890089d211842d59625e561f88">   27</a></span>    <a class="code hl_enumvalue" href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50af80f9a890089d211842d59625e561f88">RED</a> = 1, </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50a35d6719cb4d7577c031b3d79057a1b79">   28</a></span>    <a class="code hl_enumvalue" href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50a35d6719cb4d7577c031b3d79057a1b79">BLUE</a>,    </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_enumvalue" href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50aa60bd322f93178d68184e30e162571ca">GREEN</a>    </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50aa60bd322f93178d68184e30e162571ca">   30</a></span>} <a class="code hl_enumeration" href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50">COLORS</a>;</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="_l_e_d_8h.html#a95d058c7a7d7287f9a7c3d4c6c2f96cf">   35</a></span><span class="keyword">typedef</span> <span class="keywordtype">char</span> <a class="code hl_typedef" href="_l_e_d_8h.html#a95d058c7a7d7287f9a7c3d4c6c2f96cf">LED_COLOR</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keywordtype">void</span> <a class="code hl_function" href="_l_e_d_8h.html#a20416b55d8efd226dab399cb5a4261fa">HAL_LEDS_INIT</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keywordtype">void</span> <a class="code hl_function" href="_l_e_d_8h.html#a3b12b92a7c572679f21495b29671cd8d">HAL_LED_SET</a>(<a class="code hl_typedef" href="_l_e_d_8h.html#a95d058c7a7d7287f9a7c3d4c6c2f96cf">LED_COLOR</a> Color);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">void</span> <a class="code hl_function" href="_l_e_d_8h.html#a5fb9ba81c502c07776b071b4f921b818">HAL_LED_RESET</a>(<a class="code hl_typedef" href="_l_e_d_8h.html#a95d058c7a7d7287f9a7c3d4c6c2f96cf">LED_COLOR</a> Color);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keywordtype">void</span> <a class="code hl_function" href="_l_e_d_8h.html#a7e0858576c1a7b4bcc274844029d227a">HAL_LED_TOGGLE</a>(<a class="code hl_typedef" href="_l_e_d_8h.html#a95d058c7a7d7287f9a7c3d4c6c2f96cf">LED_COLOR</a> Color);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">/* LED_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_g_p_i_o___interface_8h_html"><div class="ttname"><a href="_g_p_i_o___interface_8h.html">GPIO_Interface.h</a></div></div>
+<div class="ttc" id="a_l_e_d_8h_html_a20416b55d8efd226dab399cb5a4261fa"><div class="ttname"><a href="_l_e_d_8h.html#a20416b55d8efd226dab399cb5a4261fa">HAL_LEDS_INIT</a></div><div class="ttdeci">void HAL_LEDS_INIT()</div><div class="ttdoc">Initialize the LED module.</div><div class="ttdef"><b>Definition</b> LED.c:18</div></div>
+<div class="ttc" id="a_l_e_d_8h_html_a3b12b92a7c572679f21495b29671cd8d"><div class="ttname"><a href="_l_e_d_8h.html#a3b12b92a7c572679f21495b29671cd8d">HAL_LED_SET</a></div><div class="ttdeci">void HAL_LED_SET(LED_COLOR Color)</div><div class="ttdoc">Turn on the specified LED.</div><div class="ttdef"><b>Definition</b> LED.c:25</div></div>
+<div class="ttc" id="a_l_e_d_8h_html_a5fb9ba81c502c07776b071b4f921b818"><div class="ttname"><a href="_l_e_d_8h.html#a5fb9ba81c502c07776b071b4f921b818">HAL_LED_RESET</a></div><div class="ttdeci">void HAL_LED_RESET(LED_COLOR Color)</div><div class="ttdoc">Turn off the specified LED.</div><div class="ttdef"><b>Definition</b> LED.c:30</div></div>
+<div class="ttc" id="a_l_e_d_8h_html_a7e0858576c1a7b4bcc274844029d227a"><div class="ttname"><a href="_l_e_d_8h.html#a7e0858576c1a7b4bcc274844029d227a">HAL_LED_TOGGLE</a></div><div class="ttdeci">void HAL_LED_TOGGLE(LED_COLOR Color)</div><div class="ttdoc">Toggle the specified LED.</div><div class="ttdef"><b>Definition</b> LED.c:35</div></div>
+<div class="ttc" id="a_l_e_d_8h_html_a95d058c7a7d7287f9a7c3d4c6c2f96cf"><div class="ttname"><a href="_l_e_d_8h.html#a95d058c7a7d7287f9a7c3d4c6c2f96cf">LED_COLOR</a></div><div class="ttdeci">char LED_COLOR</div><div class="ttdoc">Typedef defining LED color.</div><div class="ttdef"><b>Definition</b> LED.h:35</div></div>
+<div class="ttc" id="a_l_e_d_8h_html_ab983350d6d1201c0ebd709320e7a0d50"><div class="ttname"><a href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50">COLORS</a></div><div class="ttdeci">COLORS</div><div class="ttdoc">Enumeration defining LED colors.</div><div class="ttdef"><b>Definition</b> LED.h:26</div></div>
+<div class="ttc" id="a_l_e_d_8h_html_ab983350d6d1201c0ebd709320e7a0d50a35d6719cb4d7577c031b3d79057a1b79"><div class="ttname"><a href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50a35d6719cb4d7577c031b3d79057a1b79">BLUE</a></div><div class="ttdeci">@ BLUE</div><div class="ttdef"><b>Definition</b> LED.h:28</div></div>
+<div class="ttc" id="a_l_e_d_8h_html_ab983350d6d1201c0ebd709320e7a0d50aa60bd322f93178d68184e30e162571ca"><div class="ttname"><a href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50aa60bd322f93178d68184e30e162571ca">GREEN</a></div><div class="ttdeci">@ GREEN</div><div class="ttdef"><b>Definition</b> LED.h:29</div></div>
+<div class="ttc" id="a_l_e_d_8h_html_ab983350d6d1201c0ebd709320e7a0d50af80f9a890089d211842d59625e561f88"><div class="ttname"><a href="_l_e_d_8h.html#ab983350d6d1201c0ebd709320e7a0d50af80f9a890089d211842d59625e561f88">RED</a></div><div class="ttdeci">@ RED</div><div class="ttdef"><b>Definition</b> LED.h:27</div></div>
+<div class="ttc" id="a_s_t_d___t_y_p_e_s_8h_html"><div class="ttname"><a href="_s_t_d___t_y_p_e_s_8h.html">STD_TYPES.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
