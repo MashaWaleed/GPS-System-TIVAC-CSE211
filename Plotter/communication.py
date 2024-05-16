@@ -158,7 +158,41 @@ class BluetoothController(tk.Tk):
         except:
             messagebox.showerror("Error", "Could not send choice. Please check your COM connection.")
 
-
+    def receive_data(self):
+# This block of code is responsible for reading data from the serial port in the `BluetoothController`
+# class. Here's a breakdown of what it does:
+        dataPoints = 0
+        while True:
+            try:
+                data = self.send_port.readline().decode().strip()  # Read the data
+                print(data)
+                if type(data) == str and data.isdigit() and int(data) > 0:
+                    dataPoints = int(data)
+                    print(dataPoints)
+                    break
+            except serial.SerialException:
+                print("Error reading data. Exiting receive thread.")
+                return
+        
+        while dataPoints > 0:
+            try:
+                data = self.send_port.readline().decode().strip()  # Read the data
+                if data:
+                    print(data)
+                    # Parse the received data and store latitude and longitude points
+                    if data.startswith('$') and ',' in data:
+                        lat_lon = data[1:].split(',')
+                        if len(lat_lon) == 2:
+                            latitude = float(lat_lon[0]) / pow(10, 2) + 0.02613
+                            longitude = float(lat_lon[1]) / pow(10, 2) + 0.11135
+                            self.points.append([latitude, longitude])
+                            print("Latitude:", latitude, "Longitude:", longitude)
+                            dataPoints -= 1
+            except serial.SerialException:
+                print("Error reading data. Exiting receive thread.") 
+                return
+        graphData(self.points)
+        
 def graphData(points):
     lats = []
     lons = []

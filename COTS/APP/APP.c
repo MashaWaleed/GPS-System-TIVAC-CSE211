@@ -74,6 +74,54 @@ void APP_Destination_Reached(UART_ConfigType *cfg)
    }
 }
 
+int APP_Float_To_Int(float x)
+{
+   return (int)(x * 100000);
+}
+
+float APP_Int_To_Float(int x)
+{
+   return (float)x / 100000;
+}
+
+void APP_Write_Point(int *counter, int latitude, int longitude)
+{
+   // Write the point as <lat, long> to the EEPROM
+   MCAL_EEPROM_Write(*counter, latitude);
+   MCAL_EEPROM_Write(*counter + 1, longitude);
+
+   // Increment the counter
+   MCAL_EEPROM_Write(0, *counter + 1);
+   *counter += 2;
+}
+
+void APP_Read_Point(int *address, int *latitude, int *longitude)
+{
+   // Read the point from the EEPROM
+   *latitude = MCAL_EEPROM_Read(*address);
+   *longitude = MCAL_EEPROM_Read(*address + 1);
+   *address += 1;
+}
+
+void APP_Send_Sentences(UART_ConfigType *cfg)
+{
+   volatile int counter = MCAL_EEPROM_Read(0);
+   volatile int i = 0;
+   float read_lat, read_long;
+
+   char str[30] = {0};
+   char countStr[6] = {0};
+
+   snprintf(countStr, sizeof(countStr), "%d\n\r", counter / 2);
+   MCAL_UART_Send_String(cfg, countStr);
+   for (i = 1; i <= counter; i++)
+   {
+      APP_Read_Point(&i, &read_lat, &read_long);
+      snprintf(str, sizeof(str), "$%.5f,%.5f\n\r", read_lat, read_long);
+      MCAL_UART_Send_String(cfg, str);
+   }
+}
+
 
 void APP_System_Init(UART_ConfigType *cfg1, UART_Type * instance1, UART_ConfigType *cfg2, UART_Type * instance2)
 {
