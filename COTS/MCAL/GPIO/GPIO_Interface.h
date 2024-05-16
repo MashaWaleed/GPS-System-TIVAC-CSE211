@@ -1,20 +1,47 @@
-/********************************************/
-/************* Author: ASU_EMBEDDED_TEAM_NO?!**************/
-/************* date:  11 April 2024 **************/
-/************* Version: 0.1       **************/
-/************* Module:MCAL_GPIO_Interface.h ***********/
-/***********************************************/
+/****************************************************************/
+/******* Author    : ASU_EMBEDDED_TEAM_NO 3     *****************/
+/******* Date      : 11 April 2024              *****************/
+/******* Version   : 0.1                        *****************/
+/******* File Name : GPIO_Interface.h           *****************/
+/****************************************************************/
 #ifndef GPIO_INTERFACE_H_
 #define GPIO_INTERFACE_H_
-#include "BIT_MATH.h"
-#include "STD_TYPES.h"
+
+/*****************************< LIB >*****************************/
+#include "../../LIB/STD_TYPES.h"
+
+/*****************************< MCAL >*****************************/
 #include "GPIO_Private.h"
+#include "GPIO_Config.h"
+
+/*****************************< Defines >*****************************/
 /**
  * @defgroup GPIO_Configuration GPIO Configuration
  * @brief Macros and definitions for configuring GPIO pins.
  * @{
  */
 #define GPIO_LOCK_VALUE 0x4C4F434B
+/**
+ * @defgroup GPIO_Struct Register
+ *
+ */
+typedef struct {
+    u32 GPIODATA;
+    u32 Non_Usable_Space[254] ;
+    u32 GPIO_WRITE_DATA;
+    u32 GPIODIR;
+    u32 Non_Usable_Space2[7] ;
+    u32 GPIOAFSEL;
+    u32 Non_Usable_Space3[59] ;
+    u32 GPIOPUR;
+    u32 GPIOPDR;
+    u32 GPIOSLR;
+    u32 GPIODEN;
+    u32 GPIOLOCK;
+    u32 GPIOCR;
+    u32 GPIOAMSEL;
+    u32 GPIOPCTL;
+}GPIO_REGISTERES;
 /**
  * @defgroup GPIO_Values GPIO Values
  * @brief Values to represent the logical state of GPIO pins.
@@ -36,15 +63,8 @@
 /** @brief GPIO ports as numbers
  *
  */
-typedef enum
-{
-    PortA,
-    PortB,
-    PortC,
-    PortD,
-    PortE,
-    PortF
-} Port;
+typedef enum {PortA,PortB,PortC,PortD,PortE,PortF}
+        Port;
 /**
  * @defgroup GPIO_Pin GPIO Pin Definitions
  * @brief Definitions for GPIO pin indices.
@@ -80,6 +100,7 @@ typedef enum
 
 /** @} */
 
+/*****************************< Functions Prototypes' >*****************************/
 /**
  * @defgroup GPIO_Functions GPIO Functions
  * @brief GPIO functions for controlling GPIO pins.
