@@ -15,8 +15,6 @@ The goal is to create a GPS tracking system that collects real-time positional c
 - **Data Transfer:** Sends the collected data to a PC via UART when commanded ⬆️.
 
 ## 🏁 First Milestone
-- [**`Documentation`**](https://mashawaleed.github.io/GPS-System-TIVAC-CSE211/): A detailed documentation of the project, including the system architecture, hardware and software requirements, and the setup and operation instructions.
-- [**`Report`**](./Documentation.pdf): A print-friendly version of the documentation, briefly summarizing the project's objectives and outcomes.
 - [**`COTS/MCAL/GPIO`**](./COTS/MCAL/GPIO): Full GPIO driver implementation (initalization and control) for the TivaC TM4C123G microcontroller.
 - [**`COTS/MCAL/UART`**](./COTS/MCAL/UART): Full UART driver configuration (initalization and control) for the TivaC TM4C123G microcontroller.
 - [**`COTS/HAL/GPS`**](./COTS/HAL/GPS): GPS module driver configuration, parsing and proper reading.
@@ -24,6 +22,19 @@ The goal is to create a GPS tracking system that collects real-time positional c
 - [**`COTS/APP`**](./COTS/APP): Application layer testing and implementing GPS-related functionality.
 - [**`Final Program`**](./Final%20Program): Full fledged package, combining all the previous modules.
 - [**`Test Programs`**](./Test%20Programs): Individual testing programs for each module.
+
+## 🚀 Latest Version
+- [**`Documentation`**](https://mashawaleed.github.io/GPS-System-TIVAC-CSE211/): A detailed documentation of the project, including the system architecture, hardware and software requirements, and the setup and operation instructions.
+- [**`Report`**](./Report.pdf): A print-friendly version of the documentation, briefly summarizing and visually representing the project's layers, modules and results.
+  ### Driver updates
+  - [**`COTS/HAL/LCD`**](./COTS/HAL/LCD): LCD driver configuration and control.
+  - [**`COTS/HAL/GPS`**](./COTS/HAL/GPS): finetuned the GPS module driver configuration, parsing and proper reading.
+  - [**`COTS/MCAL/SysTick`**](./COTS/MCAL/SysTick): SysTick driver configuration.
+  - [**`COTS/MCAL/EEPROM`**](./COTS/MCAL/EEPROM): EEPROM driver configuration and control.
+  - [**`COTS/APP`**](./COTS/APP): updated application layer testing and implementing GPS-related functionality.
+  ### Added Features
+  - [**`Plotter`**](./Plotter): A Python script that reads the GPS data from the microcontroller and plots the trajectory on a map.
+  - [**`Final Program`**](./Final%20Program): updated the final program, to be fully inclusive of the new features.
 
 ## ⚙ Hardware Requirements
 - Microcontroller development board ( ARM® Cortex®-M4F Based MCU TM4C123G "TivaC" ) 🖥️
