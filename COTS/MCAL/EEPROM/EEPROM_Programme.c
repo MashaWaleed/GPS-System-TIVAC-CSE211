@@ -48,12 +48,6 @@ void MCAL_EEPROM_Fix_Error(void)
     };
 }
 
-void delay(u8 count)
-{
-    while (count--)
-        ;
-}
-
 void MCAL_EEPROM_Config_BlockOffset(u32 addr)
 {
     EEPROM_EEBLOCK_R = (addr >> 4);   
