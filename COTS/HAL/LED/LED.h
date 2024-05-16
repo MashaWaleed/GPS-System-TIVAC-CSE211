@@ -1,27 +1,60 @@
-/***********************************************/
-/************* Author: ASU_EMBEDDED_TEAM_NO?!**************/
-/************* date:  25 April 2024 **************/
-/************* Version: 0.1       **************/
-/************* Module:LED.h ***********/
-/***********************************************/
+/****************************************************************/
+/******* Author    : ASU_EMBEDDED_TEAM_NO 3     *****************/
+/******* Date      : 11 April 2024              *****************/
+/******* Version   : 0.1                        *****************/
+/******* File Name : LED.h                      *****************/
+/****************************************************************/
+
+/**
+ * @file LED.h
+ * @brief Header file for LED module
+ */
+
 #ifndef LED_H_
 #define LED_H_
 
-typedef enum {RED=1,Blue,GREEN}
-COLORS;
+/*****************************< LIB >*****************************/
+#include "../../LIB/STD_TYPES.h"
+/*****************************< MCAL >****************************/
+#include "../../MCAL/GPIO/GPIO_Interface.h"
 
-typedef u8  LED_COLOR ;
+/*****************< Functions Implementations >*******************/
+/**
+ * @brief Enumeration defining LED colors
+ */
+typedef enum
+{
+    RED = 1, /**< Red LED */
+    BLUE,    /**< Blue LED */
+    GREEN    /**< Green LED */
+} COLORS;
 
-HAL_LEDS_INIT();
-HAL_LED_SET(LED_COLOR Color);
-HAL_LED_RESET(LED_COLOR Color);
-HAL_LED_TOGGLE(LED_COLOR Color);
+/**
+ * @brief Typedef defining LED color
+ */
+typedef char LED_COLOR;
 
+/**
+ * @brief Initialize the LED module
+ */
+void HAL_LEDS_INIT();
 
+/**
+ * @brief Turn on the specified LED
+ * @param Color Color of the LED to be turned on
+ */
+void HAL_LED_SET(LED_COLOR Color);
 
+/**
+ * @brief Turn off the specified LED
+ * @param Color Color of the LED to be turned off
+ */
+void HAL_LED_RESET(LED_COLOR Color);
 
+/**
+ * @brief Toggle the specified LED
+ * @param Color Color of the LED to be toggled
+ */
+void HAL_LED_TOGGLE(LED_COLOR Color);
 
-/** @} */
-// End of GPIO_Registers_Addresses group
-
-#endif /**< LED_H_ */
+#endif /* LED_H_ */
