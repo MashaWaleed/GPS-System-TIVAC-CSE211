@@ -1,0 +1,68 @@
+\doxysection{APP.\+h}
+\hypertarget{_a_p_p_8h_source}{}\label{_a_p_p_8h_source}\index{APP/APP.h@{APP/APP.h}}
+\mbox{\hyperlink{_a_p_p_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*******\ Author\ \ \ \ :\ ASU\_EMBEDDED\_TEAM\_NO\ 3\ \ \ \ \ *****************/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{/*******\ Date\ \ \ \ \ \ :\ 10\ May\ 2024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00004\ \textcolor{comment}{/*******\ Version\ \ \ :\ 0.1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00005\ \textcolor{comment}{/*******\ File\ Name\ :\ APP.h\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ APP\_H\_}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ APP\_H\_}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{/*****************************<\ LIB\ >*****************************/}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_b_i_t___m_a_t_h_8h}{../LIB/BIT\_MATH.h}}"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h}{../LIB/STD\_TYPES.h}}"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{tm4c123gh6pm_8h}{../LIB/tm4c123gh6pm.h}}"{}}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{comment}{/*****************************<\ HAL\ >*****************************/}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_g_p_s_8h}{../HAL/GPS/GPS.h}}"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_l_c_d_8h}{../HAL/LCD/LCD.h}}"{}}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_l_e_d_8h}{../HAL/LED/LED.h}}"{}}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_s_w_i_t_c_h_8h}{../HAL/SWITCH/SWITCH.h}}"{}}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{comment}{/*****************************<\ MCAL\ >****************************/}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_g_p_i_o___interface_8h}{../MCAL/GPIO/GPIO\_Interface.h}}"{}}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t__int_8h}{../MCAL/UART/UART\_int.h}}"{}}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_s_t_k__interface_8h}{../MCAL/Systick/STK\_interface.h}}"{}}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_e_e_p_r_o_m___interface_8h}{../MCAL/EEPROM/EEPROM\_Interface.h}}"{}}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{comment}{/************************\ <\ Constants\ >\ *************************/}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ M\_PI\ 3.14159265358979323846}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ EARTH\_RADIUS\ 6371000\ }\textcolor{comment}{//\ Earth\ radius\ in\ meters}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{comment}{/*******************\ <\ Function\ Prototypes\ >\ ********************/}}
+\DoxyCodeLine{00057\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{group___a_p_p___functions_ga63cf8bd70dbd9bf1e9aa32dd6757c6d5}{APP\_To\_Degree}}(\textcolor{keywordtype}{float}\ angle);}
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{group___a_p_p___functions_gaccd274cff1554a18a652a3594e0384ba}{APP\_To\_Radian}}(\textcolor{keywordtype}{float}\ angle);}
+\DoxyCodeLine{00072\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{group___a_p_p___functions_gaa80339508e620691a1dc5d80624afb4a}{APP\_Compute\_Distance}}(\textcolor{keywordtype}{float}\ lat1,\ \textcolor{keywordtype}{float}\ long1,\ \textcolor{keywordtype}{float}\ lat2,\ \textcolor{keywordtype}{float}\ long2);}
+\DoxyCodeLine{00078\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{group___a_p_p___functions_ga337bc369f0a6f75b8991a7226ae76168}{APP\_Float\_To\_Int}}(\textcolor{keywordtype}{float}\ x);}
+\DoxyCodeLine{00084\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{group___a_p_p___functions_gae041ad88b36daffc0f1122b797e4239a}{APP\_Int\_To\_Float}}(\textcolor{keywordtype}{int}\ x);}
+\DoxyCodeLine{00092\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___a_p_p___functions_ga4e3142bf7efdfa08ba0de79bbb2eecee}{APP\_Write\_Point}}(\textcolor{keywordtype}{int}\ *counter,\ \textcolor{keywordtype}{int}\ latitude,\ \textcolor{keywordtype}{int}\ longitude);}
+\DoxyCodeLine{00100\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___a_p_p___functions_gade17de81dbc56f14d234b0029bf7e959}{APP\_Read\_Point}}(\textcolor{keywordtype}{int}\ *\ address,\ \textcolor{keywordtype}{int}\ *\ latitude,\ \textcolor{keywordtype}{int}\ *\ longitude);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00108\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___a_p_p___functions_gac578dbfb49b577fe016dd230e15e15e3}{APP\_UART\_INIT}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *cfg,\ \mbox{\hyperlink{struct_u_a_r_t___type}{UART\_Type}}\ instance);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00115\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___a_p_p___functions_gafb2e1ec868944691aa12b8c62327615a}{APP\_Send\_Sentences}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *cfg);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00122\ uint8\_t\ \mbox{\hyperlink{group___a_p_p___functions_ga49362c8c00cbc29c452ee07d4e9823fe}{APP\_Prompt\_Dump\_Read}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *cfg);}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00131\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___a_p_p___functions_ga218bbf65e1c96945b182f717625bfe96}{APP\_LCD\_Clear\_Write}}(\textcolor{keywordtype}{char}\ *str,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00140\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___a_p_p___functions_ga56c75e1355e5693ffae0e9b7704cd3a8}{APP\_LCD\_Write}}(\textcolor{keywordtype}{char}\ *str,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00149\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___a_p_p___functions_ga0ab56b3a365d9b9385ec725448cedb7d}{APP\_LCD\_Write\_Number}}(\textcolor{keywordtype}{int}\ number,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00156\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___a_p_p___functions_gaebf442c1e5ce61d3123568c341b40b61}{APP\_Destination\_Reached}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *cfg);}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00167\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_a_p_p_8c_a9868b3033fbe3ee25022511f030bcae3}{APP\_System\_Init}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *cfg1,\ \mbox{\hyperlink{struct_u_a_r_t___type}{UART\_Type}}\ instance1,\ \mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *cfg2,\ \mbox{\hyperlink{struct_u_a_r_t___type}{UART\_Type}}\ instance2)}
+\DoxyCodeLine{00172\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APP\_H\_}}
+\DoxyCodeLine{00173\ \textcolor{comment}{//\ Path:\ COTS/APP/APP.c}}
+\DoxyCodeLine{00174\ \textcolor{comment}{//\ EOF}}
+
+\end{DoxyCode}

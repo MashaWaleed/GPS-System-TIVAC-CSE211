@@ -1,46 +1,74 @@
 \doxysection{HAL/\+LED/\+LED.c File Reference}
 \hypertarget{_l_e_d_8c}{}\label{_l_e_d_8c}\index{HAL/LED/LED.c@{HAL/LED/LED.c}}
-{\ttfamily \#include "{}stdio.\+h"{}}\newline
-{\ttfamily \#include "{}STD\+\_\+\+TYPES.\+h"{}}\newline
-{\ttfamily \#include "{}BIT\+\_\+\+MATH.\+h"{}}\newline
+{\ttfamily \#include "{}../../\+LIB/\+STD\+\_\+\+TYPES.\+h"{}}\newline
 {\ttfamily \#include "{}LED.\+h"{}}\newline
-{\ttfamily \#include "{}GPIO\+\_\+\+Interface.\+h"{}}\newline
-{\ttfamily \#include "{}GPIO\+\_\+\+Private.\+h"{}}\newline
+{\ttfamily \#include "{}../../\+MCAL/\+GPIO/\+GPIO\+\_\+\+Interface.\+h"{}}\newline
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_l_e_d_8c_a79041185703dec5ef414dcb4bef8485f}{HAL\+\_\+\+LEDS\+\_\+\+INIT}} ()
-\item 
-\mbox{\hyperlink{_l_e_d_8c_a445a67dbddc864f5e9858624b6ae4654}{HAL\+\_\+\+LED\+\_\+\+SET}} (\mbox{\hyperlink{_l_e_d_8h_a4e7e9203991f8773adcf36da98629b84}{LED\+\_\+\+COLOR}} Color)
-\item 
-\mbox{\hyperlink{_l_e_d_8c_a86305eb71884681385fe5ba9abdac73e}{HAL\+\_\+\+LED\+\_\+\+RESET}} (\mbox{\hyperlink{_l_e_d_8h_a4e7e9203991f8773adcf36da98629b84}{LED\+\_\+\+COLOR}} Color)
-\item 
-\mbox{\hyperlink{_l_e_d_8c_abbbfc98d65a53592d646d05998ceb49e}{HAL\+\_\+\+LED\+\_\+\+TOGGLE}} (\mbox{\hyperlink{_l_e_d_8h_a4e7e9203991f8773adcf36da98629b84}{LED\+\_\+\+COLOR}} Color)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{_l_e_d_8c_a20416b55d8efd226dab399cb5a4261fa}{HAL\+\_\+\+LEDS\+\_\+\+INIT}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the LED module. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_e_d_8c_a3b12b92a7c572679f21495b29671cd8d}{HAL\+\_\+\+LED\+\_\+\+SET}} (\mbox{\hyperlink{_l_e_d_8h_a95d058c7a7d7287f9a7c3d4c6c2f96cf}{LED\+\_\+\+COLOR}} Color)
+\begin{DoxyCompactList}\small\item\em Turn on the specified LED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_e_d_8c_a5fb9ba81c502c07776b071b4f921b818}{HAL\+\_\+\+LED\+\_\+\+RESET}} (\mbox{\hyperlink{_l_e_d_8h_a95d058c7a7d7287f9a7c3d4c6c2f96cf}{LED\+\_\+\+COLOR}} Color)
+\begin{DoxyCompactList}\small\item\em Turn off the specified LED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_e_d_8c_a7e0858576c1a7b4bcc274844029d227a}{HAL\+\_\+\+LED\+\_\+\+TOGGLE}} (\mbox{\hyperlink{_l_e_d_8h_a95d058c7a7d7287f9a7c3d4c6c2f96cf}{LED\+\_\+\+COLOR}} Color)
+\begin{DoxyCompactList}\small\item\em Toggle the specified LED. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{_l_e_d_8c_a86305eb71884681385fe5ba9abdac73e}\label{_l_e_d_8c_a86305eb71884681385fe5ba9abdac73e} 
+\Hypertarget{_l_e_d_8c_a5fb9ba81c502c07776b071b4f921b818}\label{_l_e_d_8c_a5fb9ba81c502c07776b071b4f921b818} 
 \index{LED.c@{LED.c}!HAL\_LED\_RESET@{HAL\_LED\_RESET}}
 \index{HAL\_LED\_RESET@{HAL\_LED\_RESET}!LED.c@{LED.c}}
 \doxysubsubsection{\texorpdfstring{HAL\_LED\_RESET()}{HAL\_LED\_RESET()}}
-{\footnotesize\ttfamily HAL\+\_\+\+LED\+\_\+\+RESET (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_l_e_d_8h_a4e7e9203991f8773adcf36da98629b84}{LED\+\_\+\+COLOR}}}]{Color }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void HAL\+\_\+\+LED\+\_\+\+RESET (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_l_e_d_8h_a95d058c7a7d7287f9a7c3d4c6c2f96cf}{LED\+\_\+\+COLOR}}}]{Color }\end{DoxyParamCaption})}
 
-\Hypertarget{_l_e_d_8c_a445a67dbddc864f5e9858624b6ae4654}\label{_l_e_d_8c_a445a67dbddc864f5e9858624b6ae4654} 
+
+
+Turn off the specified LED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Color} & Color of the LED to be turned off \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_l_e_d_8c_a3b12b92a7c572679f21495b29671cd8d}\label{_l_e_d_8c_a3b12b92a7c572679f21495b29671cd8d} 
 \index{LED.c@{LED.c}!HAL\_LED\_SET@{HAL\_LED\_SET}}
 \index{HAL\_LED\_SET@{HAL\_LED\_SET}!LED.c@{LED.c}}
 \doxysubsubsection{\texorpdfstring{HAL\_LED\_SET()}{HAL\_LED\_SET()}}
-{\footnotesize\ttfamily HAL\+\_\+\+LED\+\_\+\+SET (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_l_e_d_8h_a4e7e9203991f8773adcf36da98629b84}{LED\+\_\+\+COLOR}}}]{Color }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void HAL\+\_\+\+LED\+\_\+\+SET (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_l_e_d_8h_a95d058c7a7d7287f9a7c3d4c6c2f96cf}{LED\+\_\+\+COLOR}}}]{Color }\end{DoxyParamCaption})}
 
-\Hypertarget{_l_e_d_8c_abbbfc98d65a53592d646d05998ceb49e}\label{_l_e_d_8c_abbbfc98d65a53592d646d05998ceb49e} 
+
+
+Turn on the specified LED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Color} & Color of the LED to be turned on \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_l_e_d_8c_a7e0858576c1a7b4bcc274844029d227a}\label{_l_e_d_8c_a7e0858576c1a7b4bcc274844029d227a} 
 \index{LED.c@{LED.c}!HAL\_LED\_TOGGLE@{HAL\_LED\_TOGGLE}}
 \index{HAL\_LED\_TOGGLE@{HAL\_LED\_TOGGLE}!LED.c@{LED.c}}
 \doxysubsubsection{\texorpdfstring{HAL\_LED\_TOGGLE()}{HAL\_LED\_TOGGLE()}}
-{\footnotesize\ttfamily HAL\+\_\+\+LED\+\_\+\+TOGGLE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_l_e_d_8h_a4e7e9203991f8773adcf36da98629b84}{LED\+\_\+\+COLOR}}}]{Color }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void HAL\+\_\+\+LED\+\_\+\+TOGGLE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_l_e_d_8h_a95d058c7a7d7287f9a7c3d4c6c2f96cf}{LED\+\_\+\+COLOR}}}]{Color }\end{DoxyParamCaption})}
 
-\Hypertarget{_l_e_d_8c_a79041185703dec5ef414dcb4bef8485f}\label{_l_e_d_8c_a79041185703dec5ef414dcb4bef8485f} 
+
+
+Toggle the specified LED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Color} & Color of the LED to be toggled \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_l_e_d_8c_a20416b55d8efd226dab399cb5a4261fa}\label{_l_e_d_8c_a20416b55d8efd226dab399cb5a4261fa} 
 \index{LED.c@{LED.c}!HAL\_LEDS\_INIT@{HAL\_LEDS\_INIT}}
 \index{HAL\_LEDS\_INIT@{HAL\_LEDS\_INIT}!LED.c@{LED.c}}
 \doxysubsubsection{\texorpdfstring{HAL\_LEDS\_INIT()}{HAL\_LEDS\_INIT()}}
-{\footnotesize\ttfamily HAL\+\_\+\+LEDS\+\_\+\+INIT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void HAL\+\_\+\+LEDS\+\_\+\+INIT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the LED module. 
 

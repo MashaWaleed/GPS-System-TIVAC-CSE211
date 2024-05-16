@@ -1,0 +1,56 @@
+\doxysection{MCAL/\+EEPROM/\+EEPROM\+\_\+\+Private.h File Reference}
+\hypertarget{_e_e_p_r_o_m___private_8h}{}\label{_e_e_p_r_o_m___private_8h}\index{MCAL/EEPROM/EEPROM\_Private.h@{MCAL/EEPROM/EEPROM\_Private.h}}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_e_e_p_r_o_m___private_8h_a4a7b1912f91ed7b33591915efd8985af}{MCAL\+\_\+\+EEPROM\+\_\+\+Wait}}()~while(\mbox{\hyperlink{_e_e_p_r_o_m___private_8h_a582443b5837da456dff914c441bc092b}{WORKING}})\{\}
+\item 
+\#define \mbox{\hyperlink{_e_e_p_r_o_m___private_8h_a582443b5837da456dff914c441bc092b}{WORKING}}~(\mbox{\hyperlink{tm4c123gh6pm_8h_a112b3443436e35d9cdf86c018132390a}{EEPROM\+\_\+\+EEDONE\+\_\+R}} \& \mbox{\hyperlink{tm4c123gh6pm_8h_a40b99bf5800a50f4d57c55f247a2d6ab}{EEPROM\+\_\+\+EEDONE\+\_\+\+WORKING}})
+\item 
+\#define \mbox{\hyperlink{_e_e_p_r_o_m___private_8h_a051308c9b3b86d1cf5fbf8dcfc0373b0}{PRETRY}}~(\mbox{\hyperlink{tm4c123gh6pm_8h_a5bcd55054d00186ad38ffe949a7dc9db}{EEPROM\+\_\+\+EESUPP\+\_\+R}} \& \mbox{\hyperlink{tm4c123gh6pm_8h_a60174e6e964ffdf48aaa4340f93d1f23}{EEPROM\+\_\+\+EESUPP\+\_\+\+PRETRY}})
+\item 
+\#define \mbox{\hyperlink{_e_e_p_r_o_m___private_8h_adffc922b872fbd90d24e3db45c96cc7c}{ERETRY}}~(\mbox{\hyperlink{tm4c123gh6pm_8h_a5bcd55054d00186ad38ffe949a7dc9db}{EEPROM\+\_\+\+EESUPP\+\_\+R}} \& \mbox{\hyperlink{tm4c123gh6pm_8h_a866e2d7e70bec5bff5d62c49a5808cce}{EEPROM\+\_\+\+EESUPP\+\_\+\+ERETRY}})
+\item 
+\#define \mbox{\hyperlink{_e_e_p_r_o_m___private_8h_aef6d651095a31f3d4bd855e40351b4c3}{EEPROM\+\_\+\+OK}}~0
+\item 
+\#define \mbox{\hyperlink{_e_e_p_r_o_m___private_8h_a3637a14135dc71f10e2cb8e883f12d0c}{EEPROM\+\_\+\+ERROR}}~1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_e_e_p_r_o_m___private_8h_a3637a14135dc71f10e2cb8e883f12d0c}\label{_e_e_p_r_o_m___private_8h_a3637a14135dc71f10e2cb8e883f12d0c} 
+\index{EEPROM\_Private.h@{EEPROM\_Private.h}!EEPROM\_ERROR@{EEPROM\_ERROR}}
+\index{EEPROM\_ERROR@{EEPROM\_ERROR}!EEPROM\_Private.h@{EEPROM\_Private.h}}
+\doxysubsubsection{\texorpdfstring{EEPROM\_ERROR}{EEPROM\_ERROR}}
+{\footnotesize\ttfamily \#define EEPROM\+\_\+\+ERROR~1}
+
+\Hypertarget{_e_e_p_r_o_m___private_8h_aef6d651095a31f3d4bd855e40351b4c3}\label{_e_e_p_r_o_m___private_8h_aef6d651095a31f3d4bd855e40351b4c3} 
+\index{EEPROM\_Private.h@{EEPROM\_Private.h}!EEPROM\_OK@{EEPROM\_OK}}
+\index{EEPROM\_OK@{EEPROM\_OK}!EEPROM\_Private.h@{EEPROM\_Private.h}}
+\doxysubsubsection{\texorpdfstring{EEPROM\_OK}{EEPROM\_OK}}
+{\footnotesize\ttfamily \#define EEPROM\+\_\+\+OK~0}
+
+\Hypertarget{_e_e_p_r_o_m___private_8h_adffc922b872fbd90d24e3db45c96cc7c}\label{_e_e_p_r_o_m___private_8h_adffc922b872fbd90d24e3db45c96cc7c} 
+\index{EEPROM\_Private.h@{EEPROM\_Private.h}!ERETRY@{ERETRY}}
+\index{ERETRY@{ERETRY}!EEPROM\_Private.h@{EEPROM\_Private.h}}
+\doxysubsubsection{\texorpdfstring{ERETRY}{ERETRY}}
+{\footnotesize\ttfamily \#define ERETRY~(\mbox{\hyperlink{tm4c123gh6pm_8h_a5bcd55054d00186ad38ffe949a7dc9db}{EEPROM\+\_\+\+EESUPP\+\_\+R}} \& \mbox{\hyperlink{tm4c123gh6pm_8h_a866e2d7e70bec5bff5d62c49a5808cce}{EEPROM\+\_\+\+EESUPP\+\_\+\+ERETRY}})}
+
+\Hypertarget{_e_e_p_r_o_m___private_8h_a4a7b1912f91ed7b33591915efd8985af}\label{_e_e_p_r_o_m___private_8h_a4a7b1912f91ed7b33591915efd8985af} 
+\index{EEPROM\_Private.h@{EEPROM\_Private.h}!MCAL\_EEPROM\_Wait@{MCAL\_EEPROM\_Wait}}
+\index{MCAL\_EEPROM\_Wait@{MCAL\_EEPROM\_Wait}!EEPROM\_Private.h@{EEPROM\_Private.h}}
+\doxysubsubsection{\texorpdfstring{MCAL\_EEPROM\_Wait}{MCAL\_EEPROM\_Wait}}
+{\footnotesize\ttfamily \#define MCAL\+\_\+\+EEPROM\+\_\+\+Wait(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~while(\mbox{\hyperlink{_e_e_p_r_o_m___private_8h_a582443b5837da456dff914c441bc092b}{WORKING}})\{\}}
+
+\Hypertarget{_e_e_p_r_o_m___private_8h_a051308c9b3b86d1cf5fbf8dcfc0373b0}\label{_e_e_p_r_o_m___private_8h_a051308c9b3b86d1cf5fbf8dcfc0373b0} 
+\index{EEPROM\_Private.h@{EEPROM\_Private.h}!PRETRY@{PRETRY}}
+\index{PRETRY@{PRETRY}!EEPROM\_Private.h@{EEPROM\_Private.h}}
+\doxysubsubsection{\texorpdfstring{PRETRY}{PRETRY}}
+{\footnotesize\ttfamily \#define PRETRY~(\mbox{\hyperlink{tm4c123gh6pm_8h_a5bcd55054d00186ad38ffe949a7dc9db}{EEPROM\+\_\+\+EESUPP\+\_\+R}} \& \mbox{\hyperlink{tm4c123gh6pm_8h_a60174e6e964ffdf48aaa4340f93d1f23}{EEPROM\+\_\+\+EESUPP\+\_\+\+PRETRY}})}
+
+\Hypertarget{_e_e_p_r_o_m___private_8h_a582443b5837da456dff914c441bc092b}\label{_e_e_p_r_o_m___private_8h_a582443b5837da456dff914c441bc092b} 
+\index{EEPROM\_Private.h@{EEPROM\_Private.h}!WORKING@{WORKING}}
+\index{WORKING@{WORKING}!EEPROM\_Private.h@{EEPROM\_Private.h}}
+\doxysubsubsection{\texorpdfstring{WORKING}{WORKING}}
+{\footnotesize\ttfamily \#define WORKING~(\mbox{\hyperlink{tm4c123gh6pm_8h_a112b3443436e35d9cdf86c018132390a}{EEPROM\+\_\+\+EEDONE\+\_\+R}} \& \mbox{\hyperlink{tm4c123gh6pm_8h_a40b99bf5800a50f4d57c55f247a2d6ab}{EEPROM\+\_\+\+EEDONE\+\_\+\+WORKING}})}
+

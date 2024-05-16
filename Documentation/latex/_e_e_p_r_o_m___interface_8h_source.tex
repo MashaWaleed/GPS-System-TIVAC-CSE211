@@ -1,0 +1,42 @@
+\doxysection{EEPROM\+\_\+\+Interface.\+h}
+\hypertarget{_e_e_p_r_o_m___interface_8h_source}{}\label{_e_e_p_r_o_m___interface_8h_source}\index{MCAL/EEPROM/EEPROM\_Interface.h@{MCAL/EEPROM/EEPROM\_Interface.h}}
+\mbox{\hyperlink{_e_e_p_r_o_m___interface_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*******\ Author\ \ \ \ :\ ASU\_EMBEDDED\_TEAM\_NO\ 3\ \ \ \ \ *****************/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{/*******\ Date\ \ \ \ \ \ :\ 28\ April\ 2024\ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00004\ \textcolor{comment}{/*******\ Version\ \ \ :\ 0.1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00005\ \textcolor{comment}{/*******\ File\ Name\ :\ EEPROM\_Interface.h\ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ EEPROM\_Interface\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ EEPROM\_Interface\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{/*****************************<\ LIB\ >*****************************/}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{tm4c123gh6pm_8h}{../../LIB/tm4c123gh6pm.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h}{../../LIB/STD\_TYPES.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{comment}{/*****************************<\ MCAL\ >*****************************/}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_e_e_p_r_o_m___private_8h}{EEPROM\_Private.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_e_e_p_r_o_m___config_8h}{EEPROM\_Config.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_s_t_k__interface_8h}{../Systick/STK\_interface.h}}"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{/*****************************<\ Functions\ Prototypes\ >****************************/}}
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_e_e_p_r_o_m___interface_8h_a5b6e36970c02e10e18fc52c8e06bdcbe}{MCAL\_EEPROM\_Fix\_Error}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_e_e_p_r_o_m___interface_8h_aa36bd6a6c77b6205c0ca914d05011656}{MCAL\_EEPROM\_Software\_Reset}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_e_e_p_r_o_m___interface_8h_a95d060e59e2039e8196e8f37c4c426ad}{MCAL\_EEPROM\_Config\_BlockOffset}}(\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ addr);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}\ \mbox{\hyperlink{_e_e_p_r_o_m___interface_8h_ab795b720e01b6e5a5b6501dd9b307191}{MCAL\_EEPROM\_INIT}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ \mbox{\hyperlink{_e_e_p_r_o_m___interface_8h_a025cba1ae8dd04ebabf3179208bae1c1}{MCAL\_EEPROM\_Read}}(\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ addr);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_e_e_p_r_o_m___interface_8h_a44a5087407f0dbba18f97f71a168d8f6}{MCAL\_EEPROM\_Write}}(\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ addr,\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}\ data);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}\ \mbox{\hyperlink{_e_e_p_r_o_m___interface_8h_a040eb506d2149139c20bdda79bb64806}{MCAL\_EEPROM\_Mass\_Erase}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EEPROM\_Interface\_H\_}}
+
+\end{DoxyCode}

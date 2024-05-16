@@ -1,5 +1,5 @@
 \doxysection{GPS.\+h}
-\hypertarget{_g_p_s_8h_source}{}\label{_g_p_s_8h_source}\index{HAL/GPS\_Module/GPS.h@{HAL/GPS\_Module/GPS.h}}
+\hypertarget{_g_p_s_8h_source}{}\label{_g_p_s_8h_source}\index{HAL/GPS/GPS.h@{HAL/GPS/GPS.h}}
 \mbox{\hyperlink{_g_p_s_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GPS\_H\_}}
@@ -10,11 +10,11 @@
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t__prv_8h}{UART\_prv.h}}"{}}}
 \DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t__cfg_8h}{UART\_cfg.h}}"{}}}
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t__int_8h}{UART\_int.h}}"{}}}
-\DoxyCodeLine{00009\ }
-\DoxyCodeLine{00010\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_g_p_s_8h_a28ad727a87c71dc250146578f8a462c4}{parse\_GPS\_data}}(\textcolor{keywordtype}{char}*\ \mbox{\hyperlink{_g_p_s_8c_a40909410e475f536e6f17d7db4551b76}{GPS\_Sentence}},\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg,\ \textcolor{keywordtype}{float}\ *\ latitude,\ \textcolor{keywordtype}{float}\ *\ longitude);}
-\DoxyCodeLine{00011\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_g_p_s_8h_a3d1fa3971eeca6802434517b9c07fc31}{HAL\_GPS\_Read}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg,\ \textcolor{keywordtype}{float}\ *\ latitude,\ \textcolor{keywordtype}{float}\ *\ longitude);}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00017\ uint8\_t\ \mbox{\hyperlink{_g_p_s_8h_a1c390ddda246b49ed057597948aed528}{parse\_GPS\_data}}(\textcolor{keywordtype}{char}*\ \mbox{\hyperlink{_g_p_s_8c_a40909410e475f536e6f17d7db4551b76}{GPS\_Sentence}},\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg,\ \textcolor{keywordtype}{float}\ *\ latitude,\ \textcolor{keywordtype}{float}\ *\ longitude);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00026\ uint8\_t\ \mbox{\hyperlink{_g_p_s_8h_ae089f41213fe052c05d7750b226edc5c}{HAL\_GPS\_Read}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg,\ \textcolor{keywordtype}{float}\ *\ latitude,\ \textcolor{keywordtype}{float}\ *\ longitude);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

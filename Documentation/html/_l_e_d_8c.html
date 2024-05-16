@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: HAL/LED/LED.c File Reference</title>
+<title>Gps_Tracking_System_Project: HAL/LED/LED.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project<span id="projectnumber">&#160;1</span>
+   <div id="projectname">Gps_Tracking_System_Project
    </div>
   </td>
  </tr>
@@ -96,90 +96,117 @@ $(function(){initNavTree('_l_e_d_8c.html',''); initResizable(); });
   <div class="headertitle"><div class="title">LED.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;stdio.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="_s_t_d___t_y_p_e_s_8h_source.html">STD_TYPES.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_b_i_t___m_a_t_h_8h_source.html">BIT_MATH.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_s_t_d___t_y_p_e_s_8h_source.html">../../LIB/STD_TYPES.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_l_e_d_8h_source.html">LED.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_g_p_i_o___interface_8h_source.html">GPIO_Interface.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_g_p_i_o___private_8h_source.html">GPIO_Private.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_g_p_i_o___interface_8h_source.html">../../MCAL/GPIO/GPIO_Interface.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a79041185703dec5ef414dcb4bef8485f" id="r_a79041185703dec5ef414dcb4bef8485f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79041185703dec5ef414dcb4bef8485f">HAL_LEDS_INIT</a> ()</td></tr>
-<tr class="separator:a79041185703dec5ef414dcb4bef8485f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a445a67dbddc864f5e9858624b6ae4654" id="r_a445a67dbddc864f5e9858624b6ae4654"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a445a67dbddc864f5e9858624b6ae4654">HAL_LED_SET</a> (<a class="el" href="_l_e_d_8h.html#a4e7e9203991f8773adcf36da98629b84">LED_COLOR</a> Color)</td></tr>
-<tr class="separator:a445a67dbddc864f5e9858624b6ae4654"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86305eb71884681385fe5ba9abdac73e" id="r_a86305eb71884681385fe5ba9abdac73e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86305eb71884681385fe5ba9abdac73e">HAL_LED_RESET</a> (<a class="el" href="_l_e_d_8h.html#a4e7e9203991f8773adcf36da98629b84">LED_COLOR</a> Color)</td></tr>
-<tr class="separator:a86305eb71884681385fe5ba9abdac73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbbfc98d65a53592d646d05998ceb49e" id="r_abbbfc98d65a53592d646d05998ceb49e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbbfc98d65a53592d646d05998ceb49e">HAL_LED_TOGGLE</a> (<a class="el" href="_l_e_d_8h.html#a4e7e9203991f8773adcf36da98629b84">LED_COLOR</a> Color)</td></tr>
-<tr class="separator:abbbfc98d65a53592d646d05998ceb49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20416b55d8efd226dab399cb5a4261fa" id="r_a20416b55d8efd226dab399cb5a4261fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20416b55d8efd226dab399cb5a4261fa">HAL_LEDS_INIT</a> ()</td></tr>
+<tr class="memdesc:a20416b55d8efd226dab399cb5a4261fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the LED module.  <br /></td></tr>
+<tr class="separator:a20416b55d8efd226dab399cb5a4261fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b12b92a7c572679f21495b29671cd8d" id="r_a3b12b92a7c572679f21495b29671cd8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b12b92a7c572679f21495b29671cd8d">HAL_LED_SET</a> (<a class="el" href="_l_e_d_8h.html#a95d058c7a7d7287f9a7c3d4c6c2f96cf">LED_COLOR</a> Color)</td></tr>
+<tr class="memdesc:a3b12b92a7c572679f21495b29671cd8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the specified LED.  <br /></td></tr>
+<tr class="separator:a3b12b92a7c572679f21495b29671cd8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fb9ba81c502c07776b071b4f921b818" id="r_a5fb9ba81c502c07776b071b4f921b818"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fb9ba81c502c07776b071b4f921b818">HAL_LED_RESET</a> (<a class="el" href="_l_e_d_8h.html#a95d058c7a7d7287f9a7c3d4c6c2f96cf">LED_COLOR</a> Color)</td></tr>
+<tr class="memdesc:a5fb9ba81c502c07776b071b4f921b818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn off the specified LED.  <br /></td></tr>
+<tr class="separator:a5fb9ba81c502c07776b071b4f921b818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0858576c1a7b4bcc274844029d227a" id="r_a7e0858576c1a7b4bcc274844029d227a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e0858576c1a7b4bcc274844029d227a">HAL_LED_TOGGLE</a> (<a class="el" href="_l_e_d_8h.html#a95d058c7a7d7287f9a7c3d4c6c2f96cf">LED_COLOR</a> Color)</td></tr>
+<tr class="memdesc:a7e0858576c1a7b4bcc274844029d227a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle the specified LED.  <br /></td></tr>
+<tr class="separator:a7e0858576c1a7b4bcc274844029d227a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a86305eb71884681385fe5ba9abdac73e" name="a86305eb71884681385fe5ba9abdac73e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86305eb71884681385fe5ba9abdac73e">&#9670;&#160;</a></span>HAL_LED_RESET()</h2>
+<a id="a5fb9ba81c502c07776b071b4f921b818" name="a5fb9ba81c502c07776b071b4f921b818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fb9ba81c502c07776b071b4f921b818">&#9670;&#160;</a></span>HAL_LED_RESET()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HAL_LED_RESET </td>
+          <td class="memname">void HAL_LED_RESET </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_l_e_d_8h.html#a4e7e9203991f8773adcf36da98629b84">LED_COLOR</a></td>          <td class="paramname"><span class="paramname"><em>Color</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_l_e_d_8h.html#a95d058c7a7d7287f9a7c3d4c6c2f96cf">LED_COLOR</a></td>          <td class="paramname"><span class="paramname"><em>Color</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Turn off the specified LED. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Color</td><td>Color of the LED to be turned off </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a445a67dbddc864f5e9858624b6ae4654" name="a445a67dbddc864f5e9858624b6ae4654"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a445a67dbddc864f5e9858624b6ae4654">&#9670;&#160;</a></span>HAL_LED_SET()</h2>
+<a id="a3b12b92a7c572679f21495b29671cd8d" name="a3b12b92a7c572679f21495b29671cd8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b12b92a7c572679f21495b29671cd8d">&#9670;&#160;</a></span>HAL_LED_SET()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HAL_LED_SET </td>
+          <td class="memname">void HAL_LED_SET </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_l_e_d_8h.html#a4e7e9203991f8773adcf36da98629b84">LED_COLOR</a></td>          <td class="paramname"><span class="paramname"><em>Color</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_l_e_d_8h.html#a95d058c7a7d7287f9a7c3d4c6c2f96cf">LED_COLOR</a></td>          <td class="paramname"><span class="paramname"><em>Color</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Turn on the specified LED. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Color</td><td>Color of the LED to be turned on </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="abbbfc98d65a53592d646d05998ceb49e" name="abbbfc98d65a53592d646d05998ceb49e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbbfc98d65a53592d646d05998ceb49e">&#9670;&#160;</a></span>HAL_LED_TOGGLE()</h2>
+<a id="a7e0858576c1a7b4bcc274844029d227a" name="a7e0858576c1a7b4bcc274844029d227a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e0858576c1a7b4bcc274844029d227a">&#9670;&#160;</a></span>HAL_LED_TOGGLE()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HAL_LED_TOGGLE </td>
+          <td class="memname">void HAL_LED_TOGGLE </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_l_e_d_8h.html#a4e7e9203991f8773adcf36da98629b84">LED_COLOR</a></td>          <td class="paramname"><span class="paramname"><em>Color</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_l_e_d_8h.html#a95d058c7a7d7287f9a7c3d4c6c2f96cf">LED_COLOR</a></td>          <td class="paramname"><span class="paramname"><em>Color</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Toggle the specified LED. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Color</td><td>Color of the LED to be toggled </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a79041185703dec5ef414dcb4bef8485f" name="a79041185703dec5ef414dcb4bef8485f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79041185703dec5ef414dcb4bef8485f">&#9670;&#160;</a></span>HAL_LEDS_INIT()</h2>
+<a id="a20416b55d8efd226dab399cb5a4261fa" name="a20416b55d8efd226dab399cb5a4261fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20416b55d8efd226dab399cb5a4261fa">&#9670;&#160;</a></span>HAL_LEDS_INIT()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HAL_LEDS_INIT </td>
+          <td class="memname">void HAL_LEDS_INIT </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize the LED module. </p>
 
 </div>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: MCAL/STK(Core)/STK_private.h File Reference</title>
+<title>Gps_Tracking_System_Project: MCAL/Systick/STK_private.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project<span id="projectnumber">&#160;1</span>
+   <div id="projectname">Gps_Tracking_System_Project
    </div>
   </td>
  </tr>
@@ -98,7 +98,8 @@ $(function(){initNavTree('_s_t_k__private_8h.html',''); initResizable(); });
   <div class="headertitle"><div class="title">STK_private.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="_s_t_d___t_y_p_e_s_8h_source.html">../../LIB/STD_TYPES.h</a>&quot;</code><br />
+</div>
 <p><a href="_s_t_k__private_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -123,8 +124,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a218c225075b6db58ae4e4c09d294de78" id="r_a218c225075b6db58ae4e4c09d294de78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a218c225075b6db58ae4e4c09d294de78">STK_CTRL_CLKSOURCE_1</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:a218c225075b6db58ae4e4c09d294de78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the clock source for the SysTick timer.  <br /></td></tr>
 <tr class="separator:a218c225075b6db58ae4e4c09d294de78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cc3eef1ba1650fce32214db3cd5f4f8" id="r_a3cc3eef1ba1650fce32214db3cd5f4f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cc3eef1ba1650fce32214db3cd5f4f8">STK_CTRL_CLKSOURCE_8</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a3cc3eef1ba1650fce32214db3cd5f4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae589a254fdfbe569d563484e2753cf42" id="r_ae589a254fdfbe569d563484e2753cf42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae589a254fdfbe569d563484e2753cf42">STK_CTRL_TICKINT_ENABLE</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:ae589a254fdfbe569d563484e2753cf42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether the SysTick timer exception request is enabled.  <br /></td></tr>
 <tr class="separator:ae589a254fdfbe569d563484e2753cf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,9 +133,15 @@ Macros</h2></td></tr>
 <tr class="separator:a3caf214f4c131c7096ee0f102381cf59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bdbc85bcbba823c657f36f316bfdc02" id="r_a5bdbc85bcbba823c657f36f316bfdc02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bdbc85bcbba823c657f36f316bfdc02">STK_PERIOD_INTERVAL</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a5bdbc85bcbba823c657f36f316bfdc02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac235a4c99195270ab3de52764a35a076" id="r_ac235a4c99195270ab3de52764a35a076"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac235a4c99195270ab3de52764a35a076">STK_AHB_CLK</a>&#160;&#160;&#160;1000000</td></tr>
+<tr class="memitem:ac235a4c99195270ab3de52764a35a076" id="r_ac235a4c99195270ab3de52764a35a076"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac235a4c99195270ab3de52764a35a076">STK_AHB_CLK</a>&#160;&#160;&#160;16000000</td></tr>
 <tr class="memdesc:ac235a4c99195270ab3de52764a35a076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the system clock frequency for the SysTick peripheral.  <br /></td></tr>
 <tr class="separator:ac235a4c99195270ab3de52764a35a076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31c5fc9ee38424defb09685926d22849" id="r_a31c5fc9ee38424defb09685926d22849"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31c5fc9ee38424defb09685926d22849">Enable_Systick_with_SystemClk</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:a31c5fc9ee38424defb09685926d22849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29db35038cdd41abde84913865ee0ca" id="r_ab29db35038cdd41abde84913865ee0ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab29db35038cdd41abde84913865ee0ca">No_Of_Tick_To_Delay_1ms</a>&#160;&#160;&#160;16000</td></tr>
+<tr class="separator:ab29db35038cdd41abde84913865ee0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db225161e5e9b8bd630944d7bc6c64f" id="r_a3db225161e5e9b8bd630944d7bc6c64f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3db225161e5e9b8bd630944d7bc6c64f">Counter_Reached_0_since_Last_Read</a>&#160;&#160;&#160;0x00010000</td></tr>
+<tr class="separator:a3db225161e5e9b8bd630944d7bc6c64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -144,6 +149,49 @@ Typedefs</h2></td></tr>
 <tr class="separator:a0bbb3562bfc3375e5b226fa258b47557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a3db225161e5e9b8bd630944d7bc6c64f" name="a3db225161e5e9b8bd630944d7bc6c64f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db225161e5e9b8bd630944d7bc6c64f">&#9670;&#160;</a></span>Counter_Reached_0_since_Last_Read</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Counter_Reached_0_since_Last_Read&#160;&#160;&#160;0x00010000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>STK_PRIVATE_H_ </p>
+
+</div>
+</div>
+<a id="a31c5fc9ee38424defb09685926d22849" name="a31c5fc9ee38424defb09685926d22849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31c5fc9ee38424defb09685926d22849">&#9670;&#160;</a></span>Enable_Systick_with_SystemClk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Enable_Systick_with_SystemClk&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab29db35038cdd41abde84913865ee0ca" name="ab29db35038cdd41abde84913865ee0ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab29db35038cdd41abde84913865ee0ca">&#9670;&#160;</a></span>No_Of_Tick_To_Delay_1ms</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define No_Of_Tick_To_Delay_1ms&#160;&#160;&#160;16000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abbfd9a2b36c64f065ab28c8330bc5010" name="abbfd9a2b36c64f065ab28c8330bc5010"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbfd9a2b36c64f065ab28c8330bc5010">&#9670;&#160;</a></span>STK</h2>
 
@@ -165,7 +213,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define STK_AHB_CLK&#160;&#160;&#160;1000000</td>
+          <td class="memname">#define STK_AHB_CLK&#160;&#160;&#160;16000000</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -179,7 +227,7 @@ Typedefs</h2></td></tr>
 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">None</td><td>Processor clock (AHB clock) divided by 8 STK_PRIVATE_H_ </td></tr>
+    <tr><td class="paramname">None</td><td>Processor clock (AHB clock) divided by 1 </td></tr>
   </table>
   </dd>
 </dl>
@@ -227,20 +275,6 @@ Typedefs</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a3cc3eef1ba1650fce32214db3cd5f4f8" name="a3cc3eef1ba1650fce32214db3cd5f4f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cc3eef1ba1650fce32214db3cd5f4f8">&#9670;&#160;</a></span>STK_CTRL_CLKSOURCE_8</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STK_CTRL_CLKSOURCE_8&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -396,7 +430,7 @@ Typedefs</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_aeef58f5a946ad8e66cca46db86d7cf5.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_d2bad17f12b7d40961c26419cb57f535.html">STK(Core)</a></li><li class="navelem"><a class="el" href="_s_t_k__private_8h.html">STK_private.h</a></li>
+    <li class="navelem"><a class="el" href="dir_aeef58f5a946ad8e66cca46db86d7cf5.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_f6d9352581f3a415e1e8331ef96201d2.html">Systick</a></li><li class="navelem"><a class="el" href="_s_t_k__private_8h.html">STK_private.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>

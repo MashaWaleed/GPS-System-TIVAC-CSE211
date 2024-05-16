@@ -1,0 +1,326 @@
+\doxysection{Service Layer Functions}
+\hypertarget{group___a_p_p___functions}{}\label{group___a_p_p___functions}\index{Service Layer Functions@{Service Layer Functions}}
+
+
+Functions to interact with all the modules in the project.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{group___a_p_p___functions_ga63cf8bd70dbd9bf1e9aa32dd6757c6d5}{APP\+\_\+\+To\+\_\+\+Degree}} (float angle)
+\begin{DoxyCompactList}\small\item\em Convert angle from NMEA format \mbox{[}DDDMM.\+MMMM\mbox{]} to decimal degree. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{group___a_p_p___functions_gaccd274cff1554a18a652a3594e0384ba}{APP\+\_\+\+To\+\_\+\+Radian}} (float angle)
+\begin{DoxyCompactList}\small\item\em Convert angle from degree to radian. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{group___a_p_p___functions_gaa80339508e620691a1dc5d80624afb4a}{APP\+\_\+\+Compute\+\_\+\+Distance}} (float lat1, float long1, float lat2, float long2)
+\begin{DoxyCompactList}\small\item\em Compute distance between two GPS coordinates using Haversine formula. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___a_p_p___functions_ga337bc369f0a6f75b8991a7226ae76168}{APP\+\_\+\+Float\+\_\+\+To\+\_\+\+Int}} (float x)
+\begin{DoxyCompactList}\small\item\em Convert float GPS reading to uint32\+\_\+t value. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{group___a_p_p___functions_gae041ad88b36daffc0f1122b797e4239a}{APP\+\_\+\+Int\+\_\+\+To\+\_\+\+Float}} (int x)
+\begin{DoxyCompactList}\small\item\em Convert uint32\+\_\+t GPS reading to float value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_ga4e3142bf7efdfa08ba0de79bbb2eecee}{APP\+\_\+\+Write\+\_\+\+Point}} (int \texorpdfstring{$\ast$}{*}counter, int latitude, int longitude)
+\begin{DoxyCompactList}\small\item\em Write GPS point to EEPROM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_gade17de81dbc56f14d234b0029bf7e959}{APP\+\_\+\+Read\+\_\+\+Point}} (int \texorpdfstring{$\ast$}{*}address, int \texorpdfstring{$\ast$}{*}latitude, int \texorpdfstring{$\ast$}{*}longitude)
+\begin{DoxyCompactList}\small\item\em Read GPS point from EEPROM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_gac578dbfb49b577fe016dd230e15e15e3}{APP\+\_\+\+UART\+\_\+\+INIT}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg, \mbox{\hyperlink{struct_u_a_r_t___type}{UART\+\_\+\+Type}} instance)
+\begin{DoxyCompactList}\small\item\em Initialize UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_gafb2e1ec868944691aa12b8c62327615a}{APP\+\_\+\+Send\+\_\+\+Sentences}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg)
+\begin{DoxyCompactList}\small\item\em Send sentences to UART. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group___a_p_p___functions_ga49362c8c00cbc29c452ee07d4e9823fe}{APP\+\_\+\+Prompt\+\_\+\+Dump\+\_\+\+Read}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg)
+\begin{DoxyCompactList}\small\item\em Prompt user to dump previous travel data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_ga218bbf65e1c96945b182f717625bfe96}{APP\+\_\+\+LCD\+\_\+\+Clear\+\_\+\+Write}} (char \texorpdfstring{$\ast$}{*}str, int x, int y)
+\begin{DoxyCompactList}\small\item\em Clear LCD and write string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_ga56c75e1355e5693ffae0e9b7704cd3a8}{APP\+\_\+\+LCD\+\_\+\+Write}} (char \texorpdfstring{$\ast$}{*}str, int x, int y)
+\begin{DoxyCompactList}\small\item\em Write string to LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_ga0ab56b3a365d9b9385ec725448cedb7d}{APP\+\_\+\+LCD\+\_\+\+Write\+\_\+\+Number}} (int number, int x, int y)
+\begin{DoxyCompactList}\small\item\em Write number to LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___a_p_p___functions_gaebf442c1e5ce61d3123568c341b40b61}{APP\+\_\+\+Destination\+\_\+\+Reached}} (\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}cfg)
+\begin{DoxyCompactList}\small\item\em Prompt user to dump previous travel data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions to interact with all the modules in the project. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group___a_p_p___functions_gaa80339508e620691a1dc5d80624afb4a}\label{group___a_p_p___functions_gaa80339508e620691a1dc5d80624afb4a} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_Compute\_Distance@{APP\_Compute\_Distance}}
+\index{APP\_Compute\_Distance@{APP\_Compute\_Distance}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_Compute\_Distance()}{APP\_Compute\_Distance()}}
+{\footnotesize\ttfamily float APP\+\_\+\+Compute\+\_\+\+Distance (\begin{DoxyParamCaption}\item[{float}]{lat1,  }\item[{float}]{long1,  }\item[{float}]{lat2,  }\item[{float}]{long2 }\end{DoxyParamCaption})}
+
+
+
+Compute distance between two GPS coordinates using Haversine formula. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lat1} & Latitude of first point \\
+\hline
+{\em long1} & Longitude of first point \\
+\hline
+{\em lat2} & Latitude of second point \\
+\hline
+{\em long2} & Longitude of second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance between two points in meters 
+\end{DoxyReturn}
+\Hypertarget{group___a_p_p___functions_gaebf442c1e5ce61d3123568c341b40b61}\label{group___a_p_p___functions_gaebf442c1e5ce61d3123568c341b40b61} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_Destination\_Reached@{APP\_Destination\_Reached}}
+\index{APP\_Destination\_Reached@{APP\_Destination\_Reached}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_Destination\_Reached()}{APP\_Destination\_Reached()}}
+{\footnotesize\ttfamily void APP\+\_\+\+Destination\+\_\+\+Reached (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg }\end{DoxyParamCaption})}
+
+
+
+Prompt user to dump previous travel data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & Pointer to UART configuration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t Command entered by user 
+\end{DoxyReturn}
+\Hypertarget{group___a_p_p___functions_ga337bc369f0a6f75b8991a7226ae76168}\label{group___a_p_p___functions_ga337bc369f0a6f75b8991a7226ae76168} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_Float\_To\_Int@{APP\_Float\_To\_Int}}
+\index{APP\_Float\_To\_Int@{APP\_Float\_To\_Int}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_Float\_To\_Int()}{APP\_Float\_To\_Int()}}
+{\footnotesize\ttfamily int APP\+\_\+\+Float\+\_\+\+To\+\_\+\+Int (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Convert float GPS reading to uint32\+\_\+t value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Float value to be converted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t GPS reading 
+\end{DoxyReturn}
+\Hypertarget{group___a_p_p___functions_gae041ad88b36daffc0f1122b797e4239a}\label{group___a_p_p___functions_gae041ad88b36daffc0f1122b797e4239a} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_Int\_To\_Float@{APP\_Int\_To\_Float}}
+\index{APP\_Int\_To\_Float@{APP\_Int\_To\_Float}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_Int\_To\_Float()}{APP\_Int\_To\_Float()}}
+{\footnotesize\ttfamily float APP\+\_\+\+Int\+\_\+\+To\+\_\+\+Float (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Convert uint32\+\_\+t GPS reading to float value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & uint32\+\_\+t value to be converted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Float GPS reading 
+\end{DoxyReturn}
+\Hypertarget{group___a_p_p___functions_ga218bbf65e1c96945b182f717625bfe96}\label{group___a_p_p___functions_ga218bbf65e1c96945b182f717625bfe96} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_LCD\_Clear\_Write@{APP\_LCD\_Clear\_Write}}
+\index{APP\_LCD\_Clear\_Write@{APP\_LCD\_Clear\_Write}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_LCD\_Clear\_Write()}{APP\_LCD\_Clear\_Write()}}
+{\footnotesize\ttfamily void APP\+\_\+\+LCD\+\_\+\+Clear\+\_\+\+Write (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Clear LCD and write string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to be written \\
+\hline
+{\em row} & Row to write string \\
+\hline
+{\em col} & Column to write string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{group___a_p_p___functions_ga56c75e1355e5693ffae0e9b7704cd3a8}\label{group___a_p_p___functions_ga56c75e1355e5693ffae0e9b7704cd3a8} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_LCD\_Write@{APP\_LCD\_Write}}
+\index{APP\_LCD\_Write@{APP\_LCD\_Write}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_LCD\_Write()}{APP\_LCD\_Write()}}
+{\footnotesize\ttfamily void APP\+\_\+\+LCD\+\_\+\+Write (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Write string to LCD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to be written \\
+\hline
+{\em row} & Row to write string \\
+\hline
+{\em col} & Column to write string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{group___a_p_p___functions_ga0ab56b3a365d9b9385ec725448cedb7d}\label{group___a_p_p___functions_ga0ab56b3a365d9b9385ec725448cedb7d} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_LCD\_Write\_Number@{APP\_LCD\_Write\_Number}}
+\index{APP\_LCD\_Write\_Number@{APP\_LCD\_Write\_Number}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_LCD\_Write\_Number()}{APP\_LCD\_Write\_Number()}}
+{\footnotesize\ttfamily void APP\+\_\+\+LCD\+\_\+\+Write\+\_\+\+Number (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Write number to LCD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & Number to be written \\
+\hline
+{\em row} & Row to write number \\
+\hline
+{\em col} & Column to write number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{group___a_p_p___functions_ga49362c8c00cbc29c452ee07d4e9823fe}\label{group___a_p_p___functions_ga49362c8c00cbc29c452ee07d4e9823fe} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_Prompt\_Dump\_Read@{APP\_Prompt\_Dump\_Read}}
+\index{APP\_Prompt\_Dump\_Read@{APP\_Prompt\_Dump\_Read}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_Prompt\_Dump\_Read()}{APP\_Prompt\_Dump\_Read()}}
+{\footnotesize\ttfamily uint8\+\_\+t APP\+\_\+\+Prompt\+\_\+\+Dump\+\_\+\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg }\end{DoxyParamCaption})}
+
+
+
+Prompt user to dump previous travel data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & Pointer to UART configuration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t Command entered by user 
+\end{DoxyReturn}
+\Hypertarget{group___a_p_p___functions_gade17de81dbc56f14d234b0029bf7e959}\label{group___a_p_p___functions_gade17de81dbc56f14d234b0029bf7e959} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_Read\_Point@{APP\_Read\_Point}}
+\index{APP\_Read\_Point@{APP\_Read\_Point}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_Read\_Point()}{APP\_Read\_Point()}}
+{\footnotesize\ttfamily void APP\+\_\+\+Read\+\_\+\+Point (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{address,  }\item[{int \texorpdfstring{$\ast$}{*}}]{latitude,  }\item[{int \texorpdfstring{$\ast$}{*}}]{longitude }\end{DoxyParamCaption})}
+
+
+
+Read GPS point from EEPROM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Pointer to address of point in EEPROM \\
+\hline
+{\em latitude} & Pointer to store latitude \\
+\hline
+{\em longitude} & Pointer to store longitude \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{group___a_p_p___functions_gafb2e1ec868944691aa12b8c62327615a}\label{group___a_p_p___functions_gafb2e1ec868944691aa12b8c62327615a} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_Send\_Sentences@{APP\_Send\_Sentences}}
+\index{APP\_Send\_Sentences@{APP\_Send\_Sentences}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_Send\_Sentences()}{APP\_Send\_Sentences()}}
+{\footnotesize\ttfamily void APP\+\_\+\+Send\+\_\+\+Sentences (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg }\end{DoxyParamCaption})}
+
+
+
+Send sentences to UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & Pointer to UART configuration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{group___a_p_p___functions_ga63cf8bd70dbd9bf1e9aa32dd6757c6d5}\label{group___a_p_p___functions_ga63cf8bd70dbd9bf1e9aa32dd6757c6d5} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_To\_Degree@{APP\_To\_Degree}}
+\index{APP\_To\_Degree@{APP\_To\_Degree}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_To\_Degree()}{APP\_To\_Degree()}}
+{\footnotesize\ttfamily float APP\+\_\+\+To\+\_\+\+Degree (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+Convert angle from NMEA format \mbox{[}DDDMM.\+MMMM\mbox{]} to decimal degree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Angle in NMEA format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Angle in decimal degree 
+\end{DoxyReturn}
+\Hypertarget{group___a_p_p___functions_gaccd274cff1554a18a652a3594e0384ba}\label{group___a_p_p___functions_gaccd274cff1554a18a652a3594e0384ba} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_To\_Radian@{APP\_To\_Radian}}
+\index{APP\_To\_Radian@{APP\_To\_Radian}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_To\_Radian()}{APP\_To\_Radian()}}
+{\footnotesize\ttfamily float APP\+\_\+\+To\+\_\+\+Radian (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+Convert angle from degree to radian. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Angle in degree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Angle in radian 
+\end{DoxyReturn}
+\Hypertarget{group___a_p_p___functions_gac578dbfb49b577fe016dd230e15e15e3}\label{group___a_p_p___functions_gac578dbfb49b577fe016dd230e15e15e3} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_UART\_INIT@{APP\_UART\_INIT}}
+\index{APP\_UART\_INIT@{APP\_UART\_INIT}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_UART\_INIT()}{APP\_UART\_INIT()}}
+{\footnotesize\ttfamily void APP\+\_\+\+UART\+\_\+\+INIT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\+\_\+\+Config\+Type}} \texorpdfstring{$\ast$}{*}}]{cfg,  }\item[{\mbox{\hyperlink{struct_u_a_r_t___type}{UART\+\_\+\+Type}}}]{instance }\end{DoxyParamCaption})}
+
+
+
+Initialize UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & Pointer to UART configuration \\
+\hline
+{\em instance} & UART instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{group___a_p_p___functions_ga4e3142bf7efdfa08ba0de79bbb2eecee}\label{group___a_p_p___functions_ga4e3142bf7efdfa08ba0de79bbb2eecee} 
+\index{Service Layer Functions@{Service Layer Functions}!APP\_Write\_Point@{APP\_Write\_Point}}
+\index{APP\_Write\_Point@{APP\_Write\_Point}!Service Layer Functions@{Service Layer Functions}}
+\doxysubsubsection{\texorpdfstring{APP\_Write\_Point()}{APP\_Write\_Point()}}
+{\footnotesize\ttfamily void APP\+\_\+\+Write\+\_\+\+Point (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{counter,  }\item[{int}]{latitude,  }\item[{int}]{longitude }\end{DoxyParamCaption})}
+
+
+
+Write GPS point to EEPROM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em counter} & Pointer to counter indicating number of points written to EEPROM \\
+\hline
+{\em latitude} & Latitude of the point \\
+\hline
+{\em longitude} & Longitude of the point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

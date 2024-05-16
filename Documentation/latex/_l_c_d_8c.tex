@@ -1,0 +1,135 @@
+\doxysection{HAL/\+LCD/\+LCD.c File Reference}
+\hypertarget{_l_c_d_8c}{}\label{_l_c_d_8c}\index{HAL/LCD/LCD.c@{HAL/LCD/LCD.c}}
+{\ttfamily \#include "{}string.\+h"{}}\newline
+{\ttfamily \#include "{}stdio.\+h"{}}\newline
+{\ttfamily \#include "{}LCD.\+h"{}}\newline
+{\ttfamily \#include "{}../../\+MCAL/\+GPIO/\+GPIO\+\_\+\+Interface.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_l_c_d_8c_a0dfb6d69257a983e2a21a093d2198208}{delay\+\_\+ms}} ()
+\begin{DoxyCompactList}\small\item\em Delay function for milliseconds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d_8c_a3851a3652240ba46e9c1c493036816f8}{HAL\+\_\+\+LCD\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the LCD module. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d_8c_a77e9e10e961dcd7258717dd256eead98}{HAL\+\_\+\+LCD\+\_\+\+Send\+\_\+\+CMD}} (uint8\+\_\+t cmd)
+\begin{DoxyCompactList}\small\item\em Send command to the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d_8c_a7ae117dd5336a5d3122840195c5f5328}{HAL\+\_\+\+LCD\+\_\+\+Send\+\_\+\+Char}} (uint8\+\_\+t c)
+\begin{DoxyCompactList}\small\item\em Send character to the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d_8c_aca21e5faeafa9aba565cd47bf38dd7e2}{HAL\+\_\+\+LCD\+\_\+\+Send\+\_\+\+String}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Send string to the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d_8c_a942fd91ba62b36cd1b7fecd7647174af}{HAL\+\_\+\+LCD\+\_\+\+Send\+\_\+\+Number}} (double num)
+\begin{DoxyCompactList}\small\item\em Send number to the LCD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d_8c_af85fcedea0fabb928bd66ce3adf12062}{HAL\+\_\+\+LCD\+\_\+\+Clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the LCD display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d_8c_a1f237a5cbc29672a89c1b27c03fe90da}{HAL\+\_\+\+LCD\+\_\+\+XY}} (uint8\+\_\+t x, uint8\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Set cursor position on the LCD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_l_c_d_8c_a0dfb6d69257a983e2a21a093d2198208}\label{_l_c_d_8c_a0dfb6d69257a983e2a21a093d2198208} 
+\index{LCD.c@{LCD.c}!delay\_ms@{delay\_ms}}
+\index{delay\_ms@{delay\_ms}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{delay\_ms()}{delay\_ms()}}
+{\footnotesize\ttfamily void delay\+\_\+ms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delay function for milliseconds. 
+
+\Hypertarget{_l_c_d_8c_af85fcedea0fabb928bd66ce3adf12062}\label{_l_c_d_8c_af85fcedea0fabb928bd66ce3adf12062} 
+\index{LCD.c@{LCD.c}!HAL\_LCD\_Clear@{HAL\_LCD\_Clear}}
+\index{HAL\_LCD\_Clear@{HAL\_LCD\_Clear}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_Clear()}{HAL\_LCD\_Clear()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear the LCD display. 
+
+\Hypertarget{_l_c_d_8c_a3851a3652240ba46e9c1c493036816f8}\label{_l_c_d_8c_a3851a3652240ba46e9c1c493036816f8} 
+\index{LCD.c@{LCD.c}!HAL\_LCD\_Init@{HAL\_LCD\_Init}}
+\index{HAL\_LCD\_Init@{HAL\_LCD\_Init}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_Init()}{HAL\_LCD\_Init()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the LCD module. 
+
+\Hypertarget{_l_c_d_8c_a7ae117dd5336a5d3122840195c5f5328}\label{_l_c_d_8c_a7ae117dd5336a5d3122840195c5f5328} 
+\index{LCD.c@{LCD.c}!HAL\_LCD\_Send\_Char@{HAL\_LCD\_Send\_Char}}
+\index{HAL\_LCD\_Send\_Char@{HAL\_LCD\_Send\_Char}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_Send\_Char()}{HAL\_LCD\_Send\_Char()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+\+Send\+\_\+\+Char (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{c }\end{DoxyParamCaption})}
+
+
+
+Send character to the LCD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Character to be sent \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_l_c_d_8c_a77e9e10e961dcd7258717dd256eead98}\label{_l_c_d_8c_a77e9e10e961dcd7258717dd256eead98} 
+\index{LCD.c@{LCD.c}!HAL\_LCD\_Send\_CMD@{HAL\_LCD\_Send\_CMD}}
+\index{HAL\_LCD\_Send\_CMD@{HAL\_LCD\_Send\_CMD}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_Send\_CMD()}{HAL\_LCD\_Send\_CMD()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+\+Send\+\_\+\+CMD (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Send command to the LCD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & Command to be sent \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_l_c_d_8c_a942fd91ba62b36cd1b7fecd7647174af}\label{_l_c_d_8c_a942fd91ba62b36cd1b7fecd7647174af} 
+\index{LCD.c@{LCD.c}!HAL\_LCD\_Send\_Number@{HAL\_LCD\_Send\_Number}}
+\index{HAL\_LCD\_Send\_Number@{HAL\_LCD\_Send\_Number}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_Send\_Number()}{HAL\_LCD\_Send\_Number()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+\+Send\+\_\+\+Number (\begin{DoxyParamCaption}\item[{double}]{num }\end{DoxyParamCaption})}
+
+
+
+Send number to the LCD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Number to be sent \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_l_c_d_8c_aca21e5faeafa9aba565cd47bf38dd7e2}\label{_l_c_d_8c_aca21e5faeafa9aba565cd47bf38dd7e2} 
+\index{LCD.c@{LCD.c}!HAL\_LCD\_Send\_String@{HAL\_LCD\_Send\_String}}
+\index{HAL\_LCD\_Send\_String@{HAL\_LCD\_Send\_String}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_Send\_String()}{HAL\_LCD\_Send\_String()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+\+Send\+\_\+\+String (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+
+
+Send string to the LCD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to be sent \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_l_c_d_8c_a1f237a5cbc29672a89c1b27c03fe90da}\label{_l_c_d_8c_a1f237a5cbc29672a89c1b27c03fe90da} 
+\index{LCD.c@{LCD.c}!HAL\_LCD\_XY@{HAL\_LCD\_XY}}
+\index{HAL\_LCD\_XY@{HAL\_LCD\_XY}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_LCD\_XY()}{HAL\_LCD\_XY()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+LCD\+\_\+\+XY (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{x,  }\item[{uint8\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Set cursor position on the LCD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Row number (0 or 1) \\
+\hline
+{\em y} & Column number (0-\/15) \\
+\hline
+\end{DoxyParams}
