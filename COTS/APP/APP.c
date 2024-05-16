@@ -48,6 +48,14 @@ float APP_Compute_Distance(float lat1, float long1, float lat2, float long2)
    return distance;
 }
 
+uint8_t APP_Prompt_Dump_Read(UART_ConfigType *cfg)
+{
+
+   APP_LCD_Clear_Write("Dump Prev Data?", 0, 0);
+   APP_LCD_Write("Send U", 0, 1);
+   return MCAL_UART_Receive_Byte_Poll(cfg);
+}
+
 void APP_Destination_Reached(UART_ConfigType *cfg)
 {
 	// Open Red LED and stop when destination is reached

@@ -1,9 +1,17 @@
+/****************************************************************/
+/******* Author    : ASU_EMBEDDED_TEAM_NO 3     *****************/
+/******* Date      : 10 May 2024             	*****************/
+/******* Version   : 0.1                        *****************/
+/******* File Name : GPS.c                      *****************/
+/****************************************************************/
+
 #include "GPS.h"
 #include "string.h"
 #include "stdlib.h"
 
 uint8_t GPS_Sentence[100];
 
+/*****************************< Functions Implementations >******************/
 
 uint8_t parse_GPS_data(char* GPS_Sentence,UART_ConfigType * cfg, float * latitude, float * longitude)
 {

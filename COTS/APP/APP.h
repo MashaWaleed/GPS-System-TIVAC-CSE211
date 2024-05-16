@@ -71,8 +71,95 @@ float APP_To_Radian(float angle);
 float APP_Compute_Distance(float lat1, float long1, float lat2, float long2);
 
 
+/**
+ * @brief Convert float GPS reading to uint32_t value
+ * @param x Float value to be converted
+ * @return uint32_t GPS reading
+ */
+int APP_Float_To_Int(float x);
 
 
+/**
+ * @brief Convert uint32_t GPS reading to float value
+ * @param x uint32_t value to be converted
+ * @return Float GPS reading
+ */
+float APP_Int_To_Float(int x);
+
+
+/**
+ * @brief Write GPS point to EEPROM
+ * @param counter Pointer to counter indicating number of points written to EEPROM
+ * @param latitude Latitude of the point
+ * @param longitude Longitude of the point
+ * @return void
+ */
+void APP_Write_Point(int *counter, int latitude, int longitude);
+
+
+/**
+ * @brief Read GPS point from EEPROM
+ * @param address Pointer to address of point in EEPROM
+ * @param latitude Pointer to store latitude
+ * @param longitude Pointer to store longitude
+ * @return void
+ */
+void APP_Read_Point(int * address, int * latitude, int * longitude);
+
+
+/**
+ * @brief Initialize UART
+ * @param cfg Pointer to UART configuration
+ * @param instance UART instance
+ * @return void
+ */
+void APP_UART_INIT(UART_ConfigType *cfg, UART_Type * instance);
+
+
+/**
+ * @brief Send sentences to UART
+ * @param cfg Pointer to UART configuration
+ * @return void
+ */
+void APP_Send_Sentences(UART_ConfigType *cfg);
+
+
+/**
+ * @brief Prompt user to dump previous travel data
+ * @param cfg Pointer to UART configuration
+ * @return uint8_t Command entered by user
+ */
+uint8_t APP_Prompt_Dump_Read(UART_ConfigType *cfg);
+
+
+/**
+ * @brief Clear LCD and write string
+ * @param str String to be written
+ * @param row Row to write string
+ * @param col Column to write string
+ * @return void
+ */
+void APP_LCD_Clear_Write(char *str, int x, int y);
+
+
+/**
+ * @brief Write string to LCD
+ * @param str String to be written
+ * @param row Row to write string
+ * @param col Column to write string
+ * @return void
+ */
+void APP_LCD_Write(char *str, int x, int y);
+ 
+
+/**
+ * @brief Write number to LCD
+ * @param number Number to be written
+ * @param row Row to write number
+ * @param col Column to write number
+ * @return void
+ */
+void APP_LCD_Write_Number(int number, int x, int y);
 
 
 /**
