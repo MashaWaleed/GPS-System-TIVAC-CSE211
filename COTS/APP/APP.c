@@ -132,6 +132,36 @@ void APP_System_Init(UART_ConfigType *cfg1, UART_Type * instance1, UART_ConfigTy
 	HAL_LCD_Init();
 }
 
+void APP_UART_INIT(UART_ConfigType *cfg, UART_Type * instance)
+{
+
+   // Initialising the UART instance that communicates with GPS system
+   (*cfg).Instance = instance;
+   (*cfg).BaudRate = 9600;
+   (*cfg).Data_Bit = Data_Bit_8;
+   (*cfg).Parity = Parity_None;
+   (*cfg).Stop_Bit = Stop_bit_1;
+
+   MCAL_UART_Init(cfg);
+}
+
+void APP_LCD_Write(char *str, int x, int y)
+{
+   HAL_LCD_XY(x, y);
+   HAL_LCD_Send_String(str);
+}
+void APP_LCD_Write_Number(int number, int x, int y)
+{
+   HAL_LCD_XY(x, y);
+   HAL_LCD_Send_Number(number);
+}
+
+void APP_LCD_Clear_Write(char *str, int x, int y)
+{
+   HAL_LCD_Clear();
+   APP_LCD_Write(str, x, y);
+}
+
 
 
 /*****************************< End of APP.c >***************************/
