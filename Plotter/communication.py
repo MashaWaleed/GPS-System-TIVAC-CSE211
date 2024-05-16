@@ -159,8 +159,24 @@ class BluetoothController(tk.Tk):
             messagebox.showerror("Error", "Could not send choice. Please check your COM connection.")
 
 
+def graphData(points):
+    lats = []
+    lons = []
+    # Create a map centered at coordinates and set zoom level
+    m = folium.Map(location=[points[0][0], points[0][1]], zoom_start=25)
 
+    for point in points:
+        try:
+            lats.append(float(point[0]))
+            lons.append(float(point[1]))
+        except:
+            break
+    # Add a marker with a popup
+    folium.PolyLine(locations=zip(lats, lons), color='red', weight=5).add_to(m)
+    # Save as an HTML file
+    m.save("map.html")
 
+    print("Map created! Open 'map.html' in your browser to view it.")
 
 
 def main():
