@@ -69,17 +69,20 @@ void APP_Destination_Reached(UART_ConfigType *cfg)
 	// Dumping prompt 
    APP_LCD_Write("Dump Log : U", 0, 1);
 	
-      
+   while(1){
    if(MCAL_UART_Receive_Byte_Poll(cfg) == 'U')
-   {
-      APP_LCD_Clear_Write("Dumping.....", 0, 0);
-      
-      //test_send_sentences();
-      APP_Send_Sentences(cfg);
-      
-      APP_LCD_Clear_Write("Finished Dump", 0, 0);
-      MCAL_STK_Delay_ms(5000);
-   }
+      {
+         APP_LCD_Clear_Write("Dumping.....", 0, 0);
+         
+         //test_send_sentences();
+         APP_Send_Sentences(cfg);
+         
+         APP_LCD_Clear_Write("Finished Dump", 0, 0);
+         MCAL_STK_Delay_ms(5000);
+         break;
+      }
+   }   
+   while(1){};
 }
 
 int APP_Float_To_Int(float x)
