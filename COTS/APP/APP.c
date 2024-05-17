@@ -82,7 +82,6 @@ void APP_Destination_Reached(UART_ConfigType *cfg)
          break;
       }
    }   
-   while(1){};
 }
 
 int APP_Float_To_Int(float x)
