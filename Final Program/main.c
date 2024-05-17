@@ -1,4 +1,4 @@
-#include "./COTS/APP/APP.h"
+#include "../COTS/APP/APP.h"
 
 /*Struct holding UART Configurations for our custom UART Driver*/
 
