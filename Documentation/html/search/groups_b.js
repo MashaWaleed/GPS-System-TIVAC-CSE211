@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['register_0',['Register',['../group___g_p_i_o___struct.html',1,'']]],
-  ['registers_20addresses_1',['GPIO Registers Addresses',['../group___g_p_i_o___registers___addresses.html',1,'']]]
+  ['size_0',['Data Bits Size',['../group__data_size.html',1,'']]],
+  ['stop_20bits_1',['Stop Bits',['../group__stop_bits.html',1,'']]]
 ];

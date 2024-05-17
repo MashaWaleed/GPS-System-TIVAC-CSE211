@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['layer_20functions_0',['Service Layer Functions',['../group___a_p_p___functions.html',1,'']]]
+  ['modes_0',['GPIO Input Modes',['../group___g_p_i_o___input_modes.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type_0',['Parity Type',['../group__parity.html',1,'']]]
+  ['uart_20instance_0',['UART Instance',['../group__uart_num.html',1,'']]]
 ];

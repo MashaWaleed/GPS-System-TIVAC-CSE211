@@ -1,6 +1,5 @@
 var topics =
 [
-    [ "Service Layer Functions", "group___a_p_p___functions.html", "group___a_p_p___functions" ],
     [ "EEPROM Driver", "group___public___functions.html", "group___public___functions" ],
     [ "GPIO Configuration", "group___g_p_i_o___configuration.html", "group___g_p_i_o___configuration" ],
     [ "GPIO Functions", "group___g_p_i_o___functions.html", "group___g_p_i_o___functions" ],

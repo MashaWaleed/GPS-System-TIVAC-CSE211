@@ -2,19 +2,26 @@
 \hypertarget{_g_p_s_8h_source}{}\label{_g_p_s_8h_source}\index{HAL/GPS/GPS.h@{HAL/GPS/GPS.h}}
 \mbox{\hyperlink{_g_p_s_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GPS\_H\_}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GPS\_H\_}}
-\DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}stdint.h"{}}}
-\DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t__prv_8h}{UART\_prv.h}}"{}}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t__cfg_8h}{UART\_cfg.h}}"{}}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t__int_8h}{UART\_int.h}}"{}}}
-\DoxyCodeLine{00017\ uint8\_t\ \mbox{\hyperlink{_g_p_s_8h_a1c390ddda246b49ed057597948aed528}{parse\_GPS\_data}}(\textcolor{keywordtype}{char}*\ \mbox{\hyperlink{_g_p_s_8c_a40909410e475f536e6f17d7db4551b76}{GPS\_Sentence}},\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg,\ \textcolor{keywordtype}{float}\ *\ latitude,\ \textcolor{keywordtype}{float}\ *\ longitude);}
-\DoxyCodeLine{00018\ }
-\DoxyCodeLine{00026\ uint8\_t\ \mbox{\hyperlink{_g_p_s_8h_ae089f41213fe052c05d7750b226edc5c}{HAL\_GPS\_Read}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg,\ \textcolor{keywordtype}{float}\ *\ latitude,\ \textcolor{keywordtype}{float}\ *\ longitude);}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00001\ \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*******\ Author\ \ \ \ :\ ASU\_EMBEDDED\_TEAM\_NO\ 3\ \ \ \ \ *****************/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{/*******\ Date\ \ \ \ \ \ :\ 10\ May\ 2024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00004\ \textcolor{comment}{/*******\ Version\ \ \ :\ 0.1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00005\ \textcolor{comment}{/*******\ File\ Name\ :\ GPS.h\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *****************/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ GPS\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ GPS\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}stdint.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t__prv_8h}{../../MCAL/UART/UART\_prv.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t__cfg_8h}{../../MCAL/UART/UART\_cfg.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t__int_8h}{../../MCAL/UART/UART\_int.h}}"{}}}
+\DoxyCodeLine{00024\ uint8\_t\ \mbox{\hyperlink{_g_p_s_8h_a1c390ddda246b49ed057597948aed528}{parse\_GPS\_data}}(\textcolor{keywordtype}{char}*\ \mbox{\hyperlink{_g_p_s_8c_a40909410e475f536e6f17d7db4551b76}{GPS\_Sentence}},\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg,\ \textcolor{keywordtype}{float}\ *\ latitude,\ \textcolor{keywordtype}{float}\ *\ longitude);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00033\ uint8\_t\ \mbox{\hyperlink{_g_p_s_8h_ae089f41213fe052c05d7750b226edc5c}{HAL\_GPS\_Read}}(\mbox{\hyperlink{struct_u_a_r_t___config_type}{UART\_ConfigType}}\ *\ cfg,\ \textcolor{keywordtype}{float}\ *\ latitude,\ \textcolor{keywordtype}{float}\ *\ longitude);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}
